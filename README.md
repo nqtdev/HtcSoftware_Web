@@ -1,4 +1,3 @@
 # HtcSoftware_Web
 
-## Tiếp tục dự án : npm run start
-
+## Tiếp tục dự án : npm install -> npm run start
