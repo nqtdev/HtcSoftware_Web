@@ -1,7 +1,7 @@
 import { Dropdown, Navbar, Button } from 'flowbite-react'
 import { NavLink } from 'react-router-dom'
 import logo from '../../Img/logo_sw.png'
-import Apphtc from '../../FileDownload/checkid_client_installer.exe'
+import Apphtc from '../../FileDownload/checkid_client_installer.zip'
 const CoNavbar = () => {
     return (
         <div className="z-999 fixed left-0 top-0 w-full bg-white">
