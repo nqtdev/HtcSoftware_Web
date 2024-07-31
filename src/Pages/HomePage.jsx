@@ -40,7 +40,7 @@ const HomePage = () => {
         <div className="container m-auto w-full xl:w-10/12">
             <section className="flex max-w-full flex-col justify-between lg:flex-row">
                 <div className="container m-auto box-border px-2">
-                    <h1 className="m-2 text-center text-[2.1rem] font-bold italic text-main-colors sm:text-[3.5rem] md:text-[2.8rem] lg:text-4xl xl:text-7xl">
+                    <h1 className="m-2 text-center text-4xl font-bold italic text-main-colors md:text-[3.2rem] xl:text-6xl">
                         RAR eKYC Platform
                     </h1>
                     <div className="text-center sm:m-2">

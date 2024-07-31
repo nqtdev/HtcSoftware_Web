@@ -138,9 +138,9 @@ const CheckIdSr = () => {
             {/* Banner sản phẩm  */}
             <section>
                 <div className="md: bg-bg-img-product p-3 md:flex md:p-7">
-                    <div className="m-auto text-center">
+                    <div className="m-auto text-center md:w-1/2">
                         <div className="mb-[5%]">
-                            <h1 className="font-roboto text-4xl font-black text-white lg:text-5xl xl:text-[7rem]">
+                            <h1 className="xxl:text-[7rem] font-roboto text-5xl font-black text-white xl:text-[5rem]">
                                 ID Card Reader <br />
                                 (CheckID-SR)
                             </h1>
@@ -151,7 +151,7 @@ const CheckIdSr = () => {
                             </i>
                         </div>
                     </div>
-                    <div>
+                    <div className="md:w-1/2">
                         <img src={imgProduct_SR} alt="imgProduct_SR" />
                     </div>
                 </div>

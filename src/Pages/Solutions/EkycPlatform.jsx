@@ -31,15 +31,11 @@ const EkycPlatform = () => {
         AOS.init()
     })
     return (
-        <div className="container m-auto w-full xl:w-10/12">
+        <div className="container m-auto w-full px-1 xl:w-10/12">
             {/* Banner  */}
             <section className="flex max-w-full flex-col justify-between lg:flex-row">
-                <div
-                    data-aos="fade-right"
-                    data-aos-duration="1800"
-                    className="container m-auto box-border"
-                >
-                    <h1 className="m-2 text-center text-[2.5rem] font-bold italic text-main-colors sm:text-[3.5rem]">
+                <div className="container m-auto box-border">
+                    <h1 className="m-2 text-center text-4xl font-bold italic text-main-colors md:text-[3.2rem] xl:text-6xl">
                         HTC eKYC Platform
                     </h1>
                     <div className="text-center sm:m-2">
@@ -57,11 +53,7 @@ const EkycPlatform = () => {
                         </span>
                     </div>
                 </div>
-                <div
-                    data-aos="fade-left"
-                    data-aos-duration="1800"
-                    className="container m-auto p-2"
-                >
+                <div className="container m-auto p-2">
                     <img className="w-11/12" src={Banner} alt="logo banner" />
                 </div>
             </section>
@@ -73,11 +65,7 @@ const EkycPlatform = () => {
                     </h2>
                 </div>
                 <div className="grid gap-2 md:grid-cols-2">
-                    <div
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                        className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
-                    >
+                    <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
                         <img
                             src={Vt_xacthuc}
                             alt="hình ảnh xác thực nhanh chóng"
@@ -90,11 +78,7 @@ const EkycPlatform = () => {
                             công.
                         </span>
                     </div>
-                    <div
-                        data-aos="fade-left"
-                        data-aos-duration="1400"
-                        className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
-                    >
+                    <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
                         <img
                             src={Vt_tangcuong}
                             alt="hình ảnh tăng cường bảo mật "
@@ -107,11 +91,7 @@ const EkycPlatform = () => {
                             khuôn mặt và dấu vân tay.
                         </span>
                     </div>
-                    <div
-                        data-aos="fade-right"
-                        data-aos-duration="1600"
-                        className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
-                    >
+                    <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
                         <img
                             src={Vt_tietkiem}
                             alt="hình ảnh tiết kiệm chi phí"
@@ -124,11 +104,7 @@ const EkycPlatform = () => {
                             lực.
                         </span>
                     </div>
-                    <div
-                        data-aos="fade-left"
-                        data-aos-duration="1800"
-                        className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
-                    >
+                    <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
                         <img
                             src={Vt_caithien}
                             alt="hình ảnh cải thiện trải nghiệm"
@@ -141,11 +117,7 @@ const EkycPlatform = () => {
                             trực tiếp.
                         </span>
                     </div>
-                    <div
-                        data-aos="fade-right"
-                        data-aos-duration="2000"
-                        className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
-                    >
+                    <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
                         <img
                             src={Vt_tuanthu}
                             alt="hình ảnh tuân thủ quy định"
@@ -158,11 +130,7 @@ const EkycPlatform = () => {
                             phòng chống rửa tiền và chống tài trợ khủng bố.
                         </span>
                     </div>
-                    <div
-                        data-aos="fade-left"
-                        data-aos-duration="2200"
-                        className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
-                    >
+                    <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
                         <img src={Vt_dulieu} alt="hình ảnh dữ liệu minh bạch" />
                         <span>
                             <b className="text-main-colors">
@@ -181,11 +149,7 @@ const EkycPlatform = () => {
                 </div>
                 <div className="bg-cyan-100/20">
                     {/* ID Read (OCR) */}
-                    <div
-                        className="p-6 md:flex md:flex-row-reverse"
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                    >
+                    <div className="p-6 md:flex md:flex-row-reverse">
                         <div className="m-auto md:w-1/2">
                             <div className="flex items-center">
                                 <img
@@ -235,7 +199,7 @@ const EkycPlatform = () => {
                         </div>
                     </div>
                     {/* liveness Check  */}
-                    <div className="p-6 md:flex" data-aos="fade-left">
+                    <div className="p-6 md:flex">
                         <div className="m-auto md:w-1/2">
                             <div className="flex items-center">
                                 <img
@@ -283,11 +247,7 @@ const EkycPlatform = () => {
                         </div>
                     </div>
                     {/* ID Sannity Check  */}
-                    <div
-                        className="p-6 md:flex md:flex-row-reverse"
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                    >
+                    <div className="p-6 md:flex md:flex-row-reverse">
                         <div className="m-auto md:w-1/2">
                             <div className="flex items-center">
                                 <img className="" src={Number3} alt="" />
@@ -334,7 +294,7 @@ const EkycPlatform = () => {
                         </div>
                     </div>
                     {/* Forgery ID Check  */}
-                    <div className="p-6 md:flex" data-aos="fade-left">
+                    <div className="p-6 md:flex">
                         <div className="m-auto md:w-1/2">
                             <div className="flex items-center">
                                 <img className="" src={Number4} alt="Number4" />
@@ -377,11 +337,7 @@ const EkycPlatform = () => {
                         </div>
                     </div>
                     {/* Cross Identification  */}
-                    <div
-                        className="p-6 md:flex md:flex-row-reverse"
-                        data-aos="fade-right"
-                        data-aos-duration="1200"
-                    >
+                    <div className="p-6 md:flex md:flex-row-reverse">
                         <div className="m-auto md:w-1/2">
                             <div className="flex items-center">
                                 <img className="" src={Number5} alt="Number5" />
@@ -424,7 +380,7 @@ const EkycPlatform = () => {
                         </div>
                     </div>
                     {/* Xác minh CCCD gắn chip  */}
-                    <div className="p-6 md:flex" data-aos="fade-left">
+                    <div className="p-6 md:flex">
                         <div className="m-auto md:w-1/2">
                             <div className="flex items-center">
                                 <img className="" src={Number6} alt="" />
