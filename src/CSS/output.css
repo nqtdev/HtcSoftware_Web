@@ -1676,6 +1676,10 @@ input[type="range"]::-ms-fill-lower {
   width: 12rem;
 }
 
+.w-\[70\%\] {
+  width: 70%;
+}
+
 .w-\[80\%\] {
   width: 80%;
 }
@@ -1700,10 +1704,6 @@ input[type="range"]::-ms-fill-lower {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[70\%\] {
-  width: 70%;
 }
 
 .min-w-11 {
@@ -3286,14 +3286,6 @@ input[type="range"]::-ms-fill-lower {
   line-height: 1;
 }
 
-.text-\[2\.1rem\] {
-  font-size: 2.1rem;
-}
-
-.text-\[2\.5rem\] {
-  font-size: 2.5rem;
-}
-
 .text-\[2\.8rem\] {
   font-size: 2.8rem;
 }
@@ -3321,6 +3313,22 @@ input[type="range"]::-ms-fill-lower {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
+.text-\[\.4rem\] {
+  font-size: .4rem;
+}
+
+.text-\[\.5rem\] {
+  font-size: .5rem;
+}
+
+.text-\[\.8rem\] {
+  font-size: .8rem;
 }
 
 .font-black {
@@ -6370,10 +6378,6 @@ input[type="range"]::-ms-fill-lower {
     text-align: center;
   }
 
-  .sm\:text-\[3\.5rem\] {
-    font-size: 3.5rem;
-  }
-
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -6530,30 +6534,13 @@ input[type="range"]::-ms-fill-lower {
     padding-bottom: 0.75rem;
   }
 
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .md\:text-\[2\.8rem\] {
-    font-size: 2.8rem;
+  .md\:text-\[3\.2rem\] {
+    font-size: 3.2rem;
   }
 
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:text-\[4rem\] {
-    font-size: 4rem;
-  }
-
-  .md\:text-\[3\.5rem\] {
-    font-size: 3.5rem;
-  }
-
-  .md\:text-\[3\.2rem\] {
-    font-size: 3.2rem;
   }
 
   .md\:font-medium {
@@ -6618,10 +6605,6 @@ input[type="range"]::-ms-fill-lower {
     width: 35%;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -6632,15 +6615,6 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:p-7 {
     padding: 1.75rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .lg\:text-\[3rem\] {
-    font-size: 3rem;
   }
 }
 
@@ -6657,18 +6631,6 @@ input[type="range"]::-ms-fill-lower {
     width: 75%;
   }
 
-  .xl\:w-full {
-    width: 100%;
-  }
-
-  .xl\:w-\[90\%\] {
-    width: 90%;
-  }
-
-  .xl\:w-\[80\%\] {
-    width: 80%;
-  }
-
   .xl\:w-\[85\%\] {
     width: 85%;
   }
@@ -6680,11 +6642,6 @@ input[type="range"]::-ms-fill-lower {
 
   .xl\:text-6xl {
     font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .xl\:text-7xl {
-    font-size: 4.5rem;
     line-height: 1;
   }
 

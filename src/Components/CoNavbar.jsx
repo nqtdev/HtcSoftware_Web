@@ -1,7 +1,7 @@
 import { Dropdown, Navbar, Button } from 'flowbite-react'
 import { NavLink } from 'react-router-dom'
 import logo from '../../Img/logo_sw.png'
-import Apphtc from '../../FileDownload/checkid_client_installer.zip'
+// import Apphtc from '../../FileDownload/checkid_client_installer.zip'
 const CoNavbar = () => {
     return (
         <div className="z-999 fixed left-0 top-0 w-full bg-white">
@@ -93,7 +93,7 @@ const CoNavbar = () => {
                                     CheckID-ET100
                                 </Button>
                             </Dropdown.Item>
-                            <Dropdown.Item>
+                            {/* <Dropdown.Item>
                                 <a href={Apphtc}>
                                     <Button
                                         gradientDuoTone="purpleToBlue"
@@ -121,7 +121,7 @@ const CoNavbar = () => {
                                         </div>
                                     </Button>
                                 </a>
-                            </Dropdown.Item>
+                            </Dropdown.Item> */}
                         </Dropdown>
                     </Button>
                 </Navbar.Collapse>

@@ -10,15 +10,15 @@ import Vt_dulieu from '../../../Img/HtcEkyc/S-ekyc/du-lieu-minh-bach.svg'
 import ID_OCR from '../../../Img/HtcEkyc/S-htc/img_1.svg'
 import LiveNess_Check from '../../../Img/HtcEkyc/S-htc/img_2.svg'
 import ID_Sanity from '../../../Img/HtcEkyc/S-htc/img_3.svg'
-import Forgery from '../../../Img/HtcEkyc/S-htc/img_4.svg'
-import Cross from '../../../Img/HtcEkyc/S-htc/img_5.svg'
+// import Forgery from '../../../Img/HtcEkyc/S-htc/img_4.svg'
+// import Cross from '../../../Img/HtcEkyc/S-htc/img_5.svg'
 import CheckCCCD from '../../../Img/HtcEkyc/S-htc/img_6.svg'
 import Number1 from '../../../Img/HtcEkyc/S-htc/1.svg'
 import Number2 from '../../../Img/HtcEkyc/S-htc/2.svg'
 import Number3 from '../../../Img/HtcEkyc/S-htc/3.svg'
 import Number4 from '../../../Img/HtcEkyc/S-htc/4.svg'
-import Number5 from '../../../Img/HtcEkyc/S-htc/5.svg'
-import Number6 from '../../../Img/HtcEkyc/S-htc/6.svg'
+// import Number5 from '../../../Img/HtcEkyc/S-htc/5.svg'
+// import Number6 from '../../../Img/HtcEkyc/S-htc/6.svg'
 import Star from '../../../Img/HtcEkyc/S-htc/star.svg'
 
 import AOS from 'aos'
@@ -294,7 +294,7 @@ const EkycPlatform = () => {
                         </div>
                     </div>
                     {/* Forgery ID Check  */}
-                    <div className="p-6 md:flex">
+                    {/* <div className="p-6 md:flex">
                         <div className="m-auto md:w-1/2">
                             <div className="flex items-center">
                                 <img className="" src={Number4} alt="Number4" />
@@ -335,9 +335,9 @@ const EkycPlatform = () => {
                                 alt="Forgery"
                             />
                         </div>
-                    </div>
+                    </div> */}
                     {/* Cross Identification  */}
-                    <div className="p-6 md:flex md:flex-row-reverse">
+                    {/* <div className="p-6 md:flex md:flex-row-reverse">
                         <div className="m-auto md:w-1/2">
                             <div className="flex items-center">
                                 <img className="" src={Number5} alt="Number5" />
@@ -378,12 +378,12 @@ const EkycPlatform = () => {
                                 alt="Cross"
                             />
                         </div>
-                    </div>
+                    </div> */}
                     {/* Xác minh CCCD gắn chip  */}
                     <div className="p-6 md:flex">
                         <div className="m-auto md:w-1/2">
                             <div className="flex items-center">
-                                <img className="" src={Number6} alt="" />
+                                <img className="" src={Number4} alt="" />
                                 <h3 className="font-mulish font-bold text-[#3385ff]">
                                     Xác minh CCCD gắn chip
                                 </h3>

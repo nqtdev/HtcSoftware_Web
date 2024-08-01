@@ -166,7 +166,7 @@ const CoFooter = () => {
                     </section> */}
                 </div>
                 <div className="pt-2">
-                    <h2 className="text-center font-mulish text-sm text-[#a1a5ba]">
+                    <h2 className="text-center font-mulish text-[.8rem] text-[#a1a5ba]">
                         Copyright © 2023 HTC SOFTWARE
                     </h2>
                 </div>
