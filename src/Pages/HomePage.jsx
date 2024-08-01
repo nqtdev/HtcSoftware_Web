@@ -31,6 +31,7 @@ import GcnZ from '../../Img/EkycFlatform/s6_gcn-zoom.png'
 import Dkth from '../../Img/EkycFlatform/s6_dkth.png'
 import DkthZ from '../../Img/EkycFlatform/s6_dkth-zoom.png'
 import Banner_CCDV from '../../Img/EkycFlatform/cungcapdv.png'
+import ModalImage from 'react-modal-image'
 
 const HomePage = () => {
     useEffect(() => {
@@ -340,36 +341,32 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            {/* Giấy chứng nhận */}
+            {/* Chứng nhận */}
             <section className="m-auto md:w-3/4">
                 <div data-aos="zoom-in" data-aos-duration="1000">
                     <h2 className="all-textList">Giấy chứng nhận</h2>
                 </div>
                 <div>
                     <div className="mb-5 flex flex-col sm:flex-row">
+                        {/* giấy chứng nhận */}
                         <div className="m-auto max-w-xs overflow-hidden pt-3">
-                            <img
+                            <ModalImage
                                 className="thumbnail h-auto w-full cursor-pointer"
-                                src={Gcn}
-                                data-highres={GcnZ}
+                                small={Gcn}
+                                large={GcnZ}
                                 alt="ảnh giấy chứng nhận"
                             />
                         </div>
+                        {/* Đăng ký thương hiệu  */}
                         <div className="m-auto max-w-xs overflow-hidden pt-3">
-                            <img
+                            <ModalImage
                                 className="thumbnail h-auto w-full cursor-pointer"
-                                src={Dkth}
-                                data-highres={DkthZ}
+                                small={Dkth}
+                                large={DkthZ}
                                 alt="ảnh đăng ký thương hiệu"
                             />
                         </div>
                     </div>
-                    {/* Overlay để hiển thị ảnh lớn */}
-                    {/* <div id="popup" className="popup-overlay">
-                        <div className="relative rounded-lg bg-white p-1">
-                            <img id="popupImage" src="" alt="Popup Image" />
-                        </div>
-                    </div> */}
                 </div>
             </section>
         </div>
