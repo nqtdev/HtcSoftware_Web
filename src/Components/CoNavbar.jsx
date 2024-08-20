@@ -18,11 +18,7 @@ const CoNavbar = () => {
                         active
                         to="/"
                         as={NavLink}
-                        // className="mb-1 !rounded-md !bg-main-colors p-1 text-white"
                     >
-                        {/* <p className="px-[.2rem] py-[.45rem] text-white md:px-6 md:py-3">
-                            Trang Chủ
-                        </p> */}
                         Trang Chủ
                     </Button>
                     <Button
@@ -91,6 +87,15 @@ const CoNavbar = () => {
                                     className="w-[12rem]"
                                 >
                                     CheckID-ET100
+                                </Button>
+                            </Dropdown.Item>
+                            {/* Meta eYe  */}
+                            <Dropdown.Item as={NavLink} to="/meta-eye">
+                                <Button
+                                    gradientDuoTone="purpleToBlue"
+                                    className="w-[12rem]"
+                                >
+                                    Meta eYe
                                 </Button>
                             </Dropdown.Item>
                             <Dropdown.Item>

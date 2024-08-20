@@ -9,6 +9,7 @@ import Introduction from './Pages/Introduction'
 import HomePage from './Pages/HomePage'
 import CheckIdEt from './Pages/Products/CheckIdEt'
 import CheckIdSr from './Pages/Products/CheckIdSr'
+import MetaEye from './Pages/Products/MetaEye'
 import OnTop from './OnTop'
 import ButtonCall from './Components/ButtonCall'
 import ButtonMail from './Components/ButtonMail'
@@ -27,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                     <Route path="/introduction" element={<Introduction />} />
                     <Route path="/checkid-sr" element={<CheckIdSr />} />
                     <Route path="/checkid-et100" element={<CheckIdEt />} />
+                    <Route path="/meta-eye" element={<MetaEye />} />
                 </Route>
             </Routes>
             <ScrollToTop />

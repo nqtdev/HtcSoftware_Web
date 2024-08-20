@@ -1,5 +1,6 @@
 import SlideSwiper from '../../Components/SlideSwiper'
-import product_et from '../../../Img/Products/Et100/product-et6.png'
+import product_et from '../../../Img/Products/LinkProduct/et100.png'
+import product_metaEye from '../../../Img/Products/LinkProduct/metaEye.png'
 import TableSpecification from '../../Components/TableSpecification'
 import SlideShowSwiper from '../../Components/SlideShowSwiper'
 import slide_image_0 from '../../../Img/Products/Sr/sr_cheo.png'
@@ -97,9 +98,27 @@ const CheckIdSr = () => {
     const dataSlides = [
         {
             slideContent: product_et,
-            slideName: 'Check ID-SR',
+            slideName: 'CheckID-ET100',
             slideDescription: 'ID Card Reader/Scanner',
             linkProduct: '/checkid-et100',
+        },
+        {
+            slideContent: product_metaEye,
+            slideName: 'Meta eYe',
+            slideDescription: 'Thiết bị thực tế ảo',
+            linkProduct: '/meta-eye',
+        },
+        {
+            slideContent: product_et,
+            slideName: 'CheckID-ET100',
+            slideDescription: 'ID Card Reader/Scanner',
+            linkProduct: '/checkid-et100',
+        },
+        {
+            slideContent: product_metaEye,
+            slideName: 'Meta eYe',
+            slideDescription: 'Thiết bị thực tế ảo',
+            linkProduct: '/meta-eye',
         },
         {
             slideContent: product_et,
@@ -108,28 +127,10 @@ const CheckIdSr = () => {
             linkProduct: '/checkid-et100',
         },
         {
-            slideContent: product_et,
-            slideName: 'Check ID-SR',
-            slideDescription: 'ID Card Reader/Scanner',
-            linkProduct: '/checkid-et100',
-        },
-        {
-            slideContent: product_et,
-            slideName: 'Check ID-SR',
-            slideDescription: 'ID Card Reader/Scanner',
-            linkProduct: '/checkid-et100',
-        },
-        {
-            slideContent: product_et,
-            slideName: 'Check ID-SR',
-            slideDescription: 'ID Card Reader/Scanner',
-            linkProduct: '/checkid-et100',
-        },
-        {
-            slideContent: product_et,
-            slideName: 'Check ID-SR',
-            slideDescription: 'ID Card Reader/Scanner',
-            linkProduct: '/checkid-et100',
+            slideContent: product_metaEye,
+            slideName: 'Meta eYe',
+            slideDescription: 'Thiết bị thực tế ảo',
+            linkProduct: '/meta-eye',
         },
     ]
 

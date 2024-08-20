@@ -16,7 +16,8 @@ import NFC from '../../../Img/Products/product-icon2.png'
 import Camera from '../../../Img/Products/product-icon3.png'
 import Fingerprint from '../../../Img/Products/product-icon4.png'
 import MRZ from '../../../Img/Products/product-icon5.png'
-import product_sr from '../../../Img/Products/Sr/sr_main.png'
+import product_sr from '../../../Img/Products/LinkProduct/sr.png'
+import product_metaEye from '../../../Img/Products/LinkProduct/metaEye.png'
 const CheckIdEt = () => {
     return (
         <>
@@ -392,19 +393,19 @@ const CheckIdEt = () => {
                                 </NavLink>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NavLink to="/checkid-sr">
+                                <NavLink to="/meta-eye">
                                     <div className="box rounded-md border-2 bg-main-table/20 p-1">
                                         <img
                                             className="m-auto w-3/4"
-                                            src={product_sr}
+                                            src={product_metaEye}
                                             alt=""
                                         />
                                         <div className="box bg-white p-2">
                                             <h4 className="text-md font-roboto">
-                                                CheckID-SR
+                                                Meta eYe
                                             </h4>
                                             <span className="font-roboto text-sm text-gray-600/30">
-                                                ID Card Reader/Scanner
+                                                Thiết bị thực tế ảo
                                             </span>
                                         </div>
                                     </div>
@@ -430,19 +431,19 @@ const CheckIdEt = () => {
                                 </NavLink>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <NavLink to="/checkid-sr">
+                                <NavLink to="/meta-eye">
                                     <div className="box rounded-md border-2 bg-main-table/20 p-1">
                                         <img
                                             className="m-auto w-3/4"
-                                            src={product_sr}
+                                            src={product_metaEye}
                                             alt=""
                                         />
                                         <div className="box bg-white p-2">
                                             <h4 className="text-md font-roboto">
-                                                CheckID-SR
+                                                Meta eYe
                                             </h4>
                                             <span className="font-roboto text-sm text-gray-600/30">
-                                                ID Card Reader/Scanner
+                                                Thiết bị thực tế ảo
                                             </span>
                                         </div>
                                     </div>
@@ -462,6 +463,25 @@ const CheckIdEt = () => {
                                             </h4>
                                             <span className="font-roboto text-sm text-gray-600/30">
                                                 ID Card Reader/Scanner
+                                            </span>
+                                        </div>
+                                    </div>
+                                </NavLink>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <NavLink to="/meta-eye">
+                                    <div className="box rounded-md border-2 bg-main-table/20 p-1">
+                                        <img
+                                            className="m-auto w-3/4"
+                                            src={product_metaEye}
+                                            alt=""
+                                        />
+                                        <div className="box bg-white p-2">
+                                            <h4 className="text-md font-roboto">
+                                                Meta eYe
+                                            </h4>
+                                            <span className="font-roboto text-sm text-gray-600/30">
+                                                Thiết bị thực tế ảo
                                             </span>
                                         </div>
                                     </div>
