@@ -9,10 +9,6 @@ import slide_image_2 from '../../../Img/Products/MetaEye/ngang.png'
 import slide_image_3 from '../../../Img/Products/MetaEye/cheo.png'
 import slide_image_4 from '../../../Img/Products/MetaEye/trong.png'
 import slide_image_5 from '../../../Img/Products/MetaEye/full.png'
-// import SmartCard from '../../../Img/Products/product-icon.png'
-// import NFC from '../../../Img/Products/product-icon2.png'
-// import Camera from '../../../Img/Products/product-icon3.png'
-// import MRZ from '../../../Img/Products/product-icon5.png'
 import imgProduct_eYe from '../../../Img/Products/MetaEye/main.png'
 
 const MetaEye = () => {
