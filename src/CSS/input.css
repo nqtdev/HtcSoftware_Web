@@ -53,8 +53,6 @@
 
 .s5_scroll {
     overflow: hidden;
-    /* padding: 60px 0; */
-    background: white;
     white-space: nowrap;
     position: relative;
 }
@@ -91,7 +89,6 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -4,7 +4,7 @@ import logo from '../../Img/logo_sw.png'
 import Apphtc from '../../FileDownload/checkid_client_installer.zip'
 const CoNavbar = () => {
     return (
-        <div className="z-999 fixed left-0 top-0 w-full bg-white">
+        <div className="fixed left-0 top-0 !z-10 w-full !bg-white">
             <Navbar fluid className="m-auto !p-1 xl:w-3/4">
                 {/* Logo htc software  */}
                 <Navbar.Brand to="/" as={NavLink}>

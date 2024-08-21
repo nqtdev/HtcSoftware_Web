@@ -4,20 +4,24 @@ import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
 import { FreeMode, Pagination } from 'swiper/modules'
 import { NavLink } from 'react-router-dom'
-import imgProduct_ET from '../../../Img/Products/Et100/product-et.png'
-import slide_image_1 from '../../../Img/Products/Et100/product-et1.png'
-import slide_image_2 from '../../../Img/Products/Et100/product-et2.png'
-import slide_image_3 from '../../../Img/Products/Et100/product-et3.png'
-import slide_image_4 from '../../../Img/Products/Et100/product-et4.png'
-import slide_image_5 from '../../../Img/Products/Et100/product-et5.png'
-import SmartCard from '../../../Img/Products/product-icon.png'
-import RichPort from '../../../Img/Products/product-icon1.png'
-import NFC from '../../../Img/Products/product-icon2.png'
-import Camera from '../../../Img/Products/product-icon3.png'
-import Fingerprint from '../../../Img/Products/product-icon4.png'
-import MRZ from '../../../Img/Products/product-icon5.png'
-import product_sr from '../../../Img/Products/LinkProduct/sr.png'
-import product_metaEye from '../../../Img/Products/LinkProduct/metaEye.png'
+// kích thước 650 x 500
+import imgProduct_ET from '../../../Img/Products/check_ET100/product-et.png'
+// kích thước 500 x 500
+import slide_image_1 from '../../../Img/Products/check_ET100/product-et1.png'
+import slide_image_2 from '../../../Img/Products/check_ET100/product-et2.png'
+import slide_image_3 from '../../../Img/Products/check_ET100/product-et3.png'
+import slide_image_4 from '../../../Img/Products/check_ET100/product-et4.png'
+import slide_image_5 from '../../../Img/Products/check_ET100/product-et5.png'
+// kích thước 60 x 61
+import SmartCard from '../../../Img/Products/icon_Function/product-icon.png'
+import RichPort from '../../../Img/Products/icon_Function/product-icon1.png'
+import NFC from '../../../Img/Products/icon_Function/product-icon2.png'
+import Camera from '../../../Img/Products/icon_Function/product-icon3.png'
+import Fingerprint from '../../../Img/Products/icon_Function/product-icon4.png'
+import MRZ from '../../../Img/Products/icon_Function/product-icon5.png'
+// kích thước 500 x 650
+import product_sr from '../../../Img/Products/linkProduct/sr.png'
+import product_metaEye from '../../../Img/Products/linkProduct/metaEye.png'
 const CheckIdEt = () => {
     return (
         <>

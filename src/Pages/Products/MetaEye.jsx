@@ -1,6 +1,6 @@
 import SlideSwiper from '../../Components/SlideSwiper'
-import product_et from '../../../Img/Products/LinkProduct/et100.png'
-import product_sr from '../../../Img/Products/LinkProduct/sr.png'
+import product_et from '../../../Img/Products/linkProduct/et100.png'
+import product_sr from '../../../Img/Products/linkProduct/sr.png'
 import TableSpecification from '../../Components/TableSpecification'
 import SlideShowSwiper from '../../Components/SlideShowSwiper'
 import slide_image_0 from '../../../Img/Products/MetaEye/truoc.png'
@@ -169,12 +169,12 @@ const MetaEye = () => {
 
                         <p className="text-left font-roboto text-main-colors">
                             Công nghệ Meta Reality đột phá, bao gồm tính năng AR
-                            và camera màu Passthrough <br />
+                            và camera màu Passthrough. <br />
                             Thiết kế mỏng, thoải mái, mang lại sự thoải mái
-                            tuyệt đối trong thời gian sử dụng kéo dài <br />
-                            Con chip Qualcomm Snapdragon XR2 Gen 2 đời mới, tiêu
-                            hao điện năng ít nhưng vẫn có thể cung cấp khả năng
-                            xử lý mạnh mẽ.
+                            tuyệt đối trong thời gian sử dụng kéo dài. <br />
+                            Chip Qualcomm Snapdragon XR2 Gen 2 đời mới, tiêu hao
+                            điện năng ít nhưng vẫn có thể cung cấp khả năng xử
+                            lý mạnh mẽ.
                         </p>
                     </div>
                     <div className="mt-3">
