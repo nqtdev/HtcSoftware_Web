@@ -12,3 +12,4 @@ npm install -> npm run start
     img icon chức năng: 60x61
     img link đến sản phẩm khác: 500x650
     check test
+    check test
