@@ -11,3 +11,4 @@ npm install -> npm run start
     img show hình ảnh sản phẩm: 750x750
     img icon chức năng: 60x61
     img link đến sản phẩm khác: 500x650
+    check test
