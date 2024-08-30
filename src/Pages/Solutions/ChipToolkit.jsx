@@ -1,12 +1,12 @@
-import CommingSoon from '../../Components/CommingSoon'
+import ComingSoon from 'components/ComingSoon'
 
 // @ Page sản phẩm HTC Chip ToolKit
 const ChipToolkit = () => {
-    return (
-        <div>
-            <CommingSoon />
-        </div>
-    )
+  return (
+    <div>
+      <ComingSoon />
+    </div>
+  )
 }
 
 export default ChipToolkit

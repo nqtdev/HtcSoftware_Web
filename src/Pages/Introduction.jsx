@@ -1,10 +1,10 @@
 // @ Page Giới Thiệu HTC SoftWare
-import CommingSoon from '../Components/CommingSoon'
+import ComingSoon from 'components/ComingSoon'
 export const Introduction = () => {
-    return (
-        <div>
-            <CommingSoon />
-        </div>
-    )
+  return (
+    <div>
+      <ComingSoon />
+    </div>
+  )
 }
 export default Introduction
