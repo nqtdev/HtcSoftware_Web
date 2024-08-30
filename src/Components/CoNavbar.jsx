@@ -12,6 +12,7 @@ const CoNavbar = () => {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
+          {/* Trang chủ */}
           <Button
             gradientDuoTone="purpleToBlue"
             className="mb-1 md:mb-0"
@@ -21,12 +22,14 @@ const CoNavbar = () => {
           >
             Trang Chủ
           </Button>
+          {/* Giải pháp  */}
           <Button gradientDuoTone="purpleToBlue" className="mb-1 md:mb-0">
             <Dropdown
               arrowIcon={true}
               label="Giải Pháp"
               inline
               placement="bottom"
+              className="absolute mt-2"
             >
               {/* RAR eKYC Platform */}
               <Dropdown.Item as={NavLink} to="/rar-ekyc">
@@ -55,6 +58,7 @@ const CoNavbar = () => {
               label="Thiết Bị"
               inline
               placement="bottom"
+              className="absolute mt-2"
             >
               {/* CheckID-SR */}
               <Dropdown.Item as={NavLink} to="/checkid-sr">
@@ -81,7 +85,7 @@ const CoNavbar = () => {
                     className="flex w-[12rem]"
                   >
                     <div className="flex items-center">
-                      Download{' '}
+                      Download Plugin{' '}
                       <svg
                         className="ml-2 h-6 w-6 text-white"
                         aria-hidden="true"
