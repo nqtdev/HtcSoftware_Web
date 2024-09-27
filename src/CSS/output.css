@@ -874,6 +874,8 @@ input[type="range"]::-ms-fill-lower {
   font-weight: 400;
 
   font-display: swap;
+
+  font-size: 10px;
 }
 
 *, ::before, ::after {
@@ -1228,10 +1230,6 @@ input[type="range"]::-ms-fill-lower {
   margin: -0.375rem;
 }
 
-.m-1 {
-  margin: 0.25rem;
-}
-
 .m-2 {
   margin: 0.5rem;
 }
@@ -1323,10 +1321,6 @@ input[type="range"]::-ms-fill-lower {
 
 .mb-6 {
   margin-bottom: 1.5rem;
-}
-
-.mb-\[2\%\] {
-  margin-bottom: 2%;
 }
 
 .mb-\[5\%\] {
@@ -2054,6 +2048,10 @@ input[type="range"]::-ms-fill-lower {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-1 {
@@ -3178,10 +3176,6 @@ input[type="range"]::-ms-fill-lower {
   padding-bottom: 0.625rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
 .pl-0 {
   padding-left: 0px;
 }
@@ -3469,8 +3463,8 @@ input[type="range"]::-ms-fill-lower {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-.text-gray-600\/30 {
-  color: rgb(75 85 99 / 0.3);
+.text-gray-600\/50 {
+  color: rgb(75 85 99 / 0.5);
 }
 
 .text-gray-700 {
@@ -4046,46 +4040,36 @@ input[type="range"]::-ms-fill-lower {
   padding: 1rem;
 }
 
-@media (min-width: 640px) {
-  .s5_logo_img {
-    padding: 1.25rem;
-  }
-}
-
 /* @Style logo các đối tác  */
 
 @keyframes slide {
   from {
-    transform: translateX(0);
+    transform: translateX(-10);
   }
 
   to {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
 }
 
-.s5_scroll {
+.partner_scroll {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
 }
 
-.s5_scroll:before,
-.s5_scroll:after {
+.partner_scroll:before,
+.partner_scroll:after {
   position: absolute;
   top: 0;
   content: '';
   z-index: 1;
 }
 
-/* .s5_scroll:hover .s5_logo {
-    animation-play-state: paused;
-} */
-
-.s5_logo {
+.partner_logo {
   box-sizing: border-box;
   display: inline-block;
-  animation: 10s slide infinite linear;
+  animation: 20s slide infinite linear;
 }
 
 /* @ Pages Mô tả sản phẩm CheckID-ET100 */
@@ -4129,10 +4113,11 @@ input[type="range"]::-ms-fill-lower {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* margin-right: 1.25rem; */
 }
 
 /* @ Style nút cuộn lên đầu trang  */
@@ -4156,6 +4141,10 @@ input[type="range"]::-ms-fill-lower {
   bottom: 5rem;
   right: 0.2rem;
   z-index: 10;
+}
+
+.__react_modal_image__header {
+  background-color: transparent !important;
 }
 
 .after\:absolute::after {
@@ -4286,6 +4275,12 @@ input[type="range"]::-ms-fill-lower {
 .even\:bg-gray-50:nth-child(even) {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:cursor-not-allowed:hover {

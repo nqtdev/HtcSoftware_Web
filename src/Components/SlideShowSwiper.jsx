@@ -1,4 +1,4 @@
-// @ Hiệu ứng dạng carousel , Ảnh sản phẩm hiển thị dạng Slide để xem
+// @ Xem thêm các hình ảnh khác của sản phẩm
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import 'swiper/css'
@@ -21,7 +21,7 @@ const SlideShowSwiper = ({ slidesShow }) => {
           {slidesShow.map((slidesShow, index) => (
             <SwiperSlide key={index}>
               <img
-                className="block w-full lg:w-[35%]"
+                className="block w-full lg:w-[35%] m-auto"
                 src={slidesShow.slideContent}
               />
             </SwiperSlide>

@@ -8,6 +8,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
+    font-size: 10px;
   }
 }
 
@@ -37,42 +38,35 @@
 .s3-img {
   @apply m-auto w-[90%] p-4;
 }
-.s5_logo_img {
-  @apply sm:p-5;
-}
 
 /* @Style logo các đối tác  */
 @keyframes slide {
   from {
-    transform: translateX(0);
+    transform: translateX(-10);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
 }
 
-.s5_scroll {
+.partner_scroll {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
 }
 
-.s5_scroll:before,
-.s5_scroll:after {
+.partner_scroll:before,
+.partner_scroll:after {
   position: absolute;
   top: 0;
   content: '';
   z-index: 1;
 }
 
-/* .s5_scroll:hover .s5_logo {
-    animation-play-state: paused;
-} */
-
-.s5_logo {
+.partner_logo {
   box-sizing: border-box;
   display: inline-block;
-  animation: 10s slide infinite linear;
+  animation: 20s slide infinite linear;
 }
 
 /* @ Pages Mô tả sản phẩm CheckID-ET100 */
@@ -88,10 +82,11 @@
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* margin-right: 1.25rem; */
 }
 
 /* @ Style nút cuộn lên đầu trang  */
@@ -112,4 +107,8 @@
   bottom: 5rem;
   right: 0.2rem;
   z-index: 10;
+}
+
+.__react_modal_image__header {
+  background-color: transparent !important;
 }

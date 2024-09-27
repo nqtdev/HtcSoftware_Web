@@ -2,7 +2,7 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
-import Banner from 'assets/page_RarEkyc/banner.svg'
+import Banner from 'assets/page_RarEkyc/banner.webp'
 import CheckTicker from 'assets/page_RarEkyc/check_ticket.png'
 import IconNFC from 'assets/page_RarEkyc/section_content/scan_nfc.png'
 import IconLiveNess from 'assets/page_RarEkyc/section_content/liveness.png'
@@ -12,26 +12,8 @@ import IconNfc from 'assets/page_RarEkyc/section_content_b/icon_nfc.png'
 import IconSdk from 'assets/page_RarEkyc/section_content_b/icon_sdk.png'
 import IconApi from 'assets/page_RarEkyc/section_content_b/icon_api.png'
 import Banner_CCDV from 'assets/page_RarEkyc/section_content_b/banner_section.png'
-import ImgSEA from 'assets/page_RarEkyc/partner/seabank.svg'
-import ImgTech from 'assets/page_RarEkyc/partner/tech.svg'
-import ImgBIDV from 'assets/page_RarEkyc/partner/bidv.svg'
-import ImgViettin from 'assets/page_RarEkyc/partner/vietinbank.svg'
-import ImgMB from 'assets/page_RarEkyc/partner/mb.svg'
-import ImgVietcom from 'assets/page_RarEkyc/partner/vietcombank.svg'
-import ImgACB from 'assets/page_RarEkyc/partner/acb.svg'
-import ImgTp from 'assets/page_RarEkyc/partner/tp.svg'
-import ImgShinhan from 'assets/page_RarEkyc/partner/shinhanbank.svg'
-import ImgMSB from 'assets/page_RarEkyc/partner/msb.svg'
-import ImgCMC from 'assets/page_RarEkyc/partner/cmc.svg'
-import ImgViettel from 'assets/page_RarEkyc/partner/viettel.svg'
-import ImgVNPT from 'assets/page_RarEkyc/partner/vnpt.svg'
-import ImgFPT from 'assets/page_RarEkyc/partner/fpt.svg'
-import ImgSHB from 'assets/page_RarEkyc/partner/shb.svg'
-import Gcn from 'assets/page_RarEkyc/certification/giay_chung_nhan.png'
-import GcnZ from 'assets/page_RarEkyc/certification/giay_chung_nhan_zoom.png'
-import Dkth from 'assets/page_RarEkyc/certification/dang_ky_thuong_hieu.png'
-import DkthZ from 'assets/page_RarEkyc/certification/dang_ky_thuong_hieu_zoom.png'
-import ModalImage from 'react-modal-image'
+import PartnerLogo from 'components/PartnerLogo'
+import Certificate from 'components/Certificate'
 
 const HomePage = () => {
   useEffect(() => {
@@ -266,95 +248,14 @@ const HomePage = () => {
       </section>
       {/* Đối tác */}
       <section>
-        <div data-aos="zoom-in" data-aos-duration="1000">
-          <h2 className="all-textList">Đối tác của chúng tôi</h2>
-        </div>
-        <div className="s5_scroll">
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgSEA} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgTech} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgBIDV} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgViettin} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgMB} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgVietcom} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgACB} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgTp} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgShinhan} alt="" />
-          </div>
-        </div>
-        <div className="s5_scroll">
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgMSB} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgCMC} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgViettel} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgVNPT} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgFPT} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgSHB} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgSEA} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgTech} alt="" />
-          </div>
-          <div className="s5_logo">
-            <img className="s5_logo_img" src={ImgBIDV} alt="" />
-          </div>
-        </div>
+        <PartnerLogo />
       </section>
       {/* Chứng nhận */}
       <section className="m-auto md:w-3/4">
         <div data-aos="zoom-in" data-aos-duration="1000">
           <h2 className="all-textList">Giấy chứng nhận</h2>
         </div>
-        <div>
-          <div className="mb-5 flex flex-col sm:flex-row">
-            {/* giấy chứng nhận */}
-            <div className="m-auto max-w-xs overflow-hidden pt-3">
-              <ModalImage
-                className="thumbnail h-auto w-full cursor-pointer"
-                small={Gcn}
-                large={GcnZ}
-                alt="ảnh giấy chứng nhận"
-              />
-            </div>
-            {/* Đăng ký thương hiệu  */}
-            <div className="m-auto max-w-xs overflow-hidden pt-3">
-              <ModalImage
-                className="thumbnail h-auto w-full cursor-pointer"
-                small={Dkth}
-                large={DkthZ}
-                alt="ảnh đăng ký thương hiệu"
-              />
-            </div>
-          </div>
-        </div>
+        <Certificate />
       </section>
     </div>
   )
