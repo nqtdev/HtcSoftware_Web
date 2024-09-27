@@ -4044,11 +4044,11 @@ input[type="range"]::-ms-fill-lower {
 
 @keyframes slide {
   from {
-    transform: translateX(-10);
+    transform: translateX(-5);
   }
 
   to {
-    transform: translateX(-110%);
+    transform: translateX(-50%);
   }
 }
 
@@ -4069,7 +4069,7 @@ input[type="range"]::-ms-fill-lower {
 .partner_logo {
   box-sizing: border-box;
   display: inline-block;
-  animation: 20s slide infinite linear;
+  animation: 15s slide infinite linear;
 }
 
 /* @ Pages Mô tả sản phẩm CheckID-ET100 */
@@ -6610,6 +6610,14 @@ input[type="range"]::-ms-fill-lower {
 
   .xl\:w-\[80\%\] {
     width: 80%;
+  }
+
+  .xl\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .xl\:w-\[85\%\] {
+    width: 85%;
   }
 
   .xl\:text-2xl {

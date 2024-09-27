@@ -1,14 +1,13 @@
 import { Dropdown, Navbar, Button } from 'flowbite-react'
 import { NavLink } from 'react-router-dom'
 import logo from 'assets/logo/logo_sw.png'
-// import Apphtc from '../../FileDownload/checkid_client_installer.zip'
 import Apphtc from '/checkid_client_installer.zip'
 
 const CoNavbar = () => {
   return (
     <div className="mb-20">
       <header className="fixed left-0 top-0 !z-10 w-full !bg-white ">
-        <Navbar fluid className="m-auto !p-1 xl:w-3/4 ">
+        <Navbar fluid className="m-auto !p-1 xl:w-[85%] xxl:w-3/4 ">
           {/* Logo htc software  */}
           <Navbar.Brand to="/" as={NavLink}>
             <img src={logo} className="w-1/2" alt="htc software logo" />

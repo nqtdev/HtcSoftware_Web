@@ -8,7 +8,6 @@ import ImgVietcom from 'assets/page_RarEkyc/partner/vietcombank.svg'
 import ImgACB from 'assets/page_RarEkyc/partner/acb.svg'
 import ImgTp from 'assets/page_RarEkyc/partner/tp.svg'
 import ImgShinhan from 'assets/page_RarEkyc/partner/shinhanbank.svg'
-import ImgMSB from 'assets/page_RarEkyc/partner/msb.svg'
 import ImgCMC from 'assets/page_RarEkyc/partner/cmc.svg'
 import ImgViettel from 'assets/page_RarEkyc/partner/viettel.svg'
 import ImgVNPT from 'assets/page_RarEkyc/partner/vnpt.svg'
@@ -49,8 +48,8 @@ const PartnerLogo = ({ title }) => {
     ImgVietcom,
     ImgACB,
     ImgTp,
+    ImgVinhome,
     ImgShinhan,
-    ImgMSB,
     ImgCMC,
     ImgViettel,
     ImgVNPT,
@@ -78,8 +77,7 @@ const PartnerLogo = ({ title }) => {
     ImgVng,
     ImgVndirect,
     ImgThucuc,
-    ImgVietcap,
-    ImgVinhome
+    ImgVietcap
   ]
 
   const chunkArray = (arr, chunkSize) => {
@@ -90,12 +88,12 @@ const PartnerLogo = ({ title }) => {
     return result
   }
 
-  const LogoPartner = chunkArray(LogoSvg, 8)
+  const LogoPartner = chunkArray(LogoSvg, 9)
 
   return (
     <>
       <div data-aos="zoom-in" data-aos-duration="1000">
-        <h2 className="all-textList">{title}</h2>
+        <h2 className="all-textList">Đối tác của chúng tôi</h2>
       </div>
       {LogoPartner.map((row, rowIndex) => (
         <div key={rowIndex} className="partner_scroll">

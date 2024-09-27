@@ -57,7 +57,11 @@ const EkycPlatform = () => {
           <h2 className="all-textList">Vai trò của Công nghệ e-KYC</h2>
         </div>
         <div className="grid gap-2 md:grid-cols-2">
-          <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
+          <div
+            data-aos="zoom-out-right"
+            data-aos-duration="1000"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+          >
             <img src={Vt_xacthuc} alt="hình ảnh xác thực nhanh chóng" />
             <span>
               <b className="text-main-colors">
@@ -66,7 +70,11 @@ const EkycPlatform = () => {
               Giảm thiểu thời gian xác thực so với phương pháp thủ công.
             </span>
           </div>
-          <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
+          <div
+            data-aos="zoom-out-left"
+            data-aos-duration="1000"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+          >
             <img src={Vt_tangcuong} alt="hình ảnh tăng cường bảo mật " />
             <span>
               <b className="text-main-colors">Tăng cường bảo mật:</b> Sử dụng
@@ -74,14 +82,22 @@ const EkycPlatform = () => {
               tay.
             </span>
           </div>
-          <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1100"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+          >
             <img src={Vt_tietkiem} alt="hình ảnh tiết kiệm chi phí" />
             <span>
               <b className="text-main-colors">Tiết kiệm chi phí:</b> Giảm chi
               phí liên quan đến xử lý giấy tờ và nhân lực.
             </span>
           </div>
-          <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1100"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+          >
             <img src={Vt_caithien} alt="hình ảnh cải thiện trải nghiệm" />
             <span>
               <b className="text-main-colors">
@@ -90,7 +106,11 @@ const EkycPlatform = () => {
               Khách hàng có thể xác thực từ xa mà không cần đến trực tiếp.
             </span>
           </div>
-          <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
+          <div
+            data-aos="zoom-in-right"
+            data-aos-duration="1200"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+          >
             <img src={Vt_tuanthu} alt="hình ảnh tuân thủ quy định" />
             <span>
               <b className="text-main-colors">Tuân thủ quy định pháp luật:</b>{' '}
@@ -98,7 +118,11 @@ const EkycPlatform = () => {
               tiền và chống tài trợ khủng bố.
             </span>
           </div>
-          <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
+          <div
+            data-aos="zoom-in-left"
+            data-aos-duration="1200"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+          >
             <img src={Vt_dulieu} alt="hình ảnh dữ liệu minh bạch" />
             <span>
               <b className="text-main-colors">
@@ -116,7 +140,12 @@ const EkycPlatform = () => {
         </div>
         <div className="bg-cyan-100/20">
           {/* ID Read (OCR) */}
-          <div className="p-6 md:flex md:flex-row-reverse">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-anchor-placement="top-center"
+            className="p-6 md:flex md:flex-row-reverse"
+          >
             <div className="m-auto md:w-1/2">
               <div className="flex items-center">
                 <img className="" src={Number1} alt="number 1" />
@@ -156,7 +185,12 @@ const EkycPlatform = () => {
             </div>
           </div>
           {/* liveness Check  */}
-          <div className="p-6 md:flex">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-duration="1000"
+            className="p-6 md:flex"
+          >
             <div className="m-auto md:w-1/2">
               <div className="flex items-center">
                 <img className="" src={Number2} alt="number 2" />
@@ -198,7 +232,12 @@ const EkycPlatform = () => {
             </div>
           </div>
           {/* ID Sannity Check  */}
-          <div className="p-6 md:flex md:flex-row-reverse">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-duration="1500"
+            className="p-6 md:flex md:flex-row-reverse"
+          >
             <div className="m-auto md:w-1/2">
               <div className="flex items-center">
                 <img className="" src={Number3} alt="" />
@@ -237,7 +276,12 @@ const EkycPlatform = () => {
             </div>
           </div>
           {/* Xác minh CCCD gắn chip  */}
-          <div className="p-6 md:flex">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-duration="2000"
+            className="p-6 md:flex"
+          >
             <div className="m-auto md:w-1/2">
               <div className="flex items-center">
                 <img className="" src={Number4} alt="" />

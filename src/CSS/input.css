@@ -42,10 +42,10 @@
 /* @Style logo các đối tác  */
 @keyframes slide {
   from {
-    transform: translateX(-10);
+    transform: translateX(-5);
   }
   to {
-    transform: translateX(-110%);
+    transform: translateX(-50%);
   }
 }
 
@@ -66,7 +66,7 @@
 .partner_logo {
   box-sizing: border-box;
   display: inline-block;
-  animation: 20s slide infinite linear;
+  animation: 15s slide infinite linear;
 }
 
 /* @ Pages Mô tả sản phẩm CheckID-ET100 */

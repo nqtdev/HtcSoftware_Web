@@ -68,9 +68,15 @@ const HomePage = () => {
                   className="m-auto w-1/2"
                   src={CheckTicker}
                   alt="check_ticket"
+                  data-aos="fade-right"
+                  data-aos-duration="1100"
                 />
               </div>
-              <div className="ml-3">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                className="ml-3"
+              >
                 <span className="s2-content">
                   Onboard khách hàng nhanh chóng và an toàn{' '}
                 </span>
@@ -82,9 +88,15 @@ const HomePage = () => {
                   className="m-auto w-1/2"
                   src={CheckTicker}
                   alt="check_ticket"
+                  data-aos="fade-right"
+                  data-aos-duration="1600"
                 />
               </div>
-              <div className="ml-3">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                className="ml-3"
+              >
                 <span className="s2-content">
                   Phát hiện gian lận, giả mạo về hình ảnh, thông tin giấy tờ.{' '}
                 </span>
@@ -96,9 +108,15 @@ const HomePage = () => {
                   className="m-auto w-1/2"
                   src={CheckTicker}
                   alt="check_ticket"
+                  data-aos="fade-right"
+                  data-aos-duration="2100"
                 />
               </div>
-              <div className="ml-3">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                className="ml-3"
+              >
                 <span className="s2-content">Mang lại giá trị tốt nhất. </span>
               </div>
             </li>
@@ -106,11 +124,17 @@ const HomePage = () => {
               <div className="w-1/12">
                 <img
                   className="m-auto w-1/2"
+                  data-aos="fade-right"
+                  data-aos-duration="2600"
                   src={CheckTicker}
                   alt="check_ticket"
                 />
               </div>
-              <div className="ml-3">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="2500"
+                className="ml-3"
+              >
                 <span className="s2-content">
                   Rút ngắn thời gian thẩm định.{' '}
                 </span>
@@ -130,7 +154,11 @@ const HomePage = () => {
         <div>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {/* Bước 1 */}
-            <div className="s3-content">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2400"
+              className="s3-content"
+            >
               <div className="text-center">
                 <h4 className="s3-text">Bước 1</h4>
                 <i className="font-roboto text-main-colors">
@@ -140,7 +168,11 @@ const HomePage = () => {
               <img className="s3-img" src={IconNFC} alt="biểu tượng đọc thẻ" />
             </div>
             {/* Bước 2 */}
-            <div className="s3-content">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2600"
+              className="s3-content"
+            >
               <div className="text-center">
                 <h4 className="s3-text">Bước 2</h4>
                 <i className="font-roboto text-main-colors">
@@ -154,7 +186,11 @@ const HomePage = () => {
               />
             </div>
             {/* Bước 3 */}
-            <div className="s3-content">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2800"
+              className="s3-content"
+            >
               <div className="text-center">
                 <h4 className="s3-text">Bước 3</h4>
                 <i className="font-roboto text-main-colors">
@@ -168,7 +204,11 @@ const HomePage = () => {
               />
             </div>
             {/* Bước 4 */}
-            <div className="s3-content">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="s3-content"
+            >
               <div className="text-center">
                 <h4 className="s3-text">Bước 4</h4>
                 <i className="font-roboto text-main-colors">
