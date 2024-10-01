@@ -46,11 +46,11 @@ const CoNavbar = () => {
                   </Button>
                 </Dropdown.Item>
                 {/* RAR Chip Toolkit */}
-                {/* <Dropdown.Item as={NavLink} to="/solution/chip-toolkit">
+                <Dropdown.Item as={NavLink} to="/solution/chip-toolkit">
                   <Button gradientDuoTone="purpleToBlue" className="w-[12rem]">
                     RAR Chip Toolkit
                   </Button>
-                </Dropdown.Item> */}
+                </Dropdown.Item>
               </Dropdown>
             </Button>
             {/* Thiết bị  */}
