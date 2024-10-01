@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ChipToolkit from './pages/solutions/ChipToolkit'
+// import ChipToolkit from './pages/solutions/ChipToolkit'
 import EkycPlatform from './pages/solutions/EkycPlatform'
 import RarEkyc from './pages/solutions/RarEkyc'
 import Introduction from './pages/Introduction'
@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />}>
           <Route index element={<HomePage />} />
           <Route path="solution">
-            <Route path="chip-toolkit" element={<ChipToolkit />} />
+            {/* <Route path="chip-toolkit" element={<ChipToolkit />} /> */}
             <Route path="ekyc-platform" element={<EkycPlatform />} />
             <Route path="rar-ekyc" element={<RarEkyc />} />
           </Route>
