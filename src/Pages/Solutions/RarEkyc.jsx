@@ -58,11 +58,11 @@ const RarEkyc = () => {
       {/* Giá trị của sản phẩm */}
       <section className="mx-1 mb-2">
         <div data-aos="zoom-in" data-aos-duration="1000">
-          <h2 className="all-textList">Giá trị chúng tôi đem lại</h2>
+          <h2 className="base_title">Giá trị chúng tôi đem lại</h2>
         </div>
         <div className="m-auto h-max w-full rounded-3xl border-2 border-solid border-blue-950 bg-bg-img lg:w-4/5">
           <ul className="lg:p-7">
-            <li className="s-list">
+            <li className="sticker_check">
               <div className="w-1/12">
                 <img
                   className="m-auto w-1/2"
@@ -77,12 +77,12 @@ const RarEkyc = () => {
                 data-aos-duration="1000"
                 className="ml-3"
               >
-                <span className="s2-content">
+                <span className="sticker_describe">
                   Onboard khách hàng nhanh chóng và an toàn{' '}
                 </span>
               </div>
             </li>
-            <li className="s-list">
+            <li className="sticker_check">
               <div className="w-1/12">
                 <img
                   className="m-auto w-1/2"
@@ -97,12 +97,12 @@ const RarEkyc = () => {
                 data-aos-duration="1500"
                 className="ml-3"
               >
-                <span className="s2-content">
+                <span className="sticker_describe">
                   Phát hiện gian lận, giả mạo về hình ảnh, thông tin giấy tờ.{' '}
                 </span>
               </div>
             </li>
-            <li className="s-list">
+            <li className="sticker_check">
               <div className="w-1/12">
                 <img
                   className="m-auto w-1/2"
@@ -117,10 +117,12 @@ const RarEkyc = () => {
                 data-aos-duration="2000"
                 className="ml-3"
               >
-                <span className="s2-content">Mang lại giá trị tốt nhất. </span>
+                <span className="sticker_describe">
+                  Mang lại giá trị tốt nhất.{' '}
+                </span>
               </div>
             </li>
-            <li className="s-list">
+            <li className="sticker_check">
               <div className="w-1/12">
                 <img
                   className="m-auto w-1/2"
@@ -135,7 +137,7 @@ const RarEkyc = () => {
                 data-aos-duration="2500"
                 className="ml-3"
               >
-                <span className="s2-content">
+                <span className="sticker_describe">
                   Rút ngắn thời gian thẩm định.{' '}
                 </span>
               </div>
@@ -146,7 +148,7 @@ const RarEkyc = () => {
       {/* Thao tác sử dụng  */}
       <section>
         <div data-aos="zoom-in" data-aos-duration="1000">
-          <h2 className="all-textList">
+          <h2 className="base_title">
             Thao tác <span className="text-5xl text-green-600">4 bước</span> đơn
             giản
           </h2>
@@ -160,12 +162,16 @@ const RarEkyc = () => {
               className="s3-content"
             >
               <div className="text-center">
-                <h4 className="s3-text">Bước 1</h4>
+                <h4 className="operation_text">Bước 1</h4>
                 <i className="font-roboto text-main-colors">
                   Đưa CCCD gắn chip vào thiết bị đọc thẻ chip
                 </i>
               </div>
-              <img className="s3-img" src={IconNFC} alt="biểu tượng đọc thẻ" />
+              <img
+                className="operation_img"
+                src={IconNFC}
+                alt="biểu tượng đọc thẻ"
+              />
             </div>
             {/* Bước 2 */}
             <div
@@ -174,13 +180,13 @@ const RarEkyc = () => {
               className="s3-content"
             >
               <div className="text-center">
-                <h4 className="s3-text">Bước 2</h4>
+                <h4 className="operation_text">Bước 2</h4>
                 <i className="font-roboto text-main-colors">
                   Xác thực khuôn mặt chân dung chủ giấy tờ
                 </i>
               </div>
               <img
-                className="s3-img"
+                className="operation_img"
                 src={IconLiveNess}
                 alt="biểu tượng xác thực khuôn mặt"
               />
@@ -192,13 +198,13 @@ const RarEkyc = () => {
               className="s3-content"
             >
               <div className="text-center">
-                <h4 className="s3-text">Bước 3</h4>
+                <h4 className="operation_text">Bước 3</h4>
                 <i className="font-roboto text-main-colors">
                   Xác thực CCCD gắn chip với Bộ Công An
                 </i>
               </div>
               <img
-                className="s3-img"
+                className="operation_img"
                 src={IconConnect}
                 alt="biểu tượng xác thực cccd"
               />
@@ -210,13 +216,13 @@ const RarEkyc = () => {
               className="s3-content"
             >
               <div className="text-center">
-                <h4 className="s3-text">Bước 4</h4>
+                <h4 className="operation_text">Bước 4</h4>
                 <i className="font-roboto text-main-colors">
                   Gửi kết quả xác thực cho ứng dụng thích hợp
                 </i>
               </div>
               <img
-                className="s3-img"
+                className="operation_img"
                 src={IconShow}
                 alt="biểu tượng xác thực thành công"
               />
@@ -228,7 +234,7 @@ const RarEkyc = () => {
       <section className="mx-2 my-24">
         {/* Hình thức bàn giao  */}
         <div data-aos="zoom-in" data-aos-duration="1000">
-          <h2 className="all-textList">Hình thức cung cấp dịch vụ</h2>
+          <h2 className="base_title">Hình thức cung cấp dịch vụ</h2>
         </div>
         <div className="m-auto h-max w-full rounded-3xl border-2 border-solid border-blue-950 bg-bg-img pt-8 lg:flex lg:w-4/5">
           <ul className="container w-full p-2 lg:w-3/5">
@@ -293,7 +299,7 @@ const RarEkyc = () => {
       {/* Chứng nhận */}
       <section className="m-auto md:w-3/4">
         <div data-aos="zoom-in" data-aos-duration="1000">
-          <h2 className="all-textList">Giấy chứng nhận</h2>
+          <h2 className="base_title">Giấy chứng nhận</h2>
         </div>
         <Certificate />
       </section>

@@ -10,7 +10,7 @@ const SlideSwiper = ({ slides, swiperConfig }) => {
   return (
     <>
       <div>
-        <h2 className="all-textList">Các sản phẩm khác</h2>
+        <h2 className="base_title">Các sản phẩm khác</h2>
       </div>
       <div>
         <Swiper

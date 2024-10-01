@@ -36,8 +36,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           </Route>
         </Route>
       </Routes>
-      <ScrollToTop />
     </BrowserRouter>
+    <ScrollToTop />
     <ButtonCall phoneNumber="0708896666" />
     <ButtonMail emailAddress="kinhdoanh@htcsoftware.vn" />
   </React.StrictMode>

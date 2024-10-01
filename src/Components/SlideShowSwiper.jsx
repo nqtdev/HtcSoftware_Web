@@ -9,7 +9,7 @@ const SlideShowSwiper = ({ slidesShow }) => {
   return (
     <div>
       <div>
-        <h2 className="all-textList">Hình ảnh sản phẩm</h2>
+        <h2 className="base_title">Hình ảnh sản phẩm</h2>
       </div>
       <div>
         <Swiper

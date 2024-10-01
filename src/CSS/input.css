@@ -20,22 +20,22 @@
 .style-address {
   @apply mb-3 font-bold uppercase text-white;
 }
-/* style thẻ h2 của các secsion  */
-.all-textList {
+/* style thẻ h2 của các section */
+.base_title {
   @apply my-6 text-center text-3xl font-bold text-[#2582BD] lg:my-14 lg:text-4xl;
 }
 /* style các đầu mục của : Giá trị chúng tôi đem lại  */
-.s-list {
+.sticker_check {
   @apply my-2 flex items-center;
 }
-.s2-content {
+.sticker_describe {
   @apply text-sm font-medium text-white lg:text-2xl;
 }
 /* style các mục của : Thao tác 4 bước  */
-.s3-text {
+.operation_text {
   @apply text-2xl font-bold text-blue-700;
 }
-.s3-img {
+.operation_img {
   @apply m-auto w-[90%] p-4;
 }
 
@@ -69,14 +69,14 @@
   animation: 15s slide infinite linear;
 }
 
-/* @ Pages Mô tả sản phẩm CheckID-ET100 */
-.pdtable {
+/* @ Pages Mô tả thông tin sản phẩm CheckID-ET100 */
+.table_body {
   @apply border border-gray-300 bg-main-table p-3 text-left text-xl text-black;
 }
-.ptb-specification {
+.table_specification {
   @apply border border-gray-300 p-2 text-left font-roboto text-sm;
 }
-.ptb-item {
+.table_item {
   @apply border border-gray-300 bg-main-table/40 p-2 text-left font-roboto text-sm;
 }
 

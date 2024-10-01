@@ -6,23 +6,23 @@ const TableSpecification = ({ data }) => {
   return (
     <section>
       <div>
-        <h2 className="all-textList">Thông số kỹ thuật</h2>
+        <h2 className="base_title">Thông số kỹ thuật</h2>
       </div>
       <div className="m-auto max-h-screen overflow-auto lg:w-3/4">
         <table className="min-w-full table-auto">
           <thead className="border-collapse border border-slate-500">
             <tr>
-              <th className="pdtable">Items</th>
-              <th className="pdtable">Specification</th>
-              <th className="pdtable">Items</th>
-              <th className="pdtable">Specification</th>
+              <th className="table_body">Items</th>
+              <th className="table_body">Specification</th>
+              <th className="table_body">Items</th>
+              <th className="table_body">Specification</th>
             </tr>
           </thead>
           <tbody>
             {data.map((row) => (
               <tr key={row.id}>
-                <td className="ptb-item">{row.itemA}</td>
-                <td className="ptb-specification">
+                <td className="table_item">{row.itemA}</td>
+                <td className="table_specification">
                   {row.specificationA.split('\n').map((line, index) => (
                     <React.Fragment key={index}>
                       {line}
@@ -30,8 +30,8 @@ const TableSpecification = ({ data }) => {
                     </React.Fragment>
                   ))}
                 </td>
-                <td className="ptb-item">{row.itemB}</td>
-                <td className="ptb-specification">
+                <td className="table_item">{row.itemB}</td>
+                <td className="table_specification">
                   {row.specificationB.split('\n').map((line, index) => (
                     <React.Fragment key={index}>
                       {line}

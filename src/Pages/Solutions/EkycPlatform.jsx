@@ -28,7 +28,7 @@ const EkycPlatform = () => {
   return (
     <div className="container m-auto w-full px-1 xl:w-10/12">
       {/* Banner  */}
-      <section className="flex max-w-full flex-col justify-between lg:flex-row">
+      <section className="flex flex-col justify-between lg:flex-row mt-24">
         <div className="container m-auto box-border">
           <h1 className="m-2 text-center text-4xl font-bold italic text-main-colors md:text-[3.2rem] xl:text-6xl">
             HTC eKYC Platform
@@ -48,13 +48,13 @@ const EkycPlatform = () => {
           </div>
         </div>
         <div className="container m-auto p-2">
-          <img className="w-11/12" src={Banner} alt="logo banner" />
+          <img className="w-full" src={Banner} alt="logo banner" />
         </div>
       </section>
       {/* Vai trò của công nghệ EKYC  */}
       <section className="m-auto lg:w-4/5">
-        <div data-aos="zoom-in" data-aos-duration="1000">
-          <h2 className="all-textList">Vai trò của Công nghệ e-KYC</h2>
+        <div data-aos="zoom-in" data-aos-duration="1000" className="mt-40">
+          <h2 className="base_title">Vai trò của Công nghệ e-KYC</h2>
         </div>
         <div className="grid gap-2 md:grid-cols-2">
           <div
@@ -136,13 +136,13 @@ const EkycPlatform = () => {
       {/* HTC eKYC Platform mang lại */}
       <section className="m-auto lg:w-4/5">
         <div data-aos="zoom-in" data-aos-duration="1000">
-          <h2 className="all-textList">HTC eKYC Platform</h2>
+          <h2 className="base_title">HTC eKYC Platform</h2>
         </div>
         <div className="bg-cyan-100/20">
           {/* ID Read (OCR) */}
           <div
             data-aos="fade-up"
-            data-aos-duration="800"
+            data-aos-duration="1000"
             data-aos-anchor-placement="top-center"
             className="p-6 md:flex md:flex-row-reverse"
           >
@@ -188,7 +188,7 @@ const EkycPlatform = () => {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-center"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
             className="p-6 md:flex"
           >
             <div className="m-auto md:w-1/2">
@@ -235,7 +235,7 @@ const EkycPlatform = () => {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-center"
-            data-aos-duration="1500"
+            data-aos-duration="2000"
             className="p-6 md:flex md:flex-row-reverse"
           >
             <div className="m-auto md:w-1/2">
@@ -279,7 +279,7 @@ const EkycPlatform = () => {
           <div
             data-aos="fade-up"
             data-aos-anchor-placement="top-center"
-            data-aos-duration="2000"
+            data-aos-duration="2500"
             className="p-6 md:flex"
           >
             <div className="m-auto md:w-1/2">

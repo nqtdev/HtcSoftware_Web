@@ -1407,12 +1407,20 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 0.5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .mt-5 {
@@ -1588,10 +1596,6 @@ input[type="range"]::-ms-fill-lower {
 
 .w-11 {
   width: 2.75rem;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
 }
 
 .w-12 {
@@ -1956,6 +1960,10 @@ input[type="range"]::-ms-fill-lower {
   cursor: wait;
 }
 
+.resize {
+  resize: both;
+}
+
 .snap-x {
   scroll-snap-type: x var(--tw-scroll-snap-strictness);
 }
@@ -2048,10 +2056,6 @@ input[type="range"]::-ms-fill-lower {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .gap-1 {
@@ -3978,9 +3982,9 @@ input[type="range"]::-ms-fill-lower {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-/* style thẻ h2 của các secsion  */
+/* style thẻ h2 của các section */
 
-.all-textList {
+.base_title {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -3992,7 +3996,7 @@ input[type="range"]::-ms-fill-lower {
 }
 
 @media (min-width: 1024px) {
-  .all-textList {
+  .base_title {
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
     font-size: 2.25rem;
@@ -4002,14 +4006,14 @@ input[type="range"]::-ms-fill-lower {
 
 /* style các đầu mục của : Giá trị chúng tôi đem lại  */
 
-.s-list {
+.sticker_check {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
 }
 
-.s2-content {
+.sticker_describe {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
@@ -4018,7 +4022,7 @@ input[type="range"]::-ms-fill-lower {
 }
 
 @media (min-width: 1024px) {
-  .s2-content {
+  .sticker_describe {
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -4026,7 +4030,7 @@ input[type="range"]::-ms-fill-lower {
 
 /* style các mục của : Thao tác 4 bước  */
 
-.s3-text {
+.operation_text {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
@@ -4034,7 +4038,7 @@ input[type="range"]::-ms-fill-lower {
   color: rgb(26 86 219 / var(--tw-text-opacity));
 }
 
-.s3-img {
+.operation_img {
   margin: auto;
   width: 90%;
   padding: 1rem;
@@ -4072,9 +4076,9 @@ input[type="range"]::-ms-fill-lower {
   animation: 15s slide infinite linear;
 }
 
-/* @ Pages Mô tả sản phẩm CheckID-ET100 */
+/* @ Pages Mô tả thông tin sản phẩm CheckID-ET100 */
 
-.pdtable {
+.table_body {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -4088,7 +4092,7 @@ input[type="range"]::-ms-fill-lower {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.ptb-specification {
+.table_specification {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -4099,7 +4103,7 @@ input[type="range"]::-ms-fill-lower {
   line-height: 1.25rem;
 }
 
-.ptb-item {
+.table_item {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -6604,16 +6608,8 @@ input[type="range"]::-ms-fill-lower {
     width: 83.333333%;
   }
 
-  .xl\:w-3\/4 {
-    width: 75%;
-  }
-
   .xl\:w-\[80\%\] {
     width: 80%;
-  }
-
-  .xl\:w-\[90\%\] {
-    width: 90%;
   }
 
   .xl\:w-\[85\%\] {
