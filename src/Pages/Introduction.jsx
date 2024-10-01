@@ -1,8 +1,8 @@
 // @ Page Giới Thiệu HTC SoftWare
 import ComingSoon from 'components/ComingSoon'
-export const Introduction = () => {
+const Introduction = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <ComingSoon />
     </div>
   )

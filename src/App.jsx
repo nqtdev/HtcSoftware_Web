@@ -1,20 +1,14 @@
-import CoFooter from './components/CoFooter'
-import CoNavbar from './components/CoNavbar'
+import CoNavbar from 'components/CoNavbar'
+import FooterWeb from './layouts/footer'
 import { Outlet } from 'react-router-dom'
+
 function App() {
   return (
-    <div className="block">
-      <section className="mb-20">
-        <CoNavbar />
-      </section>
-      <section className="m-1">
-        <Outlet />
-      </section>
-      <section>
-        <CoFooter />
-      </section>
-    </div>
+    <>
+      <CoNavbar />
+      <Outlet />
+      <FooterWeb />
+    </>
   )
 }
-
 export default App

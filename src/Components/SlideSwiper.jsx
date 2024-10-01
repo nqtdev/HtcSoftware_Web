@@ -10,7 +10,7 @@ const SlideSwiper = ({ slides, swiperConfig }) => {
   return (
     <>
       <div>
-        <h2 className="all-textList">Các sản phẩm khác</h2>
+        <h2 className="base_title">Các sản phẩm khác</h2>
       </div>
       <div>
         <Swiper
@@ -31,20 +31,19 @@ const SlideSwiper = ({ slides, swiperConfig }) => {
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
               <NavLink to={slide.linkProduct}>
-                <div
-                  className='className="box p-1" rounded-md border-2 bg-main-table/20'
-                  to
-                >
+                <div className="rounded-lg border-2 bg-main-table/20 mx-4 overflow-hidden ">
                   <div>
                     <img
-                      className="m-auto w-3/4"
+                      className="m-auto w-3/4 h-auto relative z-0 transition-all duration-300 hover:scale-110"
                       src={slide.slideContent}
                       alt={slide.slideName}
                     />
                   </div>
                   <div className="box bg-white p-2">
-                    <h4 className="text-md font-roboto">{slide.slideName}</h4>
-                    <span className="font-roboto text-sm text-gray-600/30">
+                    <h4 className="text-base font-roboto text-blue-500">
+                      {slide.slideName}
+                    </h4>
+                    <span className="font-roboto text-sm text-gray-600/50">
                       {slide.slideDescription}
                     </span>
                   </div>

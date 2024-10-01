@@ -1,21 +1,21 @@
 // @ Page sản phẩm HTC eKYC Platform
 // Thêm hiệu ứng khi cuộn chuột
-import Banner from 'assets/page_HtcEkyc/banner.svg'
-import Vt_xacthuc from 'assets/page_HtcEkyc/section_content/xac-thuc-nhanh-chong.svg'
-import Vt_tangcuong from 'assets/page_HtcEkyc/section_content/tang-cuong-bao-mat.svg'
-import Vt_tietkiem from 'assets/page_HtcEkyc/section_content/tiet-kiem-chi-phi.svg'
-import Vt_caithien from 'assets/page_HtcEkyc/section_content/cai-thien-trai-nghiem.svg'
-import Vt_tuanthu from 'assets/page_HtcEkyc/section_content/tuan-thu-quy-dinh.svg'
-import Vt_dulieu from 'assets/page_HtcEkyc/section_content/du-lieu-minh-bach.svg'
-import ID_OCR from 'assets/page_HtcEkyc/section_content_b/img_1.svg'
-import LiveNess_Check from 'assets/page_HtcEkyc/section_content_b/img_2.svg'
-import ID_Sanity from 'assets/page_HtcEkyc/section_content_b/img_3.svg'
-import CheckCCCD from 'assets/page_HtcEkyc/section_content_b/img_6.svg'
-import Number1 from 'assets/page_HtcEkyc/number/number_1.svg'
-import Number2 from 'assets/page_HtcEkyc/number/number_2.svg'
-import Number3 from 'assets/page_HtcEkyc/number/number_3.svg'
-import Number4 from 'assets/page_HtcEkyc/number/number_4.svg'
-import Star from 'assets/page_HtcEkyc/icon_star.svg'
+import Banner from 'assets/page_EkycPlatform/banner.webp'
+import Vt_xacthuc from 'assets/page_EkycPlatform/section_characteristic/xac-thuc-nhanh-chong.webp'
+import Vt_tangcuong from 'assets/page_EkycPlatform/section_characteristic/tang-cuong-bao-mat.webp'
+import Vt_tietkiem from 'assets/page_EkycPlatform/section_characteristic/tiet-kiem-chi-phi.webp'
+import Vt_caithien from 'assets/page_EkycPlatform/section_characteristic/cai-thien-trai-nghiem.webp'
+import Vt_tuanthu from 'assets/page_EkycPlatform/section_characteristic/tuan-thu-quy-dinh.webp'
+import Vt_dulieu from 'assets/page_EkycPlatform/section_characteristic/du-lieu-minh-bach.webp'
+import ID_OCR from 'assets/page_EkycPlatform/section_service/img_1.webp'
+import LiveNess_Check from 'assets/page_EkycPlatform/section_service/img_2.webp'
+import ID_Sanity from 'assets/page_EkycPlatform/section_service/img_3.webp'
+import CheckCCCD from 'assets/page_EkycPlatform/section_service/img_6.webp'
+import Number1 from 'assets/page_EkycPlatform/number/number_1.webp'
+import Number2 from 'assets/page_EkycPlatform/number/number_2.webp'
+import Number3 from 'assets/page_EkycPlatform/number/number_3.webp'
+import Number4 from 'assets/page_EkycPlatform/number/number_4.webp'
+import Star from 'assets/page_EkycPlatform/icon_star.webp'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
@@ -28,7 +28,7 @@ const EkycPlatform = () => {
   return (
     <div className="container m-auto w-full px-1 xl:w-10/12">
       {/* Banner  */}
-      <section className="flex max-w-full flex-col justify-between lg:flex-row">
+      <section className="flex flex-col justify-between lg:flex-row mt-24">
         <div className="container m-auto box-border">
           <h1 className="m-2 text-center text-4xl font-bold italic text-main-colors md:text-[3.2rem] xl:text-6xl">
             HTC eKYC Platform
@@ -48,16 +48,20 @@ const EkycPlatform = () => {
           </div>
         </div>
         <div className="container m-auto p-2">
-          <img className="w-11/12" src={Banner} alt="logo banner" />
+          <img className="w-full" src={Banner} alt="logo banner" />
         </div>
       </section>
       {/* Vai trò của công nghệ EKYC  */}
       <section className="m-auto lg:w-4/5">
-        <div data-aos="zoom-in" data-aos-duration="1000">
-          <h2 className="all-textList">Vai trò của Công nghệ e-KYC</h2>
+        <div data-aos="zoom-in" data-aos-duration="1000" className="mt-40">
+          <h2 className="base_title">Vai trò của Công nghệ e-KYC</h2>
         </div>
         <div className="grid gap-2 md:grid-cols-2">
-          <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
+          <div
+            data-aos="zoom-out-right"
+            data-aos-duration="1000"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+          >
             <img src={Vt_xacthuc} alt="hình ảnh xác thực nhanh chóng" />
             <span>
               <b className="text-main-colors">
@@ -66,7 +70,11 @@ const EkycPlatform = () => {
               Giảm thiểu thời gian xác thực so với phương pháp thủ công.
             </span>
           </div>
-          <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
+          <div
+            data-aos="zoom-out-left"
+            data-aos-duration="1000"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+          >
             <img src={Vt_tangcuong} alt="hình ảnh tăng cường bảo mật " />
             <span>
               <b className="text-main-colors">Tăng cường bảo mật:</b> Sử dụng
@@ -74,14 +82,22 @@ const EkycPlatform = () => {
               tay.
             </span>
           </div>
-          <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1100"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+          >
             <img src={Vt_tietkiem} alt="hình ảnh tiết kiệm chi phí" />
             <span>
               <b className="text-main-colors">Tiết kiệm chi phí:</b> Giảm chi
               phí liên quan đến xử lý giấy tờ và nhân lực.
             </span>
           </div>
-          <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1100"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+          >
             <img src={Vt_caithien} alt="hình ảnh cải thiện trải nghiệm" />
             <span>
               <b className="text-main-colors">
@@ -90,7 +106,11 @@ const EkycPlatform = () => {
               Khách hàng có thể xác thực từ xa mà không cần đến trực tiếp.
             </span>
           </div>
-          <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
+          <div
+            data-aos="zoom-in-right"
+            data-aos-duration="1200"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+          >
             <img src={Vt_tuanthu} alt="hình ảnh tuân thủ quy định" />
             <span>
               <b className="text-main-colors">Tuân thủ quy định pháp luật:</b>{' '}
@@ -98,7 +118,11 @@ const EkycPlatform = () => {
               tiền và chống tài trợ khủng bố.
             </span>
           </div>
-          <div className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1">
+          <div
+            data-aos="zoom-in-left"
+            data-aos-duration="1200"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+          >
             <img src={Vt_dulieu} alt="hình ảnh dữ liệu minh bạch" />
             <span>
               <b className="text-main-colors">
@@ -112,11 +136,16 @@ const EkycPlatform = () => {
       {/* HTC eKYC Platform mang lại */}
       <section className="m-auto lg:w-4/5">
         <div data-aos="zoom-in" data-aos-duration="1000">
-          <h2 className="all-textList">HTC eKYC Platform</h2>
+          <h2 className="base_title">HTC eKYC Platform</h2>
         </div>
         <div className="bg-cyan-100/20">
           {/* ID Read (OCR) */}
-          <div className="p-6 md:flex md:flex-row-reverse">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center"
+            className="p-6 md:flex md:flex-row-reverse"
+          >
             <div className="m-auto md:w-1/2">
               <div className="flex items-center">
                 <img className="" src={Number1} alt="number 1" />
@@ -156,7 +185,12 @@ const EkycPlatform = () => {
             </div>
           </div>
           {/* liveness Check  */}
-          <div className="p-6 md:flex">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-duration="1500"
+            className="p-6 md:flex"
+          >
             <div className="m-auto md:w-1/2">
               <div className="flex items-center">
                 <img className="" src={Number2} alt="number 2" />
@@ -198,7 +232,12 @@ const EkycPlatform = () => {
             </div>
           </div>
           {/* ID Sannity Check  */}
-          <div className="p-6 md:flex md:flex-row-reverse">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-duration="2000"
+            className="p-6 md:flex md:flex-row-reverse"
+          >
             <div className="m-auto md:w-1/2">
               <div className="flex items-center">
                 <img className="" src={Number3} alt="" />
@@ -236,94 +275,13 @@ const EkycPlatform = () => {
               <img className="m-auto w-3/4" src={ID_Sanity} alt="ID_Sanity" />
             </div>
           </div>
-          {/* Forgery ID Check  */}
-          {/* <div className="p-6 md:flex">
-                        <div className="m-auto md:w-1/2">
-                            <div className="flex items-center">
-                                <img className="" src={Number4} alt="Number4" />
-                                <h3 className="font-mulish font-bold text-[#3385ff]">
-                                    Forgery ID Check
-                                </h3>
-                            </div>
-                            <span className="font-mulish text-[#545f7a]">
-                                Forgery ID Check - Giải pháp phát hiện các
-                                trường hợp khách hàng chủ động gian lận (Fraud).
-                            </span>
-                            <div className="flex items-center">
-                                <img src={Star} alt="icon ngôi sao" />
-                                <span className="font-mulish font-medium text-gray-500">
-                                    Phát hiện giấy tờ tuỳ thân giả, giấy tờ bị
-                                    chỉnh sửa bằng phần mềm.
-                                </span>
-                            </div>
-                            <div className="flex items-center">
-                                <img src={Star} alt="icon ngôi sao" />
-                                <span className="font-mulish font-medium text-gray-500">
-                                    Hỗ trợ kiểm tra tính hợp lệ của các giấy tờ
-                                    CMND cũ.
-                                </span>
-                            </div>
-                            <div className="flex items-center">
-                                <img src={Star} alt="icon ngôi sao" />
-                                <span className="font-mulish font-medium text-gray-500">
-                                    Kiểm tra ảnh chụp giấy tờ tuỳ thân có phải
-                                    là ảnh được chụp lại từ màn hình.
-                                </span>
-                            </div>
-                        </div>
-                        <div className="md:w-1/2">
-                            <img
-                                className="m-auto w-3/4"
-                                src={Forgery}
-                                alt="Forgery"
-                            />
-                        </div>
-                    </div> */}
-          {/* Cross Identification  */}
-          {/* <div className="p-6 md:flex md:flex-row-reverse">
-                        <div className="m-auto md:w-1/2">
-                            <div className="flex items-center">
-                                <img className="" src={Number5} alt="Number5" />
-                                <h3 className="font-mulish font-bold text-[#3385ff]">
-                                    Cross Identification
-                                </h3>
-                            </div>
-                            <span className="font-mulish text-[#545f7a]">
-                                Cross Identification - Giải pháp hỗ trợ doanh
-                                nghiệp kiểm tra thông tin khách hàng e-KYC với
-                                thông tin CSDL ID của HTC Sofrware
-                            </span>
-                            <div className="flex items-center">
-                                <img src={Star} alt="icon ngôi sao" />
-                                <span className="font-mulish font-medium text-gray-500">
-                                    Kiểm tra hồ sơ khách hàng trong kho CSDL ID
-                                    của HTC Sofrware.
-                                </span>
-                            </div>
-                            <div className="flex items-center">
-                                <img src={Star} alt="icon ngôi sao" />
-                                <span className="font-mulish font-medium text-gray-500">
-                                    Đối chiếu, so sánh thông tin khách hàng
-                                    nhanh chóng, chính xác.
-                                </span>
-                            </div>
-                            <div className="flex items-center">
-                                <img src={Star} alt="icon ngôi sao" />
-                                <span className="font-mulish font-medium text-gray-500">
-                                    Phát hiện nhanh các hành vi giả mạo giấy tờ.
-                                </span>
-                            </div>
-                        </div>
-                        <div className="md:w-1/2">
-                            <img
-                                className="m-auto w-3/4"
-                                src={Cross}
-                                alt="Cross"
-                            />
-                        </div>
-                    </div> */}
           {/* Xác minh CCCD gắn chip  */}
-          <div className="p-6 md:flex">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-duration="2500"
+            className="p-6 md:flex"
+          >
             <div className="m-auto md:w-1/2">
               <div className="flex items-center">
                 <img className="" src={Number4} alt="" />
