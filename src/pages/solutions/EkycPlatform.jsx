@@ -18,13 +18,25 @@ import Number4 from 'assets/page_EkycPlatform/number/number_4.webp'
 import Star from 'assets/page_EkycPlatform/icon_star.webp'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const EkycPlatform = () => {
-  // Thêm hiệu ứng khi cuộn chuột
+  const [isMobile, setIsMobile] = useState(false)
   useEffect(() => {
-    AOS.init()
-  })
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+    window.addEventListener('resize', checkScreenSize)
+    checkScreenSize()
+    AOS.init({
+      mirror: true,
+      anchorPlacement: 'top-bottom'
+    })
+    return () => {
+      window.removeEventListener('resize', checkScreenSize)
+    }
+  }, [])
+
   return (
     <div className="container m-auto w-full px-1 xl:w-10/12">
       {/* Banner  */}
@@ -53,13 +65,17 @@ const EkycPlatform = () => {
       </section>
       {/* Vai trò của công nghệ EKYC  */}
       <section className="m-auto lg:w-4/5">
-        <div data-aos="zoom-in" data-aos-duration="1000" className="mt-40">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          className="mt-36 xxl:mt-60"
+        >
           <h2 className="base_title">Vai trò của Công nghệ e-KYC</h2>
         </div>
-        <div className="grid gap-2 md:grid-cols-2">
+        <div className="grid gap-2 md:grid-cols-2 max-w-screen-lg mx-auto">
           <div
-            data-aos="zoom-out-right"
-            data-aos-duration="1000"
+            data-aos={isMobile ? 'fade-down' : 'zoom-out-right'}
+            data-aos-duration={isMobile ? '1000' : '1000'}
             className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
           >
             <img src={Vt_xacthuc} alt="hình ảnh xác thực nhanh chóng" />
@@ -71,8 +87,8 @@ const EkycPlatform = () => {
             </span>
           </div>
           <div
-            data-aos="zoom-out-left"
-            data-aos-duration="1000"
+            data-aos={isMobile ? 'fade-down' : 'zoom-out-left'}
+            data-aos-duration={isMobile ? '1200' : '1000'}
             className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
           >
             <img src={Vt_tangcuong} alt="hình ảnh tăng cường bảo mật " />
@@ -83,8 +99,8 @@ const EkycPlatform = () => {
             </span>
           </div>
           <div
-            data-aos="fade-right"
-            data-aos-duration="1100"
+            data-aos={isMobile ? 'fade-down' : 'fade-right'}
+            data-aos-duration={isMobile ? '1400' : '1100'}
             className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
           >
             <img src={Vt_tietkiem} alt="hình ảnh tiết kiệm chi phí" />
@@ -94,8 +110,8 @@ const EkycPlatform = () => {
             </span>
           </div>
           <div
-            data-aos="fade-left"
-            data-aos-duration="1100"
+            data-aos={isMobile ? 'fade-down' : 'fade-left'}
+            data-aos-duration={isMobile ? '1600' : '1100'}
             className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
           >
             <img src={Vt_caithien} alt="hình ảnh cải thiện trải nghiệm" />
@@ -107,8 +123,8 @@ const EkycPlatform = () => {
             </span>
           </div>
           <div
-            data-aos="zoom-in-right"
-            data-aos-duration="1200"
+            data-aos={isMobile ? 'fade-down' : 'zoom-out-right'}
+            data-aos-duration={isMobile ? '1800' : '1200'}
             className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
           >
             <img src={Vt_tuanthu} alt="hình ảnh tuân thủ quy định" />
@@ -119,8 +135,8 @@ const EkycPlatform = () => {
             </span>
           </div>
           <div
-            data-aos="zoom-in-left"
-            data-aos-duration="1200"
+            data-aos={isMobile ? 'fade-down' : 'zoom-out-left'}
+            data-aos-duration={isMobile ? '2000' : '1200'}
             className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
           >
             <img src={Vt_dulieu} alt="hình ảnh dữ liệu minh bạch" />
