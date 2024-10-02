@@ -158,7 +158,7 @@ const HomePage = () => {
             {/* Bước 1 */}
             <div
               data-aos="fade-up"
-              data-aos-duration="2400"
+              data-aos-duration="1500"
               className="s3-content"
             >
               <div className="text-center">
@@ -176,7 +176,7 @@ const HomePage = () => {
             {/* Bước 2 */}
             <div
               data-aos="fade-up"
-              data-aos-duration="2600"
+              data-aos-duration="2000"
               className="s3-content"
             >
               <div className="text-center">
@@ -194,7 +194,7 @@ const HomePage = () => {
             {/* Bước 3 */}
             <div
               data-aos="fade-up"
-              data-aos-duration="2800"
+              data-aos-duration="2500"
               className="s3-content"
             >
               <div className="text-center">

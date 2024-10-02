@@ -28,10 +28,7 @@ const EkycPlatform = () => {
     }
     window.addEventListener('resize', checkScreenSize)
     checkScreenSize()
-    AOS.init({
-      mirror: true,
-      anchorPlacement: 'top-bottom'
-    })
+    AOS.init({})
     return () => {
       window.removeEventListener('resize', checkScreenSize)
     }
@@ -65,18 +62,14 @@ const EkycPlatform = () => {
       </section>
       {/* Vai trò của công nghệ EKYC  */}
       <section className="m-auto lg:w-4/5">
-        <div
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          className="mt-36 xxl:mt-60"
-        >
+        <div data-aos="zoom-in" data-aos-duration="1000" className="mt-10 ">
           <h2 className="base_title">Vai trò của Công nghệ e-KYC</h2>
         </div>
-        <div className="grid gap-2 md:grid-cols-2 max-w-screen-lg mx-auto">
+        <div className="grid gap-2 md:grid-cols-2 mx-auto">
           <div
             data-aos={isMobile ? 'fade-down' : 'zoom-out-right'}
             data-aos-duration={isMobile ? '1000' : '1000'}
-            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1 w-[99%]"
           >
             <img src={Vt_xacthuc} alt="hình ảnh xác thực nhanh chóng" />
             <span>
@@ -89,7 +82,7 @@ const EkycPlatform = () => {
           <div
             data-aos={isMobile ? 'fade-down' : 'zoom-out-left'}
             data-aos-duration={isMobile ? '1200' : '1000'}
-            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1 w-[99%]"
           >
             <img src={Vt_tangcuong} alt="hình ảnh tăng cường bảo mật " />
             <span>
@@ -101,7 +94,7 @@ const EkycPlatform = () => {
           <div
             data-aos={isMobile ? 'fade-down' : 'fade-right'}
             data-aos-duration={isMobile ? '1400' : '1100'}
-            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1 w-[99%]"
           >
             <img src={Vt_tietkiem} alt="hình ảnh tiết kiệm chi phí" />
             <span>
@@ -112,7 +105,7 @@ const EkycPlatform = () => {
           <div
             data-aos={isMobile ? 'fade-down' : 'fade-left'}
             data-aos-duration={isMobile ? '1600' : '1100'}
-            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1 w-[99%]"
           >
             <img src={Vt_caithien} alt="hình ảnh cải thiện trải nghiệm" />
             <span>
@@ -125,7 +118,7 @@ const EkycPlatform = () => {
           <div
             data-aos={isMobile ? 'fade-down' : 'zoom-out-right'}
             data-aos-duration={isMobile ? '1800' : '1200'}
-            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1 w-[99%]"
           >
             <img src={Vt_tuanthu} alt="hình ảnh tuân thủ quy định" />
             <span>
@@ -137,7 +130,7 @@ const EkycPlatform = () => {
           <div
             data-aos={isMobile ? 'fade-down' : 'zoom-out-left'}
             data-aos-duration={isMobile ? '2000' : '1200'}
-            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1"
+            className="flex items-center gap-4 rounded-lg border-2 border-sky-500 px-1 w-[99%]"
           >
             <img src={Vt_dulieu} alt="hình ảnh dữ liệu minh bạch" />
             <span>
