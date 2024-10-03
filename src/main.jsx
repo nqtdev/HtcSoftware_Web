@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+// import App from './App'
+import Layouts from './layouts'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage.jsx'
 import RarEkyc from './pages/solutions/RarEkyc.jsx'
@@ -21,7 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <OnTop />
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route path="/" element={<Layouts />}>
           <Route index element={<HomePage />} />
           <Route path="solution">
             <Route path="chip-toolkit" element={<ChipToolkit />} />
