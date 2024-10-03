@@ -1411,6 +1411,10 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -1690,8 +1694,12 @@ input[type="range"]::-ms-fill-lower {
   width: 80%;
 }
 
-.w-\[98\%\] {
-  width: 98%;
+.w-\[97\%\] {
+  width: 97%;
+}
+
+.w-\[99\%\] {
+  width: 99%;
 }
 
 .w-\[99vw\] {
@@ -1714,10 +1722,6 @@ input[type="range"]::-ms-fill-lower {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[99\%\] {
-  width: 99%;
 }
 
 .min-w-11 {
@@ -2168,6 +2172,10 @@ input[type="range"]::-ms-fill-lower {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .overflow-y-auto {
@@ -4022,6 +4030,7 @@ input[type="range"]::-ms-fill-lower {
 }
 
 .sticker_describe {
+  overflow: hidden;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;

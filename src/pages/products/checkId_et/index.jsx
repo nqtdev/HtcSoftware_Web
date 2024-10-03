@@ -3,9 +3,9 @@ import TableSpecification from 'components/TableSpecification'
 import SlideShowSwiper from 'components/SlideShowSwiper'
 import SlideSwiperConfig from 'components/SlideSwiperConfig'
 
-import DeviceParameters from './components/DeviceParameters'
-import SlideProduct from './components/SlideProduct'
-import ShowProducts from './components/ShowProducts'
+import DeviceParameters from './data/DeviceParameters'
+import SlideProduct from './data/SlideProduct'
+import ShowProducts from './data/ShowProducts'
 
 import SmartCard from 'assets/image_products/icon_function/smartCard.png'
 import RichPort from 'assets/image_products/icon_function/RichPort.png'

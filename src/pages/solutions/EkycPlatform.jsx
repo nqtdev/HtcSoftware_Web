@@ -61,7 +61,7 @@ const EkycPlatform = () => {
         </div>
       </section>
       {/* Vai trò của công nghệ EKYC  */}
-      <section className="m-auto lg:w-4/5">
+      <section className="m-auto lg:w-4/5 mt-20">
         <div data-aos="zoom-in" data-aos-duration="1000" className="mt-10 ">
           <h2 className="base_title">Vai trò của Công nghệ e-KYC</h2>
         </div>

@@ -8,7 +8,7 @@ const TableSpecification = ({ data }) => {
       <div>
         <h2 className="base_title">Thông số kỹ thuật</h2>
       </div>
-      <div className="m-auto max-h-screen overflow-auto lg:w-3/4">
+      <div className="m-auto overflow-x-auto lg:w-3/4">
         <table className="min-w-full table-auto">
           <thead className="border-collapse border border-slate-500">
             <tr>
