@@ -60,7 +60,7 @@ const HomePage = () => {
         <div data-aos="zoom-in" data-aos-duration="1000">
           <h2 className="base_title">Giá trị chúng tôi đem lại</h2>
         </div>
-        <div className="m-auto w-[97%] rounded-3xl border-2 border-solid border-blue-950 bg-bg-img lg:w-4/5">
+        <div className="m-auto w-[99%] rounded-3xl border-2 border-solid border-blue-950 bg-bg-img lg:w-4/5">
           <ul className="lg:p-7">
             <li className="sticker_check">
               <div className="w-1/12">
@@ -149,7 +149,7 @@ const HomePage = () => {
       <section>
         <div data-aos="zoom-in" data-aos-duration="1000">
           <h2 className="base_title">
-            Thao tác <span className="text-5xl text-green-600">4 bước</span> đơn
+            Thao tác <span className="text-4xl text-green-600">4 bước</span> đơn
             giản
           </h2>
         </div>
