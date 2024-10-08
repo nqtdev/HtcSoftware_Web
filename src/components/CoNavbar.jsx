@@ -149,7 +149,7 @@ const CoNavbar = () => {
                     Meta eYe
                   </Button>
                 </Dropdown.Item>
-
+                <Dropdown.Divider />
                 {/* Download Plugin */}
                 <Dropdown.Item onClick={closeMenu}>
                   {' '}

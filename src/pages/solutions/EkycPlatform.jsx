@@ -18,22 +18,13 @@ import Number4 from 'assets/page_EkycPlatform/number/number_4.webp'
 import Star from 'assets/page_EkycPlatform/icon_star.webp'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect, useState } from 'react'
-
+import { useEffect } from 'react'
+import useCheckMobile from 'hooks/useCheckMobile'
 const EkycPlatform = () => {
-  const [isMobile, setIsMobile] = useState(false)
   useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768)
-    }
-    window.addEventListener('resize', checkScreenSize)
-    checkScreenSize()
     AOS.init({})
-    return () => {
-      window.removeEventListener('resize', checkScreenSize)
-    }
   }, [])
-
+  const isMobile = useCheckMobile()
   return (
     <div className="container m-auto w-full px-1 xl:w-10/12">
       {/* Banner  */}

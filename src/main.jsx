@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App'
 import Layouts from './layouts'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage.jsx'
@@ -13,9 +12,6 @@ import CheckIdSr from './pages/products/checkId_sr'
 import MetaEye from './pages/products/metaEye'
 import OnTop from 'components/OnTop'
 import './css/output.css'
-import ScrollToTop from './layouts/buttons/ScrollToTop.jsx'
-import ButtonCall from './layouts/buttons/ButtonCall.jsx'
-import ButtonMail from './layouts/buttons/ButtonMail.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -38,8 +34,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Route>
       </Routes>
     </BrowserRouter>
-    <ScrollToTop />
-    <ButtonCall phoneNumber="0708896666" />
-    <ButtonMail emailAddress="kinhdoanh@htcsoftware.vn" />
   </React.StrictMode>
 )
