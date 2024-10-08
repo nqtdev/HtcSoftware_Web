@@ -14,11 +14,12 @@ import IconApi from 'assets/page_RarEkyc/section_content_b/icon_api.png'
 import Banner_CCDV from 'assets/page_RarEkyc/section_content_b/banner_section.png'
 import PartnerLogo from 'components/PartnerLogo'
 import Certificate from 'components/Certificate'
-
+import useCheckMobile from 'hooks/useCheckMobile'
 const RarEkyc = () => {
   useEffect(() => {
     AOS.init()
   })
+  const isMobile = useCheckMobile()
   return (
     <div className="container m-auto w-full xl:w-10/12">
       <section className="flex max-w-full flex-col justify-between lg:flex-row">
@@ -56,11 +57,11 @@ const RarEkyc = () => {
         </div>
       </section>
       {/* Giá trị của sản phẩm */}
-      <section className="mx-1 mb-2">
+      <section>
         <div data-aos="zoom-in" data-aos-duration="1000">
           <h2 className="base_title">Giá trị chúng tôi đem lại</h2>
         </div>
-        <div className="m-auto h-max w-[99%] rounded-3xl border-2 border-solid border-blue-950 bg-bg-img lg:w-4/5">
+        <div className="m-auto w-[99%] rounded-3xl border-2 border-solid border-blue-950 bg-bg-img lg:w-4/5">
           <ul className="lg:p-7">
             <li className="sticker_check">
               <div className="w-1/12">
@@ -68,13 +69,13 @@ const RarEkyc = () => {
                   className="m-auto w-1/2"
                   src={CheckTicker}
                   alt="check_ticket"
-                  data-aos="fade-right"
-                  data-aos-duration="1100"
+                  data-aos={isMobile ? 'zoom-out' : 'fade-right'}
+                  data-aos-duration={isMobile ? '1500' : '1100'}
                 />
               </div>
               <div
-                data-aos="fade-left"
-                data-aos-duration="1000"
+                data-aos={isMobile ? 'flip-down' : 'fade-left'}
+                data-aos-duration={isMobile ? '1000' : '1100'}
                 className="ml-3"
               >
                 <span className="sticker_describe">
@@ -88,13 +89,13 @@ const RarEkyc = () => {
                   className="m-auto w-1/2"
                   src={CheckTicker}
                   alt="check_ticket"
-                  data-aos="fade-right"
-                  data-aos-duration="1600"
+                  data-aos={isMobile ? 'zoom-out' : 'fade-right'}
+                  data-aos-duration={isMobile ? '2000' : '1600'}
                 />
               </div>
               <div
-                data-aos="fade-left"
-                data-aos-duration="1500"
+                data-aos={isMobile ? 'flip-down' : 'fade-left'}
+                data-aos-duration={isMobile ? '1500' : '1600'}
                 className="ml-3"
               >
                 <span className="sticker_describe">
@@ -108,13 +109,13 @@ const RarEkyc = () => {
                   className="m-auto w-1/2"
                   src={CheckTicker}
                   alt="check_ticket"
-                  data-aos="fade-right"
-                  data-aos-duration="2100"
+                  data-aos={isMobile ? 'zoom-out' : 'fade-right'}
+                  data-aos-duration={isMobile ? '2500' : '2100'}
                 />
               </div>
               <div
-                data-aos="fade-left"
-                data-aos-duration="2000"
+                data-aos={isMobile ? 'flip-down' : 'fade-left'}
+                data-aos-duration={isMobile ? '2000' : '2100'}
                 className="ml-3"
               >
                 <span className="sticker_describe">
@@ -126,15 +127,15 @@ const RarEkyc = () => {
               <div className="w-1/12">
                 <img
                   className="m-auto w-1/2"
-                  data-aos="fade-right"
-                  data-aos-duration="2600"
+                  data-aos={isMobile ? 'zoom-out' : 'fade-right'}
+                  data-aos-duration={isMobile ? '3000' : '2600'}
                   src={CheckTicker}
                   alt="check_ticket"
                 />
               </div>
               <div
-                data-aos="fade-left"
-                data-aos-duration="2500"
+                data-aos={isMobile ? 'flip-down' : 'fade-left'}
+                data-aos-duration={isMobile ? '2500' : '2600'}
                 className="ml-3"
               >
                 <span className="sticker_describe">
@@ -149,7 +150,7 @@ const RarEkyc = () => {
       <section>
         <div data-aos="zoom-in" data-aos-duration="1000">
           <h2 className="base_title">
-            Thao tác <span className="text-5xl text-green-600">4 bước</span> đơn
+            Thao tác <span className="text-4xl text-green-600">4 bước</span> đơn
             giản
           </h2>
         </div>
@@ -158,7 +159,7 @@ const RarEkyc = () => {
             {/* Bước 1 */}
             <div
               data-aos="fade-up"
-              data-aos-duration="2400"
+              data-aos-duration="1500"
               className="s3-content"
             >
               <div className="text-center">
@@ -176,7 +177,7 @@ const RarEkyc = () => {
             {/* Bước 2 */}
             <div
               data-aos="fade-up"
-              data-aos-duration="2600"
+              data-aos-duration="2000"
               className="s3-content"
             >
               <div className="text-center">
@@ -194,7 +195,7 @@ const RarEkyc = () => {
             {/* Bước 3 */}
             <div
               data-aos="fade-up"
-              data-aos-duration="2800"
+              data-aos-duration="2500"
               className="s3-content"
             >
               <div className="text-center">

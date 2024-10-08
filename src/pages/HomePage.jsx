@@ -14,11 +14,12 @@ import IconApi from 'assets/page_RarEkyc/section_content_b/icon_api.png'
 import Banner_CCDV from 'assets/page_RarEkyc/section_content_b/banner_section.png'
 import PartnerLogo from 'components/PartnerLogo'
 import Certificate from 'components/Certificate'
-
+import useCheckMobile from 'hooks/useCheckMobile'
 const HomePage = () => {
   useEffect(() => {
     AOS.init()
   })
+  const isMobile = useCheckMobile()
   return (
     <div className="container m-auto w-full xl:w-10/12">
       <section className="flex max-w-full flex-col justify-between lg:flex-row">
@@ -68,13 +69,13 @@ const HomePage = () => {
                   className="m-auto w-1/2"
                   src={CheckTicker}
                   alt="check_ticket"
-                  data-aos="fade-right"
-                  data-aos-duration="1100"
+                  data-aos={isMobile ? 'zoom-out' : 'fade-right'}
+                  data-aos-duration={isMobile ? '1500' : '1100'}
                 />
               </div>
               <div
-                data-aos="fade-left"
-                data-aos-duration="1000"
+                data-aos={isMobile ? 'flip-down' : 'fade-left'}
+                data-aos-duration={isMobile ? '1000' : '1100'}
                 className="ml-3"
               >
                 <span className="sticker_describe">
@@ -88,13 +89,13 @@ const HomePage = () => {
                   className="m-auto w-1/2"
                   src={CheckTicker}
                   alt="check_ticket"
-                  data-aos="fade-right"
-                  data-aos-duration="1600"
+                  data-aos={isMobile ? 'zoom-out' : 'fade-right'}
+                  data-aos-duration={isMobile ? '2000' : '1600'}
                 />
               </div>
               <div
-                data-aos="fade-left"
-                data-aos-duration="1500"
+                data-aos={isMobile ? 'flip-down' : 'fade-left'}
+                data-aos-duration={isMobile ? '1500' : '1600'}
                 className="ml-3"
               >
                 <span className="sticker_describe">
@@ -108,13 +109,13 @@ const HomePage = () => {
                   className="m-auto w-1/2"
                   src={CheckTicker}
                   alt="check_ticket"
-                  data-aos="fade-right"
-                  data-aos-duration="2100"
+                  data-aos={isMobile ? 'zoom-out' : 'fade-right'}
+                  data-aos-duration={isMobile ? '2500' : '2100'}
                 />
               </div>
               <div
-                data-aos="fade-left"
-                data-aos-duration="2000"
+                data-aos={isMobile ? 'flip-down' : 'fade-left'}
+                data-aos-duration={isMobile ? '2000' : '2100'}
                 className="ml-3"
               >
                 <span className="sticker_describe">
@@ -126,15 +127,15 @@ const HomePage = () => {
               <div className="w-1/12">
                 <img
                   className="m-auto w-1/2"
-                  data-aos="fade-right"
-                  data-aos-duration="2600"
+                  data-aos={isMobile ? 'zoom-out' : 'fade-right'}
+                  data-aos-duration={isMobile ? '3000' : '2600'}
                   src={CheckTicker}
                   alt="check_ticket"
                 />
               </div>
               <div
-                data-aos="fade-left"
-                data-aos-duration="2500"
+                data-aos={isMobile ? 'flip-down' : 'fade-left'}
+                data-aos-duration={isMobile ? '2500' : '2600'}
                 className="ml-3"
               >
                 <span className="sticker_describe">
