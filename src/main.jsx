@@ -12,6 +12,7 @@ import CheckIdSr from './pages/products/checkId_sr'
 import MetaEye from './pages/products/metaEye'
 import OnTop from 'components/OnTop'
 import './css/output.css'
+import ComingSoon from 'components/ComingSoon'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -31,6 +32,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="checkid-et100" element={<CheckIdEt />} />
             <Route path="meta-eye" element={<MetaEye />} />
           </Route>
+          <Route path="*" element={<ComingSoon />} />
         </Route>
       </Routes>
     </BrowserRouter>
