@@ -1698,10 +1698,6 @@ input[type="range"]::-ms-fill-lower {
   width: 99%;
 }
 
-.w-\[99vw\] {
-  width: 99vw;
-}
-
 .w-auto {
   width: auto;
 }
