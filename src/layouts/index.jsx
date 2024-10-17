@@ -13,7 +13,7 @@ function Layouts() {
       <Outlet />
       <FooterWeb />
       <ScrollToTop />
-      <ButtonCall phoneNumber="0708896666" />
+      <ButtonCall phoneNumber="0848565555" />
       <ButtonMail emailAddress="kinhdoanh@htcsoftware.vn" />
     </>
   )
