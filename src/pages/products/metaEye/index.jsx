@@ -8,6 +8,7 @@ import DeviceParameters from './data/DeviceParameters'
 import ShowProducts from './data/ShowProducts'
 
 import imgProduct_eYe from 'assets/image_products/meta_eye/main.webp'
+import ButtonContact from '../../../layouts/buttons/ButtonContact'
 
 const MetaEye = () => {
   return (
@@ -68,9 +69,7 @@ const MetaEye = () => {
                   25.000.000 VNĐ
                 </span>
               </div>
-              <button className="mt-5 rounded bg-red-500 px-8 py-4 text-xl font-bold text-white hover:bg-red-700">
-                Mua Ngay
-              </button>
+              <ButtonContact />
             </div>
           </div>
         </div>
