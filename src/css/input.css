@@ -114,3 +114,6 @@
 .__react_modal_image__header {
   background-color: transparent !important;
 }
+.ant-tabs-nav {
+  margin: auto !important;
+}
