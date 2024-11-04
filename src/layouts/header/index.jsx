@@ -98,7 +98,7 @@ const HeaderWeb = () => {
                 {/* RAR Chip Toolkit */}
                 <Dropdown.Item
                   as={NavLink}
-                  to="/solution/chip-toolkit"
+                  to="https://idpass.vn" // Thay đổi liên kết
                   onClick={closeMenu} // Đóng menu khi nhấp vào
                 >
                   <Button gradientDuoTone="purpleToBlue" className="w-[12rem]">
