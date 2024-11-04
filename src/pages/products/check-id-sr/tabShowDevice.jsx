@@ -45,8 +45,7 @@ const TabShowDevice = () => (
       },
       components: {
         Tabs: {
-          // titleFontSizeLG: 17,
-          titleFontSize: 17
+          titleFontSize: 14
         }
       }
     }}
