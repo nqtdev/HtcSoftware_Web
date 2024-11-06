@@ -171,7 +171,7 @@ const HeaderWeb = () => {
                 <Dropdown.Item onClick={closeMenu}>
                   {' '}
                   {/* Đóng menu khi nhấp vào */}
-                  <a href="https://htcsoftware.vn/checkid_client_installer.zip">
+                  <a href="https://htcsoftware.vn/store/checkid_client_installer.zip">
                     <Button
                       gradientDuoTone="purpleToBlue"
                       className="flex w-[12rem]"
