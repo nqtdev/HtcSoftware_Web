@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,34 +12,40 @@
       content="htc software, htcjsc, htcsoftware, rar ekyc, định danh điện tử, căn cước công dân gắn chíp, bộ công an, rar ekyc platform, htc ekyc platform, RAR-C06"
     />
     <meta name="author" content="HTC SoftWare" />
+    <meta property="og:title" content="HTC SoftWare" />
+    <meta property="og:description" content="Giải pháp eKYC từ HTC SoftWare" />
     <title>HTC SoftWare</title>
+
+    <!-- Favicon -->
     <link
       rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon/favicon-32x32.png"
+      href="/favicon/favicon.ico"
+      sizes="any"
+      type="image/x-icon"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/favicon/favicon-96x96.png"
-    />
+
+    <!-- External CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!-- Preload important resources -->
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      as="style"
+    />
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
-    <!-- <script src="./src/js/navbar.js"></script> -->
+
+    <!-- Defer loading of non-critical JS -->
+    <script type="module" src="/src/main.jsx" defer></script>
+    <script
+      src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"
+      defer
+    ></script>
+    <!-- <script src="./src/js/navbar.js" defer></script> -->
   </body>
 </html>

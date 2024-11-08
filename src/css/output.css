@@ -1694,6 +1694,10 @@ input[type="range"]::-ms-fill-lower {
   width: 80%;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .w-\[99\%\] {
   width: 99%;
 }
@@ -2076,6 +2080,10 @@ input[type="range"]::-ms-fill-lower {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .-space-x-4 > :not([hidden]) ~ :not([hidden]) {

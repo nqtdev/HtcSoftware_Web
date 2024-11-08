@@ -10,8 +10,10 @@ import imgProduct_SR from 'assets/image_products/check-id-sr/banner.png'
 import TabShowDevice from './tabShowDevice'
 
 import OtherProduct from 'components/otherProducts'
-import MobileIDView from 'components/softwareInterface/mobileid'
+
 import ButtonContact from 'layouts/buttons/ButtonContact'
+import DataGetSR from 'components/softwareInterface/DataGetSR'
+import MobileIDView from 'components/softwareInterface/Mobileid'
 
 const CheckIdSr = () => {
   return (
@@ -118,6 +120,9 @@ const CheckIdSr = () => {
       </section>
       <section>
         <MobileIDView />
+      </section>
+      <section>
+        <DataGetSR />
       </section>
       {/* Thông số kỹ thuật thiết bị  */}
       <section>

@@ -15,8 +15,9 @@ import imgProduct_HN from 'assets/image_products/check-id-212/banner.png'
 import SlideShowSwiper from 'components/SlideShowSwiper'
 
 import OtherProduct from 'components/otherProducts'
-import HanelView from 'components/softwareInterface/hanel'
 import ButtonContact from 'layouts/buttons/ButtonContact'
+import HanelView from 'components/softwareInterface/Hanel'
+import DataGet from 'components/softwareInterface/DataGet'
 const CheckIdHn = () => {
   return (
     <div className="App">
@@ -127,6 +128,9 @@ const CheckIdHn = () => {
       {/* Thông số kỹ thuật thiết bị  */}
       <section>
         <HanelView />
+      </section>
+      <section>
+        <DataGet />
       </section>
       <section>
         <div>

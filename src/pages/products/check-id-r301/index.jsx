@@ -6,9 +6,11 @@ import NFC from 'assets/image_products/icon_function/NFC.png'
 import RickPorts from 'assets/image_products/icon_function/RichPort.png'
 import imgProduct_RT from 'assets/image_products/check-id-r301/banner.png'
 import OtherProduct from 'components/otherProducts'
-import MobileIDView from 'components/softwareInterface/mobileid'
+
 import ButtonContact from 'layouts/buttons/ButtonContact'
 import SlideShowSwiper from 'components/SlideShowSwiper'
+import MobileIDView from 'components/softwareInterface/Mobileid'
+import DataGet from 'components/softwareInterface/DataGet'
 
 const CheckIdRt = () => {
   return (
@@ -107,6 +109,9 @@ const CheckIdRt = () => {
       </section>
       <section>
         <MobileIDView />
+      </section>
+      <section>
+        <DataGet />
       </section>
       {/* Thông số kỹ thuật thiết bị  */}
       <section>

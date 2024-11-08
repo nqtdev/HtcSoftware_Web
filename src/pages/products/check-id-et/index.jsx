@@ -14,6 +14,7 @@ import imgProduct_ET from 'assets/image_products/check-id-et100/banner.png'
 
 import OtherProduct from 'components/otherProducts'
 import ButtonContact from 'layouts/buttons/ButtonContact'
+import DataGet from 'components/softwareInterface/DataGet'
 
 const CheckIdEt = () => {
   return (
@@ -139,7 +140,11 @@ const CheckIdEt = () => {
           </div>
         </div>
       </section>
+      <section>
+        <DataGet />
+      </section>
       {/* Thông số kỹ thuật thiết bị  */}
+
       <section>
         <div>
           <h2 className="base_title">Thông số kỹ thuật thiết bị</h2>
