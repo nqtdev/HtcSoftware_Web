@@ -9,7 +9,7 @@ import OtherProduct from 'components/otherProducts'
 
 import ButtonContact from 'layouts/buttons/ButtonContact'
 import SlideShowSwiper from 'components/SlideShowSwiper'
-import MobileIDView from 'components/softwareInterface/Mobileid'
+import MobileIDView from 'components/softwareInterface/mobileid'
 import DataGet from 'components/softwareInterface/DataGet'
 
 const CheckIdRt = () => {

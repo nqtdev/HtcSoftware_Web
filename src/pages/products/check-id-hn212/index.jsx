@@ -16,7 +16,7 @@ import SlideShowSwiper from 'components/SlideShowSwiper'
 
 import OtherProduct from 'components/otherProducts'
 import ButtonContact from 'layouts/buttons/ButtonContact'
-import HanelView from 'components/softwareInterface/Hanel'
+import HanelView from 'components/softwareInterface/hanel'
 import DataGet from 'components/softwareInterface/DataGet'
 const CheckIdHn = () => {
   return (

@@ -13,7 +13,7 @@ import OtherProduct from 'components/otherProducts'
 
 import ButtonContact from 'layouts/buttons/ButtonContact'
 import DataGetSR from 'components/softwareInterface/DataGetSR'
-import MobileIDView from 'components/softwareInterface/Mobileid'
+import MobileIDView from 'components/softwareInterface/mobileid'
 
 const CheckIdSr = () => {
   return (
