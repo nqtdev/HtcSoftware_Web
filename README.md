@@ -11,3 +11,5 @@ npm install -> npm run start
   2024.10.01 - Update v1.1
   . Fix lại link download
   . Bổ sung thông tin dữ liệu đọc
+  2024.11.13 - Update v1.1.13
+  . Bổ sung image bộ công thương

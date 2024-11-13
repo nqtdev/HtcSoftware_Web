@@ -1,6 +1,7 @@
 // @Thanh Footer
 import LogoHtcSw from 'assets/logo/logo_sw.png'
-
+import imgBcta from 'assets/logo/bct_notion.png'
+import imgBctb from 'assets/logo/bct_sub.png'
 const FooterWeb = () => {
   return (
     <footer className="mt-16 flex justify-center bg-main-bgcolors">
@@ -69,6 +70,14 @@ const FooterWeb = () => {
                   />
                 </svg>
                 <p className="ml-3 text-white">Mã Số Thuế: 0103925078</p>
+              </div>
+              <div className="flex mt-2 items-center">
+                <div className="w-full">
+                  <img className="w-3/4" src={imgBcta} alt="" />
+                </div>
+                <div className="w-full">
+                  <img className="w-3/4" src={imgBctb} alt="" />
+                </div>
               </div>
             </div>
           </section>

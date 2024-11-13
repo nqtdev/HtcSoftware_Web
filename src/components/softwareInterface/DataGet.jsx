@@ -1,4 +1,3 @@
-import checkid from 'assets/image_products/softwareInterface/checkid.png'
 import { Divider, List, Typography, Row, Col } from 'antd'
 
 const dataCard = [
