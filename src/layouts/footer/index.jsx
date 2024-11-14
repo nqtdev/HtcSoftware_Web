@@ -71,12 +71,12 @@ const FooterWeb = () => {
                 </svg>
                 <p className="ml-3 text-white">Mã Số Thuế: 0103925078</p>
               </div>
-              <div className="flex mt-2 items-center">
+              <div className="flex mt-2 w-3/4 items-center">
                 <div className="w-full">
-                  <img className="w-3/4" src={imgBcta} alt="" />
+                  <img className="w-4/5" src={imgBcta} alt="" />
                 </div>
                 <div className="w-full">
-                  <img className="w-3/4" src={imgBctb} alt="" />
+                  <img className="w-4/5" src={imgBctb} alt="" />
                 </div>
               </div>
             </div>
