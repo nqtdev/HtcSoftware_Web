@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import Call from 'assets/icon_buttons/Call.svg'
+import Call from 'assets/icon_buttons/Call.webp'
 
 const ButtonCall = ({ phoneNumber }) => {
   return (

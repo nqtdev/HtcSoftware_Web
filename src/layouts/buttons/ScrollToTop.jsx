@@ -1,6 +1,6 @@
 // @ Nút chức năng cuộn lên đầu trang
 import { useEffect, useState } from 'react'
-import Scroll from 'assets/icon_buttons/scrollToTop.svg'
+import Scroll from 'assets/icon_buttons/scrollToTop.webp'
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false)
   const toggleVisibility = () => {

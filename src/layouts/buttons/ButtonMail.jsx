@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import Mail from 'assets/icon_buttons/seenMail.svg'
+import Mail from 'assets/icon_buttons/seenMail.webp'
 
 const ButtonMail = ({ emailAddress }) => {
   return (

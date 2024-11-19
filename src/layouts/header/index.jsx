@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Dropdown, Navbar, Button } from 'flowbite-react'
 import { NavLink } from 'react-router-dom'
-import logo from 'assets/logo/logo_sw.png'
+import logo from 'assets/logo/logo_sw.webp'
 
 const HeaderWeb = () => {
   // Quản lý trạng thái mở/đóng của menu
