@@ -2,7 +2,7 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
-import Banner from 'assets/page_RarEkyc/banner.webp'
+// import Banner from 'assets/page_RarEkyc/banner.webp'
 import CheckTicker from 'assets/page_RarEkyc/check_ticket.png'
 import IconNFC from 'assets/page_RarEkyc/section_content/scan_nfc.png'
 import IconLiveNess from 'assets/page_RarEkyc/section_content/liveness.png'
@@ -53,7 +53,7 @@ const RarEkyc = () => {
           </div>
         </div>
         <div className="container m-auto p-2">
-          <img className="w-full" src={Banner} alt="logo banner" />
+          <img className="w-full" src="/banner.webp" alt="logo banner" />
         </div>
       </section>
       {/* Giá trị của sản phẩm */}

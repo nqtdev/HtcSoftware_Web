@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Dropdown, Navbar, Button } from 'flowbite-react'
 import { NavLink } from 'react-router-dom'
-import logo from 'assets/logo/logo_sw.webp'
+// import logo from 'assets/logo/logo_sw.webp'
 
 const HeaderWeb = () => {
   // Quản lý trạng thái mở/đóng của menu
@@ -23,7 +23,11 @@ const HeaderWeb = () => {
         <Navbar fluid className="m-auto !p-1 xl:w-[85%] xxl:w-3/4">
           {/* Logo HTC Software */}
           <Navbar.Brand to="/" as={NavLink}>
-            <img src={logo} className="w-1/2" alt="HTC Software Logo" />
+            <img
+              src="/logo_sw.webp"
+              className="w-1/2"
+              alt="HTC Software Logo"
+            />
           </Navbar.Brand>
 
           {/* Nút Toggle Tùy Chỉnh cho Mobile */}

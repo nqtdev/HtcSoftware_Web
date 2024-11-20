@@ -15,6 +15,7 @@ const Certificate = () => {
         {CertificateImg.map((image, index) => (
           <div key={index} className="m-auto max-w-xs overflow-hidden pt-3">
             <ModalImage
+              loading="lazy"
               hideDownload={true}
               hideZoom={true}
               className="thumbnail h-auto w-full cursor-pointer"
