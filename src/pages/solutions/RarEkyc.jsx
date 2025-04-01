@@ -295,6 +295,9 @@ const RarEkyc = () => {
       </section>
       {/* Đối tác */}
       <section>
+        <div data-aos="zoom-in" data-aos-duration="1000">
+          <h2 className="base_title">Đối tác của chúng tôi</h2>
+        </div>
         <PartnerLogo />
       </section>
       {/* Chứng nhận */}

@@ -1,7 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import 'tailwindcss';
 @import 'flowbite';
 
 @layer base {
@@ -24,7 +21,7 @@
 }
 /* style thẻ h2 của các section */
 .base_title {
-  @apply my-6 text-center text-3xl font-bold text-[#2582BD] lg:my-14 lg:text-4xl;
+  @apply my-6 text-center text-3xl font-bold text-[#223464]  first-letter:lg:my-14 lg:text-4xl;
 }
 /* style các đầu mục của : Giá trị chúng tôi đem lại  */
 .sticker_check {

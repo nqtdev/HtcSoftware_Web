@@ -92,9 +92,6 @@ const PartnerLogo = ({ title }) => {
 
   return (
     <>
-      <div data-aos="zoom-in" data-aos-duration="1000">
-        <h2 className="base_title">Đối tác của chúng tôi</h2>
-      </div>
       {LogoPartner.map((row, rowIndex) => (
         <div key={rowIndex} className="partner_scroll">
           {row.map((logo, index) => {

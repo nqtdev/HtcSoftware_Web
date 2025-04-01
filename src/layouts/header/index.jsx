@@ -66,7 +66,26 @@ const HeaderWeb = () => {
             >
               Trang Chủ
             </Button>
-
+            <Button
+              gradientDuoTone="purpleToBlue"
+              className="mb-1 md:mb-0"
+              active
+              to="/nghiquyet-57"
+              as={NavLink}
+              onClick={closeMenu} // Đóng menu khi nhấp vào
+            >
+              NQ 57
+            </Button>
+            <Button
+              gradientDuoTone="purpleToBlue"
+              className="mb-1 md:mb-0"
+              active
+              to="/mo-hinh"
+              as={NavLink}
+              onClick={closeMenu} // Đóng menu khi nhấp vào
+            >
+              Mô Hình
+            </Button>
             {/* Giải Pháp */}
             <Button gradientDuoTone="purpleToBlue" className="mb-1 md:mb-0">
               <Dropdown
@@ -105,7 +124,7 @@ const HeaderWeb = () => {
                   onClick={closeMenu} // Đóng menu khi nhấp vào
                 >
                   <Button gradientDuoTone="purpleToBlue" className="w-[12rem]">
-                    RAR Chip Toolkit
+                    IDpass
                   </Button>
                 </Dropdown.Item>
               </Dropdown>
@@ -118,20 +137,17 @@ const HeaderWeb = () => {
                 label="Thiết Bị"
                 inline
                 placement="bottom"
-                className="absolute mt-2"
+                className="absolute mt-2 gird grid-cols-2"
               >
-                {/* CheckID-SR */}
                 <Dropdown.Item
                   as={NavLink}
                   to="/products/check-id-sr"
                   onClick={closeMenu} // Đóng menu khi nhấp vào
                 >
-                  <Button gradientDuoTone="purpleToBlue" className="w-[12rem]">
+                  <Button gradientDuoTone="purpleToBlue" className="w-[12rem] ">
                     CheckID-SR
                   </Button>
                 </Dropdown.Item>
-
-                {/* CheckID-ET100 */}
                 <Dropdown.Item
                   as={NavLink}
                   to="/products/check-id-et100"
@@ -159,8 +175,6 @@ const HeaderWeb = () => {
                     CheckID-HN212
                   </Button>
                 </Dropdown.Item>
-
-                {/* Meta eYe */}
                 <Dropdown.Item
                   as={NavLink}
                   to="/products/meta-eye"
