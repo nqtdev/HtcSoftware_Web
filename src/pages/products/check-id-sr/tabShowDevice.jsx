@@ -1,11 +1,7 @@
-import { Tabs, ConfigProvider } from 'antd'
+import {Tabs} from 'antd'
 import SlideShowSwiper from 'components/SlideShowSwiper'
-import {
-  SlideProductCam,
-  SlideProductNoCam,
-  SlideProduct
-} from './data/SlideProduct'
-const onChange = (key) => {
+import {SlideProductCam, SlideProductNoCam, SlideProduct} from './data/SlideProduct'
+const onChange = key => {
   console.log(key)
 }
 const items = [
@@ -16,7 +12,7 @@ const items = [
       <>
         <SlideShowSwiper slidesShow={SlideProductCam} />
       </>
-    )
+    ),
   },
   {
     key: '2',
@@ -25,7 +21,7 @@ const items = [
       <>
         <SlideShowSwiper slidesShow={SlideProductNoCam} />
       </>
-    )
+    ),
   },
   {
     key: '3',
@@ -34,23 +30,8 @@ const items = [
       <>
         <SlideShowSwiper slidesShow={SlideProduct} />
       </>
-    )
-  }
+    ),
+  },
 ]
-const TabShowDevice = () => (
-  <ConfigProvider
-    theme={{
-      token: {
-        fontFamily: 'Arial'
-      },
-      components: {
-        Tabs: {
-          titleFontSize: 16
-        }
-      }
-    }}
-  >
-    <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
-  </ConfigProvider>
-)
+const TabShowDevice = () => <Tabs defaultActiveKey='1' items={items} onChange={onChange} />
 export default TabShowDevice

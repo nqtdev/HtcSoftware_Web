@@ -6,14 +6,12 @@ import SmartCard from 'assets/image_products/icon_function/smartCard.png'
 import NFC from 'assets/image_products/icon_function/NFC.png'
 import Camera from 'assets/image_products/icon_function/Camera.png'
 import MRZ from 'assets/image_products/icon_function/MRZ.png'
-import imgProduct_SR from 'assets/image_products/check-id-sr/banner.png'
+import imgProduct_SR from 'assets/image_products/check-id-sr/banner.webp'
 import TabShowDevice from './tabShowDevice'
-
-import OtherProduct from 'components/otherProducts'
-
 import ButtonContact from 'layouts/buttons/ButtonContact'
-import DataGetSR from 'components/softwareInterface/DataGetSR'
+import OtherProduct from 'components/otherProducts'
 import MobileIDView from 'components/softwareInterface/mobileid'
+import DataGetSR from 'components/softwareInterface/DataGetSR'
 
 const CheckIdSr = () => {
   return (
@@ -40,7 +38,7 @@ const CheckIdSr = () => {
         </div>
       </section>
       {/* Xem thêm hình ảnh sản phẩm  */}
-      <section>
+      <section className="lg:h-[41rem]">
         <div>
           <h2 className="base_title">Hình ảnh sản phẩm</h2>
         </div>
@@ -50,7 +48,7 @@ const CheckIdSr = () => {
       </section>
       {/* Chi tiết sản phẩm  */}
       <section>
-        <div className="m-auto grid gap-3 p-3 lg:w-2/3 lg:grid-cols-2 ">
+        <div className="m-auto grid gap-3 p-3 lg:w-2/3 lg:grid-cols-2">
           <div>
             <div className="mb-3 ml-2">
               <i className="text-center text-3xl font-bold text-main-colors">
@@ -72,7 +70,7 @@ const CheckIdSr = () => {
                 Chức năng:
               </u>
             </div>
-            <ul className="grid grid-cols-4 gap-2 md:grid-cols-5">
+            <ul className="grid grid-cols-3 gap-2 md:grid-cols-6">
               <li className="m-auto cursor-pointer">
                 <img
                   className="mb-1 cursor-pointer rounded-md border p-1"
