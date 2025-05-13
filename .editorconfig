@@ -1,6 +1,5 @@
 # EditorConfig giúp duy trì định dạng nhất quán giữa các công cụ và trình chỉnh sửa.
 root = true
-
 [*]
 end_of_line = lf
 charset = utf-8

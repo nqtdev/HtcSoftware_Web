@@ -5,9 +5,10 @@
       "components/*": ["components/*"],
       "assets/*": ["assets/*"],
       "hooks/*": ["hooks/*"],
+      "layout/*": ["layout/*"],
       "pages/*": ["pages/*"],
-      "layouts/*": ["layouts/*"],
-      "css/*": ["css/*"]
+      "routes/*": ["routes/*"],
+      "utils/*": ["utils/*"]
     }
   }
 }

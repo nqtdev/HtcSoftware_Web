@@ -1,4 +1,6 @@
 // @ Page sản phẩm HTC eKYC Platform
+// Thêm hiệu ứng khi cuộn chuột
+import Banner from 'assets/page_EkycPlatform/banner.webp'
 import Vt_xacthuc from 'assets/page_EkycPlatform/section_characteristic/xac-thuc-nhanh-chong.webp'
 import Vt_tangcuong from 'assets/page_EkycPlatform/section_characteristic/tang-cuong-bao-mat.webp'
 import Vt_tietkiem from 'assets/page_EkycPlatform/section_characteristic/tiet-kiem-chi-phi.webp'
@@ -46,7 +48,7 @@ const EkycPlatform = () => {
           </div>
         </div>
         <div className="container m-auto p-2">
-          <img className="w-full" src="/bannerEkyc.webp" alt="logo banner" />
+          <img className="w-full" src={Banner} alt="logo banner" />
         </div>
       </section>
       {/* Vai trò của công nghệ EKYC  */}

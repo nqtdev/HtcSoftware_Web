@@ -1,19 +1,14 @@
-# HtcSoftware_Web
+# BaseProject
 
-## Khởi chạy:
+# Cài đặt ESLint và các plugin cần thiết cho React
 
-npm install -> npm run start
+npm install eslint eslint-plugin-react eslint-plugin-react-hooks eslint-config-prettier eslint-plugin-prettier --save-dev
 
-## Note:
+# Cài đặt Prettier
 
-- Bảng tiêu chuẩn kích cỡ sản phẩm (Mục Product) - img banner sản phẩm: 650x500 - img show hình ảnh sản phẩm: 750x750 - img icon chức năng: 60x61 - img link đến sản phẩm khác: 500x650
+npm install prettier --save-dev
 
-  2024.10.01 - Update v1.1
-  . Fix lại link download
-  . Bổ sung thông tin dữ liệu đọc
-  2024.11.13 - Update v1.1.13
-  . Bổ sung image bộ công thương
+## Lịch sử cập nhật
 
-
-
-wss://127.0.0.1:9505/ISPlugin
+- v1.0.0: sửa lại cấu hình node.js.yml
+- 29/11 . Clean Code
