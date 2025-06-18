@@ -4,8 +4,8 @@ const LayoutFooter = () => {
   return (
     <footer className='bg-gray-800 text-white pt-12 pb-6'>
       <div className='container mx-auto px-4 xl:px-0'>
-        <h3 className='text-xl text-center font-bold mb-4 text-white'>
-          CÔNG TY CỔ PHẦN VIỄN THÔNG QUỐC TẾ THÁI BÌNH DƯƠNG
+        <h3 className='text-2xl text-center font-roboto font-bold mb-4 text-white uppercase '>
+          Công ty Cổ phần Thương mại và Truyền thông HTC.
         </h3>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8 mb-8'>
           {/* Column 1 - Logo & Contact */}
