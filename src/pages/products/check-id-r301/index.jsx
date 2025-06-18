@@ -1,39 +1,59 @@
 import TableSpecification from 'components/TableSpecification'
 import DeviceParameters from './data/DeviceParameters'
 import SlideProduct from './data/SlideProduct'
-import SmartCard from 'assets/image_products/icon_function/smartCard.png'
-import NFC from 'assets/image_products/icon_function/NFC.png'
-import RickPorts from 'assets/image_products/icon_function/RichPort.png'
 import imgProduct_RT from 'assets/image_products/check-id-r301/banner.png'
 import OtherProduct from 'components/otherProducts'
-
-import ButtonContact from 'layout/buttons/ButtonContact'
 import SlideShowSwiper from 'components/SlideShowSwiper'
-import MobileIDView from 'components/softwareInterface/mobileid'
+import MobileIDView from 'components/softwareInterface/MobileIdView'
 import DataGet from 'components/softwareInterface/DataGet'
+import FeaturesSection from 'components/FeaturesSection'
+import Features from './data/Features'
 
 const CheckIdRt = () => {
   return (
-    <div className='App'>
+    <div className='bg-gradient-to-br from-slate-50 to-blue-50'>
       {/* Banner sản phẩm  */}
       <section>
-        <div className='md: bg-bg-img-product p-3 md:flex md:p-7'>
-          <div className='m-auto text-center md:w-1/2'>
-            <div className='mb-[5%]'>
-              <h1 className='xxl:text-[5rem] font-roboto text-5xl font-black text-white xl:text-[4rem]'>
-                CCID Smartcard Reader <br />
-                (R301-C11)
-              </h1>
-            </div>
-            <div>
-              <i className='font-roboto text-white xl:text-2xl'>
+        <div className='relative min-h-[80vh] w-full overflow-hidden'>
+          {/* Background với overlay */}
+          <div
+            className='absolute inset-0 bg-bg-img-product bg-cover bg-center bg-no-repeat'
+            style={{
+              backgroundAttachment: 'fixed',
+              filter: 'brightness(0.7) contrast(1.1)',
+            }}
+          >
+            <div className='absolute inset-0 bg-gradient-to-r from-blue-900/70 to-indigo-900/70'></div>
+          </div>
+
+          {/* Content */}
+          <div className='relative z-10 container mx-auto px-4 py-16 md:py-24 h-full flex flex-col md:flex-row items-center'>
+            {/* Text Content */}
+            <div className='md:w-1/2 text-center md:text-left mb-12 md:mb-0 px-4'>
+              <div className='mb-8 animate-fadeIn'>
+                <h1 className='text-3xl md:text-6xl 2xl:text-7xl font-bold text-white leading-tight'>
+                  CCID Smartcard Reader <br />
+                  <span className='bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent'>
+                    (R301-C11)
+                  </span>
+                </h1>
+                <div className='mt-4 h-1 w-24 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto md:mx-0 rounded-full'></div>
+              </div>
+
+              <p className='text-lg sm:text-xl md:text-2xl text-white/90 font-medium max-w-lg mx-auto md:mx-0 animate-fadeIn delay-100'>
                 Đầu Đọc Thẻ Thông Minh Nhỏ Gọn, Dễ Sử Dụng, Hiệu Quả Chi Phí Cho PC, Hỗ Trợ Thẻ ISO
                 7816 Class A, B và C.
-              </i>
+              </p>
             </div>
-          </div>
-          <div className='md:w-1/2'>
-            <img className='m-auto' src={imgProduct_RT} alt='imgProduct_RT' />
+
+            {/* Image Content */}
+            <div className='md:w-1/2 flex justify-center animate-float'>
+              <img
+                src={imgProduct_RT}
+                alt='CheckID-ET100 Terminal'
+                className='w-full max-w-md lg:max-w-lg xl:max-w-xl drop-shadow-2xl transition-transform duration-500 hover:scale-105'
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -46,17 +66,15 @@ const CheckIdRt = () => {
           <SlideShowSwiper slidesShow={SlideProduct} />
         </div>
       </section>
-      {/* Chi tiết sản phẩm  */}
       <section>
-        <div className='m-auto grid gap-3 p-3 lg:w-2/3 lg:grid-cols-2'>
+        <div className='m-auto px-3 md:w-3/4 '>
           <div>
             <div className='mb-3 ml-2'>
-              <i className='text-center text-3xl font-bold text-main-colors'>
+              <i className='text-center text-2xl font-roboto text-main-colors'>
                 CCID Smartcard Reader
               </i>
             </div>
-
-            <p className='text-left font-roboto text-main-colors'>
+            <p className='font-mulish text-main-colors'>
               R301-C11 phù hợp với khách hàng có quan tâm chủ yếu đến vấn đề an ninh và đáp ứng nhu
               cầu về một giải pháp linh hoạt cho xác thực ID, thương mại điện tử, thanh toán điện
               tử, bảo mật thông tin và kiểm soát truy cập. <br />
@@ -64,35 +82,10 @@ const CheckIdRt = () => {
               pháp hoàn chỉnh cho mọi cách sử dụng.
             </p>
           </div>
-          <div className='mt-3'>
-            <div className='mb-2'>
-              <u className='text-xl font-semibold text-main-colors'>Chức năng:</u>
-            </div>
-            <ul className='grid grid-cols-3 gap-2 md:grid-cols-6'>
-              <li className='m-auto cursor-pointer'>
-                <img
-                  className='mb-1 cursor-pointer rounded-md border p-1'
-                  src={SmartCard}
-                  alt='SmartCard'
-                />
-                <p className='text-center font-roboto text-sm text-main-colors'>SmartCard</p>
-              </li>
-              <li className='m-auto cursor-pointer'>
-                <img className='mb-1 cursor-pointer rounded-md border p-1' src={NFC} alt='NFC' />
-                <p className='text-center font-roboto text-sm text-main-colors'>NFC</p>
-              </li>
-              <li className='m-auto cursor-pointer'>
-                <img
-                  className='mb-1 cursor-pointer rounded-md border p-1'
-                  src={RickPorts}
-                  alt='RickPorts'
-                />
-                <p className='text-center font-roboto text-sm text-main-colors'>RickPorts</p>
-              </li>
-            </ul>
-            <ButtonContact />
-          </div>
         </div>
+      </section>
+      <section>
+        <FeaturesSection dataFeatures={Features} />
       </section>
       <section>
         <MobileIDView />
@@ -102,9 +95,6 @@ const CheckIdRt = () => {
       </section>
       {/* Thông số kỹ thuật thiết bị  */}
       <section>
-        <div>
-          <h2 className='base_title'>Thông số kỹ thuật thiết bị</h2>
-        </div>
         <TableSpecification data={DeviceParameters} />
       </section>
       {/* Xem thêm sản phẩm */}

@@ -1,7 +1,7 @@
 // @ Thông tin nghị quyết 57
 import anh1 from 'assets/nq57/anhhiephoi2.webp'
 import anh3 from 'assets/nq57/anhhiephoi3.webp'
-import News from './news'
+import ListNews from './news/listNews'
 
 const Introduction = () => {
   return (
@@ -112,7 +112,7 @@ const Introduction = () => {
           </div>
         </div>
         <div className='col-span-3 w-full'>
-          <News />
+          <ListNews />
         </div>
       </div>
     </>

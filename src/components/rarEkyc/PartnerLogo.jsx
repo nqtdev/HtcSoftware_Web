@@ -38,7 +38,7 @@ import ImgVinhome from 'assets/page_RarEkyc/partner/vinhome.svg'
 import ImgVinmec from 'assets/page_RarEkyc/partner/vinmec.svg'
 import ImgVndirect from 'assets/page_RarEkyc/partner/vndirect.svg'
 
-const PartnerLogo = ({ title }) => {
+const PartnerLogo = ({title}) => {
   const LogoSvg = [
     ImgSEA,
     ImgTech,
@@ -77,7 +77,7 @@ const PartnerLogo = ({ title }) => {
     ImgVng,
     ImgVndirect,
     ImgThucuc,
-    ImgVietcap
+    ImgVietcap,
   ]
 
   const chunkArray = (arr, chunkSize) => {
@@ -92,19 +92,20 @@ const PartnerLogo = ({ title }) => {
 
   return (
     <>
-      <div data-aos="zoom-in" data-aos-duration="1000">
-        <h2 className="base_title">Đối tác của chúng tôi</h2>
+      <div data-aos='zoom-in' data-aos-duration='1000'>
+        <h2 className='base_title'>Đối tác của chúng tôi</h2>
+        <div className='w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full'></div>
       </div>
       {LogoPartner.map((row, rowIndex) => (
-        <div key={rowIndex} className="partner_scroll">
+        <div key={rowIndex} className='partner_scroll'>
           {row.map((logo, index) => {
             // Lấy tên hình ảnh từ đường dẫn
             const imageName = logo.split('/').pop().split('.')[0]
 
             return (
-              <div className="partner_logo" key={index}>
+              <div className='partner_logo' key={index}>
                 <img
-                  className="px-4 py-3"
+                  className='px-4 py-3'
                   src={logo}
                   alt={`Logo ${imageName}`} // Thêm "Logo" trước tên hình ảnh
                 />

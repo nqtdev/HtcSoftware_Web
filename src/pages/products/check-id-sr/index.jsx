@@ -1,39 +1,58 @@
 import TableSpecification from 'components/TableSpecification'
-
 import DeviceParameters from './data/DeviceParameters'
-
-import SmartCard from 'assets/image_products/icon_function/smartCard.png'
-import NFC from 'assets/image_products/icon_function/NFC.png'
-import Camera from 'assets/image_products/icon_function/Camera.png'
-import MRZ from 'assets/image_products/icon_function/MRZ.png'
 import imgProduct_SR from 'assets/image_products/check-id-sr/banner.webp'
 import TabShowDevice from './tabShowDevice'
-import ButtonContact from 'layout/buttons/ButtonContact'
 import OtherProduct from 'components/otherProducts'
-import MobileIDView from 'components/softwareInterface/mobileid'
+import MobileIDView from 'components/softwareInterface/MobileIdView'
 import DataGetSR from 'components/softwareInterface/DataGetSR'
+import FeaturesSection from 'components/FeaturesSection'
+import Features from './data/Features'
 
 const CheckIdSr = () => {
   return (
-    <div className='App'>
+    <div className='bg-gradient-to-br from-slate-50 to-blue-50'>
       {/* Banner sản phẩm  */}
+
       <section>
-        <div className='md: bg-bg-img-product p-3 md:flex md:p-7'>
-          <div className='m-auto text-center md:w-1/2'>
-            <div className='mb-[5%]'>
-              <h1 className='xxl:text-[7rem] font-roboto text-5xl font-black text-white xl:text-[5rem]'>
-                ID Card Reader <br />
-                (CheckID-SR)
-              </h1>
-            </div>
-            <div>
-              <i className='font-roboto text-white xl:text-2xl'>
-                Đầu đọc/quét thẻ ID cho kiosk tự phục vụ
-              </i>
-            </div>
+        <div className='relative min-h-[80vh] w-full overflow-hidden'>
+          {/* Background với overlay */}
+          <div
+            className='absolute inset-0 bg-bg-img-product bg-cover bg-center bg-no-repeat'
+            style={{
+              backgroundAttachment: 'fixed',
+              filter: 'brightness(0.7) contrast(1.1)',
+            }}
+          >
+            <div className='absolute inset-0 bg-gradient-to-r from-blue-900/70 to-indigo-900/70'></div>
           </div>
-          <div className='md:w-1/2'>
-            <img className='m-auto' src={imgProduct_SR} alt='imgProduct_SR' />
+
+          {/* Content */}
+          <div className='relative z-10 container mx-auto px-4 py-16 md:py-24 h-full flex flex-col md:flex-row items-center'>
+            {/* Text Content */}
+            <div className='md:w-1/2 text-center md:text-left mb-12 md:mb-0 px-4'>
+              <div className='mb-8 animate-fadeIn'>
+                <h1 className='text-3xl md:text-6xl 2xl:text-7xl font-bold text-white leading-tight'>
+                  ID Card Reader <br />
+                  <span className='bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent'>
+                    (CheckID-SR)
+                  </span>
+                </h1>
+                <div className='mt-4 h-1 w-24 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto md:mx-0 rounded-full'></div>
+              </div>
+
+              <p className='text-lg sm:text-xl md:text-2xl text-white/90 font-medium max-w-lg mx-auto md:mx-0 animate-fadeIn delay-100'>
+                Đầu đọc/quét thẻ ID cho kiosk tự phục vụ
+              </p>
+            </div>
+
+            {/* Image Content */}
+            <div className='md:w-1/2 flex justify-center animate-float'>
+              <img
+                src={imgProduct_SR}
+                alt='imgProduct_SR'
+                className='w-full max-w-md lg:max-w-lg xl:max-w-xl drop-shadow-2xl transition-transform duration-500 hover:scale-105'
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -41,61 +60,32 @@ const CheckIdSr = () => {
       <section className='lg:h-[41rem]'>
         <div>
           <h2 className='base_title'>Hình ảnh sản phẩm</h2>
+          <div className='w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full'></div>
         </div>
         <div className='m-auto w-3/4'>
           <TabShowDevice />
         </div>
       </section>
-      {/* Chi tiết sản phẩm  */}
+
       <section>
-        <div className='m-auto grid gap-3 p-3 lg:w-2/3 lg:grid-cols-2'>
+        <div className='m-auto px-3 md:w-3/4 '>
           <div>
             <div className='mb-3 ml-2'>
-              <i className='text-center text-3xl font-bold text-main-colors'>
+              <i className='text-center text-2xl font-roboto text-main-colors'>
                 ID Card Reader/Scanner
               </i>
             </div>
-
-            <p className='text-left font-roboto text-main-colors'>
+            <p className='font-mulish text-main-colors'>
               Hưởng lợi từ việc nhập dữ liệu và xác minh chính xác <br />
               Thiết kế OEM cho cổng ABC và các Kiosk tự phục vụ <br />
               Thiết kế trực quan dễ sử dụng <br /> Kiểm tra tự động hành khách, vận hành 24/7 <br />{' '}
               Đọc và xác minh mọi loại thẻ bao gồm cả tài liệu điện tử du lịch
             </p>
           </div>
-          <div className='mt-3'>
-            <div className='mb-2'>
-              <u className='text-xl font-semibold text-main-colors'>Chức năng:</u>
-            </div>
-            <ul className='grid grid-cols-3 gap-2 md:grid-cols-6'>
-              <li className='m-auto cursor-pointer'>
-                <img
-                  className='mb-1 cursor-pointer rounded-md border p-1'
-                  src={SmartCard}
-                  alt='SmartCard'
-                />
-                <p className='text-center font-roboto text-sm text-main-colors'>SmartCard</p>
-              </li>
-              <li className='m-auto cursor-pointer'>
-                <img className='mb-1 cursor-pointer rounded-md border p-1' src={NFC} alt='NFC' />
-                <p className='text-center font-roboto text-sm text-main-colors'>NFC</p>
-              </li>
-              <li className='m-auto cursor-pointer'>
-                <img
-                  className='mb-1 cursor-pointer rounded-md border p-1'
-                  src={Camera}
-                  alt='Camera'
-                />
-                <p className='text-center font-roboto text-sm text-main-colors'>Camera</p>
-              </li>
-              <li className='m-auto cursor-pointer'>
-                <img className='mb-1 cursor-pointer rounded-md border p-1' src={MRZ} alt='MRZ' />
-                <p className='text-center font-roboto text-sm text-main-colors'>MRZ</p>
-              </li>
-            </ul>
-            <ButtonContact />
-          </div>
         </div>
+      </section>
+      <section>
+        <FeaturesSection dataFeatures={Features} />
       </section>
       <section>
         <MobileIDView />
@@ -105,9 +95,6 @@ const CheckIdSr = () => {
       </section>
       {/* Thông số kỹ thuật thiết bị  */}
       <section>
-        <div>
-          <h2 className='base_title'>Thông số kỹ thuật thiết bị</h2>
-        </div>
         <TableSpecification data={DeviceParameters} />
       </section>
       {/* Xem thêm sản phẩm */}

@@ -54,6 +54,7 @@ const RarEkyc = () => {
       <section>
         <div data-aos='zoom-in' data-aos-duration='1000'>
           <h2 className='base_title'>Giá trị chúng tôi đem lại</h2>
+          <div className='w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full'></div>
         </div>
         <div className='m-auto w-[99%] rounded-3xl border-2 border-solid border-blue-950 bg-bg-img lg:w-4/5'>
           <ul className='lg:p-7'>
@@ -140,6 +141,7 @@ const RarEkyc = () => {
           <h2 className='base_title'>
             Thao tác <span className='text-4xl text-green-600'>4 bước</span> đơn giản
           </h2>
+          <div className='w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full'></div>
         </div>
         <div>
           <div className='grid grid-cols-2 gap-4 md:grid-cols-4'>
@@ -195,6 +197,7 @@ const RarEkyc = () => {
         {/* Hình thức bàn giao  */}
         <div data-aos='zoom-in' data-aos-duration='1000'>
           <h2 className='base_title'>Hình thức cung cấp dịch vụ</h2>
+          <div className='w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full'></div>
         </div>
         <div className='m-auto h-max w-full rounded-3xl border-2 border-solid border-blue-950 bg-bg-img pt-8 lg:flex lg:w-4/5'>
           <ul className='container w-full p-2 lg:w-3/5'>

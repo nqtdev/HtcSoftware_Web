@@ -7,7 +7,7 @@ const onChange = key => {
 const items = [
   {
     key: '1',
-    label: 'Có Camera',
+    label: <p className='font-mulish '>Có Camera</p>,
     children: (
       <>
         <SlideShowSwiper slidesShow={SlideProductCam} />
@@ -16,7 +16,8 @@ const items = [
   },
   {
     key: '2',
-    label: 'Không Camera',
+    label: <p className='font-mulish '>Không Camera</p>,
+
     children: (
       <>
         <SlideShowSwiper slidesShow={SlideProductNoCam} />
@@ -25,7 +26,8 @@ const items = [
   },
   {
     key: '3',
-    label: 'So sánh',
+    label: <p className='font-mulish '>So Sánh</p>,
+
     children: (
       <>
         <SlideShowSwiper slidesShow={SlideProduct} />

@@ -12,10 +12,17 @@ import CheckIdRt from 'pages/products/check-id-r301'
 import CheckIdHn from 'pages/products/check-id-hn212'
 import MetaEye from 'pages/products/meta-eye'
 import HomePage from 'pages/HomePage'
+import BreakingNews from 'pages/news'
+import AnbinhBank from 'pages/news/contentNews/anbinhBank'
 
 const solutionsRoutes = [
   {path: 'ekyc-platform', element: <EkycPlatform />},
   {path: 'rar-ekyc', element: <RarEkyc />},
+]
+const newsRoutes = [
+  {path: '', element: <BreakingNews />},
+  {path: 'ban-giao-thiet-bi-ABBank', element: <AnbinhBank />},
+  {path: 'check-id-et100', element: <CheckIdEt />},
 ]
 const productsRoutes = [
   {path: 'check-id-sr', element: <CheckIdSr />},
@@ -39,6 +46,7 @@ const Routers = createBrowserRouter([
       },
       {path: 'nghiquyet-57', element: <Introduction />},
       {path: 'solution', children: solutionsRoutes},
+      {path: 'breaking-news', children: newsRoutes},
       {path: 'products', children: productsRoutes},
       {path: 'mo-hinh', children: modelsRoutes},
     ],

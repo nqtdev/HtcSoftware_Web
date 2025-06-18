@@ -1,30 +1,38 @@
 import {useParams} from 'react-router-dom'
-import News from 'pages/news'
 import checkbox from 'assets/page_modal/checkbox.svg'
 import data from 'pages/model/pageModel/dataModelDetail'
+import ListNews from 'pages/news/listNews'
+import ErrorPage from 'pages/errorPage'
+
+// ✅ Tạo hàm chuyển title thành slug
+const createSlug = str =>
+  str
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
 
 const ModelDetail = () => {
-  const {id} = useParams() // Lấy id từ URL
-  const pageData = data.find(item => item.id === id) // Tìm model theo id
-  // Nếu không tìm thấy dữ liệu, hiển thị thông báo
+  const {id} = useParams() // ✅ Tìm item trong danh sách có slug trùng id từ URL
+
+  const pageData = data.find(item => createSlug(item.title) === id)
+
   if (!pageData) {
-    return <h2 className='text-center text-red-500'>Không tìm thấy trang</h2>
+    return <ErrorPage />
   }
 
   return (
     <div>
-      {/* Header */}
       <div className='w-full h-56 flex justify-center items-center bg-gradient-to-r bg-blue-500 opacity-80'>
         <h2 className='text-white text-center text-3xl xl:px-20 font-mulish'>{pageData.title}</h2>
       </div>
       <div className='xl:grid xl:grid-cols-10 xxl:px-64 xl:px-32 px-5 gap-5 mt-5'>
-        {/* Nội dung chính */}
         <div className='col-span-7'>
           {pageData.image && (
             <img className='rounded-lg w-full' src={pageData.image} alt={pageData.title} />
           )}
-
-          {/* Render các phần theo API */}
           {pageData.sections.map((section, index) => (
             <div key={index} className='mt-5'>
               <h4 className='text-xl font-mulish text-gray-700'>{section.title}</h4>
@@ -44,9 +52,8 @@ const ModelDetail = () => {
             </i>
           </div>
         </div>
-        {/* Sidebar Tin tức */}
         <div className='col-span-3'>
-          <News />
+          <ListNews />
         </div>
       </div>
     </div>
