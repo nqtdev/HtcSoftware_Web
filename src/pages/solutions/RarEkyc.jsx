@@ -23,7 +23,11 @@ const RarEkyc = () => {
   return (
     <div className='container m-auto w-full xl:w-10/12'>
       <section className='flex max-w-full flex-col justify-between lg:flex-row'>
-        <div className='container m-auto box-border px-2'>
+        <div
+          data-aos='fade-right'
+          data-aos-duration='2000'
+          className='container m-auto box-border px-2'
+        >
           <h1 className='m-2 text-center text-4xl font-bold italic text-main-colors md:text-[3.2rem] xl:text-6xl'>
             RAR eKYC Platform
           </h1>
@@ -46,7 +50,7 @@ const RarEkyc = () => {
             </span>
           </div>
         </div>
-        <div className='container m-auto p-2'>
+        <div data-aos='fade-left' data-aos-duration='2000' className='container m-auto p-2'>
           <img className='w-full' src='/banner.webp' alt='logo banner' />
         </div>
       </section>

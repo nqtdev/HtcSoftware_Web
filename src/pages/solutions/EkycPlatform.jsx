@@ -29,24 +29,24 @@ const EkycPlatform = () => {
     <div className='container m-auto w-full px-1 xl:w-10/12'>
       {/* Banner  */}
       <section className='flex flex-col justify-between lg:flex-row mt-24'>
-        <div className='container m-auto box-border'>
+        <div data-aos='fade-right' data-aos-duration='2000' className='container m-auto box-border'>
           <h1 className='m-2 text-center text-4xl font-bold italic text-main-colors md:text-[3.2rem] xl:text-6xl'>
             HTC eKYC Platform
           </h1>
           <div className='text-center sm:m-2'>
-            <span className='text-md font-soro text-main-colors xl:text-2xl'>
+            <span className='text-md font-roboto text-main-colors xl:text-2xl'>
               Giải pháp định danh điện tử cho doanh nghiệp
             </span>
           </div>
           <div>
-            <span className='ml-1 font-soro text-lg text-gray-400'>
+            <span className='ml-1 font-roboto text-lg text-gray-500'>
               Nền tảng HTC eKYC là một giải pháp toàn diện, được trang bị các thuật toán và công
               nghệ thông minh, tiên tiến. Đồng thời, nó luôn được giám sát, cập nhật và tối ưu hóa
               để cung cấp chất lượng dịch vụ tốt nhất cho khách hàng.
             </span>
           </div>
         </div>
-        <div className='container m-auto p-2'>
+        <div data-aos='fade-left' data-aos-duration='2000' className='container m-auto p-2'>
           <img className='w-full' src={Banner} alt='logo banner' />
         </div>
       </section>

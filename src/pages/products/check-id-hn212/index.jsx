@@ -28,7 +28,11 @@ const CheckIdHn = () => {
           {/* Content */}
           <div className='relative z-10 container mx-auto px-4 py-16 md:py-24 h-full flex flex-col md:flex-row items-center'>
             {/* Text Content */}
-            <div className='md:w-1/2 text-center md:text-left mb-12 md:mb-0 px-4'>
+            <div
+              data-aos='fade-right'
+              data-aos-duration='2000'
+              className='md:w-1/2 text-center md:text-left mb-12 md:mb-0 px-4'
+            >
               <div className='mb-8 animate-fadeIn'>
                 <h1 className='text-3xl md:text-6xl 2xl:text-7xl font-bold text-white leading-tight'>
                   CCID Smartcard Reader <br />
@@ -44,7 +48,11 @@ const CheckIdHn = () => {
               </p>
             </div>
             {/* Image Content */}
-            <div className='md:w-1/2 flex justify-center animate-float'>
+            <div
+              data-aos='fade-left'
+              data-aos-duration='2000'
+              className='md:w-1/2 flex justify-center animate-float'
+            >
               <img
                 src={imgProduct_HN}
                 alt='CheckID-ET100 Terminal'
