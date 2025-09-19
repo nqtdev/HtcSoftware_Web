@@ -1,9 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 import {useParams} from 'react-router-dom'
 import checkbox from 'assets/page_modal/checkbox.svg'
 import data from 'pages/model/pageModel/dataModelDetail'
 import ListNews from 'pages/news/listNews'
 import ErrorPage from 'pages/errorPage'
-
+import bannerMohinh from 'assets/page_modal/bannerMohinh.webp'
 // ✅ Tạo hàm chuyển title thành slug
 const createSlug = str =>
   str
@@ -25,8 +26,17 @@ const ModelDetail = () => {
 
   return (
     <div>
-      <div className='w-full h-56 flex justify-center items-center bg-gradient-to-r bg-blue-500 opacity-80'>
-        <h2 className='text-white text-center text-3xl xl:px-20 font-mulish'>{pageData.title}</h2>
+      <div
+        className='w-full h-56 flex justify-center items-center bg-cover bg-center bg-no-repeat'
+        style={{backgroundImage: `url(${bannerMohinh})`}}
+      >
+        {/* <h2 className='text-white text-center text-2xl xl:px-20 font-mulish'>{pageData.title}</h2> */}
+        <h2
+          className='text-white text-center text-2xl font-mulish text-sh'
+          style={{textShadow: '2px 2px 6px rgba(0,0,0,1)'}}
+        >
+          {pageData.title}
+        </h2>
       </div>
       <div className='xl:grid xl:grid-cols-10 xxl:px-64 xl:px-32 px-5 gap-5 mt-5'>
         <div className='col-span-7'>
@@ -48,7 +58,7 @@ const ModelDetail = () => {
           ))}
           <div>
             <i className='text-[.5rem]'>
-              Nguồn "Trung Tâm Dịch Vụ Chuyển Đổi Số - Chi Nhánh Tổng Công Ty Gtel (Gtel CDS)"
+              Nguồn " Trung Tâm Dịch Vụ Chuyển Đổi Số - Chi Nhánh Tổng Công Ty Gtel (Gtel CDS)"
             </i>
           </div>
         </div>

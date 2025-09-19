@@ -1,34 +1,36 @@
 import {createBrowserRouter} from 'react-router-dom'
 import ErrorPage from 'pages/errorPage'
 import Layout from 'layout/index'
-import EkycPlatform from 'pages/solutions/EkycPlatform'
-import RarEkyc from 'pages/solutions/RarEkyc'
+import HtcEkycPlatform from 'pages/solutions/HtcEkycPlatform'
+import RarEkycPlatform from 'pages/solutions/RarEkycPlatform'
 import Model from 'pages/model'
 import ModelDetail from 'pages/model/pageModel/ModelDetail'
 import Introduction from 'pages/NQ_57'
-import CheckIdSr from 'pages/products/check-id-sr'
-import CheckIdEt from 'pages/products/check-id-et'
-import CheckIdRt from 'pages/products/check-id-r301'
-import CheckIdHn from 'pages/products/check-id-hn212'
+import CheckIdSr from 'pages/products/checkID-SR'
+import CheckIdEt from 'pages/products/checkID-ET100'
+import CheckIdRt from 'pages/products/checkID-R301'
+import CheckIdHn from 'pages/products/checkID-HN212'
 import MetaEye from 'pages/products/meta-eye'
 import HomePage from 'pages/HomePage'
 import BreakingNews from 'pages/news'
 import AnbinhBank from 'pages/news/contentNews/anbinhBank'
+import RarVNeidPlatform from 'pages/solutions/RarVNeidPlatform'
 
 const solutionsRoutes = [
-  {path: 'ekyc-platform', element: <EkycPlatform />},
-  {path: 'rar-ekyc', element: <RarEkyc />},
+  {path: 'HtcEkycPlatform', element: <HtcEkycPlatform />},
+  {path: 'RarEkycPlatform', element: <RarEkycPlatform />},
+  {path: 'RarVNeidPlatform', element: <RarVNeidPlatform />},
 ]
 const newsRoutes = [
   {path: '', element: <BreakingNews />},
   {path: 'ban-giao-thiet-bi-ABBank', element: <AnbinhBank />},
-  {path: 'check-id-et100', element: <CheckIdEt />},
+  {path: 'checkID-ET100', element: <CheckIdEt />},
 ]
 const productsRoutes = [
-  {path: 'check-id-sr', element: <CheckIdSr />},
-  {path: 'check-id-et100', element: <CheckIdEt />},
-  {path: 'check-id-r301', element: <CheckIdRt />},
-  {path: 'check-id-hn212', element: <CheckIdHn />},
+  {path: 'checkID-SR', element: <CheckIdSr />},
+  {path: 'checkID-ET100', element: <CheckIdEt />},
+  {path: 'checkID-R301', element: <CheckIdRt />},
+  {path: 'checkID-HN212', element: <CheckIdHn />},
   {path: 'meta-eye', element: <MetaEye />},
 ]
 const modelsRoutes = [

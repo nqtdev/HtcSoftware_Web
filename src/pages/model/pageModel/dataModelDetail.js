@@ -1,26 +1,46 @@
-import imgModal from 'assets/page_modal/mo-hinh-01.webp'
-import imgModal2 from 'assets/page_modal/mo-hinh-02.webp'
-import imgModal3 from 'assets/page_modal/mo-hinh-03.webp'
-import imgModal4 from 'assets/page_modal/mo-hinh-04.webp'
-import imgModal5 from 'assets/page_modal/mo-hinh-05.webp'
-import imgModal6 from 'assets/page_modal/mo-hinh-06 (1).webp'
-import imgModal7 from 'assets/page_modal/mo-hinh-06 (2).webp'
-import imgModal8 from 'assets/page_modal/mo-hinh-06 (3).webp'
-import imgModal9 from 'assets/page_modal/mo-hinh-06 (4).webp'
-import imgModal10 from 'assets/page_modal/mo-hinh-06 (5).webp'
-import imgModal11 from 'assets/page_modal/mo-hinh-06 (6).webp'
-import imgModal12 from 'assets/page_modal/mo-hinh-06 (7).webp'
-import imgModal13 from 'assets/page_modal/mo-hinh-06 (8).webp'
-import imgModal14 from 'assets/page_modal/mo-hinh-06 (9).webp'
-import imgModal15 from 'assets/page_modal/mo-hinh-06 (10).webp'
-import imgModal16 from 'assets/page_modal/mo-hinh-06 (11).webp'
-import imgModal17 from 'assets/page_modal/mo-hinh-06 (12).webp'
-import imgModal18 from 'assets/page_modal/mo-hinh-06 (13).webp'
-import imgModal19 from 'assets/page_modal/mo-hinh-06 (14).webp'
-import imgModal20 from 'assets/page_modal/mo-hinh-06 (15).webp'
-import imgModal21 from 'assets/page_modal/mo-hinh-06 (16).webp'
-import imgModal22 from 'assets/page_modal/mo-hinh-06 (17).webp'
-import imgModal23 from 'assets/page_modal/mo-hinh-06 (18).webp'
+import imgModal from 'assets/page_modal/1.webp'
+import imgModal2 from 'assets/page_modal/2.webp'
+import imgModal3 from 'assets/page_modal/3.webp'
+import imgModal4 from 'assets/page_modal/4.webp'
+import imgModal5 from 'assets/page_modal/5.webp'
+import imgModal6 from 'assets/page_modal/6.webp'
+import imgModal7 from 'assets/page_modal/7.webp'
+import imgModal8 from 'assets/page_modal/8.webp'
+import imgModal9 from 'assets/page_modal/9.webp'
+import imgModal10 from 'assets/page_modal/10.webp'
+import imgModal11 from 'assets/page_modal/11.webp'
+import imgModal12 from 'assets/page_modal/12.webp'
+import imgModal13 from 'assets/page_modal/13.webp'
+import imgModal14 from 'assets/page_modal/14.webp'
+import imgModal15 from 'assets/page_modal/15.webp'
+import imgModal16 from 'assets/page_modal/16.webp'
+import imgModal17 from 'assets/page_modal/17.webp'
+import imgModal18 from 'assets/page_modal/18.webp'
+import imgModal19 from 'assets/page_modal/19.webp'
+import imgModal20 from 'assets/page_modal/20.webp'
+import imgModal21 from 'assets/page_modal/21.webp'
+import imgModal22 from 'assets/page_modal/22.webp'
+import imgModal23 from 'assets/page_modal/23.webp'
+import imgModal24 from 'assets/page_modal/24.webp'
+import imgModal25 from 'assets/page_modal/25.webp'
+import imgModal26 from 'assets/page_modal/26.webp'
+import imgModal27 from 'assets/page_modal/27.webp'
+import imgModal28 from 'assets/page_modal/28.webp'
+import imgModal29 from 'assets/page_modal/29.webp'
+import imgModal30 from 'assets/page_modal/30.webp'
+import imgModal31 from 'assets/page_modal/31.webp'
+import imgModal32 from 'assets/page_modal/32.webp'
+import imgModal33 from 'assets/page_modal/33.webp'
+import imgModal34 from 'assets/page_modal/34.webp'
+import imgModal35 from 'assets/page_modal/35.webp'
+import imgModal36 from 'assets/page_modal/36.webp'
+import imgModal37 from 'assets/page_modal/37.webp'
+import imgModal38 from 'assets/page_modal/38.webp'
+import imgModal39 from 'assets/page_modal/39.webp'
+import imgModal40 from 'assets/page_modal/40.webp'
+import imgModal41 from 'assets/page_modal/41.webp'
+import imgModal42 from 'assets/page_modal/42.webp'
+import imgModal43 from 'assets/page_modal/43.webp'
 
 const data = [
   {
@@ -1003,7 +1023,7 @@ const data = [
   },
   {
     id: '22',
-    title: 'Mô hình 22:Đảm bảo điều kiện công dân số',
+    title: 'Mô hình 22: Đảm bảo điều kiện công dân số',
     image: imgModal22,
     sections: [
       {
@@ -1044,7 +1064,7 @@ const data = [
   {
     id: '23',
     title:
-      'Mô hình 23:Triển khai hệ thống quản lý trường học: Xác thực thông tin giáo viên và học sinh; Cho phép giáo viên đăng nhập bằng tài khoản VneID (SSO); Quản lý điểm, lịch học…',
+      'Mô hình 23: Triển khai hệ thống quản lý trường học: Xác thực thông tin giáo viên và học sinh; Cho phép giáo viên đăng nhập bằng tài khoản VneID (SSO); Quản lý điểm, lịch học…',
     image: imgModal23,
     sections: [
       {
@@ -1093,6 +1113,778 @@ const data = [
           '1. Thiết bị đọc CCCD + Web server/Mobile App + Hệ thống cơ sở dữ liệu',
           '2. Giao diện Web/Desktop/Mobile App/Ứng dụng tương ứng',
         ],
+      },
+    ],
+  },
+  {
+    id: '24',
+    title:
+      'Mô hình 24: Phát triển du lịch, gắn với phát triển đặc sản vùng miền hỗ trợ người dân ứng dụng dữ liệu dân cư, định danh xác thực điện tử trong phát triển kinh tế hộ gia đình, kinh tế số.',
+    image: imgModal24,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'C06: Chủ trì xây dựng giải pháp trên Vneid và các ứng dụng số của các đơn vị, doanh nghiệp có liên quan.',
+          'Sở Thông tin và truyền thông: Chủ trì phối hợp cùng các đơn vị có liên quan tổ chức thực hiện.',
+          'Hiệu quả: Giới thiệu quảng bá sản phẩn, dịch vụ phục vụ phát triển kinh tế, du lịch; định danh tổ chức, cá nhân tránh thất thu thuế.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Đề án 06', 'Dự kiến 30/10/2023'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Sở Văn hóa TTDL, Sở TTTT cung cấp tài liệu quảng bá, sản phẩn, dịch vụ phục vụ phát triển kinh tế, du lịch cho C06 đưa lên trang tin tích hợp Vneid.',
+          'Bước 2: C06 sẽ đưa các tin liên quan đến chính sách, sản phẩm hỗ trợ quảng bá rộng rãi.',
+          'Bước 3: Đối với các tỉnh có app công dân số có chức năng giới thiệu các sản phẩm được tích hợp với Vneid để cung cấp dịch vụ.',
+          'Bước 4: hỗ trợ các hộ kinh doanh cá thể ký hợp đồng điện tử trên Vneid.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+      {
+        title: 'Giải pháp',
+        items: [
+          '1.Dự án truy xuất nguồn gốc sản phẩm, giải pháp tem chống giả',
+          '2.Dự án Echeck định danh sản phẩm hàng hóa, kiểm tra xuất xứ hàng hóa, chống hàng lậu hàng giả.',
+          '3. Kết hợp sàn thương mại điện tử Numbala tạo nơi buôn bán hàng hóa đã hóa đã qua xác thực và kiểm định xuất xứ. Chỉ những sản phẩm đã kiểm tra xác thực thông tin mới được kinh doanh trên này',
+        ],
+      },
+      {
+        title: 'Nền tảng công nghệ',
+        items: ['Web server/Mobile App '],
+      },
+    ],
+  },
+  {
+    id: '25',
+    title: 'Mô hình 25: Triển khai giải pháp thu phí không dùng tiền mặt tại các bãi xe của tỉnh',
+    image: imgModal25,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'Sở Giao thông vận tải; ban quản lý các bãi xe chủ trì tổ chức thực hiện',
+          'C06 chủ trì, phối hợp với địa phương và doanh nghiệp khảo sát đánh giá hỗ trợ triển khai thí điểm.',
+          'Hiệu quả: Tránh thất thu thuế; nhanh chóng, tiện lợi, không cần bố trí người kiểm soát thu phí tại các bãi xe; xác thực đúng danh tính chủ sở hữu người gửi xe',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Sở Giao thông vận tải chủ trì, phối hợp với Ban quản lý các bãi đỗ xe, C06 tiến hành khảo sát đánh giá lựa chọn đơn vị triển khai thí điểm.',
+          'Bước 2: C06 cùng doanh nghiệp hỗ trợ tích hợp phần mềm tại các bãi xe đang có và hỗ trợ triển khai lắp đặt thiết bị tại bãi xe.',
+          'Bước 3: Đánh giá tính hiệu quả và đề xuất nhân rộng các bãi đỗ xe trên toàn tỉnh; đồng thời, đề xuất, lập dự toán mua sắm thiết bị để tổ chức triển khai nhân rộng.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Mất kinh phí', 'Mua sắm thiết bị camera; máy quét'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+    ],
+  },
+  {
+    id: '26',
+    title: 'Mô hình 26: Chuẩn hóa xác thực tập trung (SSO)',
+    image: imgModal26,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'Cục C06: chủ trì cung cấp tài liệu tiêu chuẩn kỹ thuật kết nối, hỗ trợ kỹ thuật tích hợp hệ thống.',
+          'Sở Thông tin và Truyền thông: chủ trì, phối hợp với các doanh nghiệp tích hợp hệ thống.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: [
+          'CV 2116/TCTTKDDA06-QLHC hướng dẫn tích hợp với hệ thống dddt',
+          'Bước 2: C06 cung cấp tài liệu và hỗ trợ tích hợp. ',
+          'Bước 3: C06 phối hợp các đơn vị kiểm tra ANAT.',
+          'Bước 4: Triển khai chính thức.',
+        ],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Sở TTTT Cv gửi C06 đề nghị tích hợp tài khoản định danh điện tử và cử đầu mối hỗ trợ.',
+          'Bước 2: Các trường tổ chức thực hiện.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+    ],
+  },
+  {
+    id: '27',
+    title: 'Mô hình 27: Nền tảng tích hợp, chia sẻ dữ liệu tỉnh (LGSP)',
+    image: imgModal27,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'Sở Thông tin và Truyền thông: Chủ trì, phối hợp với các đơn vị nghiên cứu đề xuất đầu tư, nâng cấp triển khai đáp ứng yêu cầu thực tiễn.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Sở TTTT rà soát đánh giá đầu tư, thuê, nâng cấp phù hợp với thực tế địa phương.',
+          'Bước 2: Đề xuất UBND tổ chức thực hiện.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: [
+          'Mất phí đầu tư hoặc thuê nhà cung cấp dịch vụ.',
+          'Theo khung kiến trúc CPĐT, địa phương phải đầu tư, nâng cấp đáp ứng chuyển đổi số.',
+        ],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+    ],
+  },
+  {
+    id: '28',
+    title:
+      'Mô hình 28: Truyền thông nội bộ cho toàn bộ cán bộ, công chức, viên chức cơ quan nhà nước',
+    image: imgModal28,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'Sở Thông tin và Truyền thông chủ trì triển khai công tác truyền thông nội bộ và giám sát kết quả truyền thông qua App công dân số.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: C06 cung cấp các tài liệu tuyên truyền.',
+          'Bước 2: Sở Thông tin và Truyền thông chủ trì triển khai công tác truyền thông nội bộ và giám sát kết quả tuyên truyền.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+    ],
+  },
+  {
+    id: '29',
+    title:
+      'Mô hình 29: Triển khai nền tảng đào tạo, giáo dục trực tuyến đại chúng mở (MOOC) trên toàn quốc để nâng cao nhận thức, hỗ trợ triển khai Đề án 06 cho các cán bộ, công chức',
+    image: imgModal29,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'C06: Chủ trì cung cấp công cụ đào tạo trực tuyến cho cán bộ, công chức, viên chức khi có nhu cầu đào tạo theo quy mô 5000 học viên.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh '],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Các đơn vị đăng ký lập danh sách các học viên đào tạo trực tuyến về đề án 06 ',
+          'Bước 2: Thực hiện học tập trực tuyến trên website daotao.ai ',
+          'Bước 3: Kiểm tra đánh giá và cấp chứng chỉ đào tạo.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+    ],
+  },
+  {
+    id: '30',
+    title: 'Mô hình 30: Triển khai tố giác tội phạm qua ứng dụng VneID',
+    image: imgModal30,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: ['Công an tỉnh chủ trì'],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Công an tỉnh chủ trì'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: C06 đã cung cấp tính năng tố giác TP trên Vneid.',
+          'Bước 2: Công an tỉnh, Sở TTTT tăng cường tuyên truyền hướng dẫn công dân thực hiện..',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+    ],
+  },
+  {
+    id: '31',
+    title:
+      'Mô hình 31: Triển khai tuyên chuyển chính sách, hỗ trợ pháp lý qua ứng dụng VNeID, Call Centrer',
+    image: imgModal31,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: ['C06 chủ trì'],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh '],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'ước 1: C06 đã cung cấp tính năng trên Vneid. Hotline:19000368',
+          'Bước 2: Công an tỉnh, Sở TTTT tăng cường tuyên truyền hướng dẫn công dân thực hiện.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+    ],
+  },
+  {
+    id: '32',
+    title: 'Mô hình 32: Thông tin lý lịch tư pháp trên VNeID',
+    image: imgModal32,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'C06: Chủ trì phối hợp với Bộ Tư pháp, Sở Tư pháp triển khai giải pháp.',
+          'Sở Tư pháp, Sở TTTT: phối hợp tích hợp hệ thống giải quyết TTHC tại tỉnh trao đổi thông tin.',
+          'Hiệu quả: Nền văn minh hành chính cho tổ chức, doanh nghiệp, người dân',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Đề án 06, Chỉ thị 23', 'Dự kiến tháng 10/2023.'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: C06 phối hợp Bộ Tư pháp thống nhất quy trình, giải pháp thực hiện trên VNeid.',
+          'Bước 2: Công an tỉnh, Sở Tư pháp tăng cường tuyên truyền hướng dẫn công dân thực hiện.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+    ],
+  },
+  {
+    id: '33',
+    title:
+      'Mô hình 33: Triển khai tích hợp thông tin Sổ sức khỏe điện tử, Sổ lao động điện tử trên VNeid.',
+    image: imgModal33,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'C06: Chủ trì phối hợp với Bộ Y tế, Bộ Lao động TBXH triển khai giải pháp.',
+          'Sở Y tế, Sở LĐTBXH, Sở TTTT: phối hợp triển khai.',
+          'Hiệu quả: Tích hợp các thông tin sức khỏe, quá trình khám chữa bệnh và việc làm ..',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Đề án 06', 'Tuyên truyền tích hợp BHYT, Sổ sức khỏe'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: C06 phối hợp với Bộ Y tế, Bộ LĐTBXH tích hợp sổ sức khỏe điện tử, sổ lao động điện tử.',
+          'Bước 2: Công an tỉnh, Sở TTTT tăng cường tuyên truyền hướng dẫn công dân thực hiện.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+      {
+        title: 'Giải pháp',
+        items: [
+          'Phần mềm nhằm mục đích góp phần vào lĩnh vực chăm sóc sức khỏe, tăng cường gắn kết bệnh nhân với phòng khám / bệnh viện / cơ sở xét nghiệm',
+          'Liên kết hoạt động với các phòng khám / bệnh viện đưa các quy trình khám chữa bệnh, quản lý bệnh nhân, giấy tờ khám chữa bệnh đồng bộ hợp nhất online',
+          'Người dùng có thể xem các thông tin sức khỏe, quá trình khám chữa bệnh, lưu trữ hồ sơ, bệnh án và sử dụng thông tin này cho tất cả phòng khám / bệnh viện có liên kết',
+          'Tích hợp cấp thuốc online lưu trữ quá trình mua bán và sử dụng',
+          'Mạng xã hội dành cho cộng đồng liên quan đến y tế',
+        ],
+      },
+      {
+        title: 'Nền tảng công nghệ',
+        items: [
+          'Web server/Mobile App cho đội ngũ doanh nghiệp, bệnh viện, phòng khám, y bác sỹ và bệnh nhân',
+        ],
+      },
+    ],
+  },
+  {
+    id: '34',
+    title:
+      'Mô hình 34: Quản lý thông tin người sử dụng đất, chủ sở hữu nhà ở, tài sản gắn liền với đất thông qua Cơ sở dữ liệu quốc gia về dân cư, VneID',
+    image: imgModal34,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'Sở Tài Nguyên Môi trường: Chủ trì phối hợp UBND các huyện, thị xã, thành phố phối hợp với C06 rà soát, làm sạch dữ liệu.',
+          'C06: Chủ trì, phối hợp Sở Tài nguyên môi trường làm sạch dữ liệu với CSDLQG về DC, hướng dẫn tích hợp giấy tờ trên App Vneid; triển khai khai thác thông tin chỗ ở hợp pháp trong DVC cư trú, Cơ sở dữ liệu quốc gia về dân cư.',
+          'Hiệu quả: Tạo lập dữ liệu dùng chung, đơn giản hóa TTHC.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Sở TNMT rà soát, phối hợp với Bộ TNMT, C06 làm sạch dữ liệu.',
+          'Bước 2: C06 phối hợp Bộ TNMT tích hợp khai thác thông tin chỗ ở hợp pháp phục vụ DVC cư trú, tích hợp các giấy tờ nhà đất lên Vneid.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+      {
+        title: 'Giải pháp',
+        items: [
+          'Xây dựng hệ thống quản lý giao dịch bất động sản',
+          'Tích hợp quản lý sản phẩm của các doanh nghiệp và cá nhân',
+          'Tích hợp bản đồ số quốc gia',
+          'Hệ thống tra cứu thông tin bất động sản, thông tin quy hoạch của 64 tỉnh thành Việt Nam',
+          'Hệ thống định giá dựa trên cơ sở dữ liệu quốc gia',
+          'Tích hợp nền tảng xác thực người mua, người bán, người sử dụng, đặc biệt tài sản phải gắn liền với chủ sở hữu',
+          'Tích hợp quy trình mua bán, công chứng, đặt cọc, giao dịch online bỏ qua giấy tờ truyền thống',
+        ],
+      },
+      {
+        title: 'Nền tảng công nghệ',
+        items: ['Web server/Mobile App '],
+      },
+    ],
+  },
+  {
+    id: '35',
+    title:
+      'Mô hình 35: Số hóa tạo lập dữ liệu trên nền Cơ sở dữ liệu quốc gia về dân cư, như: Hộ tịch, lao động xã hội, các tổ chức, đoàn hội…. Phục vụ cải cách TTHC',
+    image: imgModal35,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'C06: Chủ trì xây dựng phân mềm nhập dữ liệu trên nền Cơ sở dữ liệu quốc gia về dân cư; hỗ trợ công tác nhập liệu.',
+          'Các sở ngành địa phương: Tiến hành thu thập, số hóa, tạo lập dữ liệu theo lĩnh vực.',
+          'Hiệu quả: Tạo lập dữ liệu dùng chung, đơn giản hóa TTHC.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: [
+          'Theo nhu cầu, đề nghị của Tổ công tác tỉnh (Quy trình 1292/HTQTCT-QLHC; Quy trình số 3936/NCC-QLHC; Đề án 06)',
+          'Hoàn thành tháng 12/2023.',
+        ],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Các đơn vị địa phương rà soát các dữ liệu hiện đang quản lý chưa được số hóa.',
+          'Bước 2: C06 hỗ trợ triển khai giải pháp só hóa trên nền dân cư.',
+          'Bước 3: Tổ triển khai đề án các cấp thực hiện tạo lập dữ liệu phục vụ dùng chung.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+      {
+        title: 'Giải pháp',
+        items: ['Triển khai tính năng An sinh xã hội trên App VNeID'],
+      },
+    ],
+  },
+  {
+    id: '36',
+    title: 'Mô hình 36: Quản lý chương trình An sinh xã hội thông qua VneID',
+    image: imgModal36,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'Sở Lao động - Thương binh và Xã hội: chủ trì phối hợp UBND các huyện, thị xã, Tỉnh tạo lập Cơ sở dữ liệu ASXH thông qua VneID, Cơ sở dữ liệu quốc gia về dân cư; phối hợp với C06 làm sạch dữ liệu; triển khai chi trả an sinh xã hội sử dụng thanh toán không dùng tiền mặt.',
+          'Các doanh nghiệp phối hợp cấp tài khoản thanh toán (Ví điện tử hoặc tài khoản ngân hàng hoặc tài khoản viễn thông tùy vào nhu cầu của từng đối tượng an sinh xã hội đảm bảo thuận tiện…).',
+          'Sở Thông tin và Truyền thông phối hợp C06 triển khai giải pháp hiển thị trạng thái và quản lý chi trả an sinh xã hội trên APP Công dân số Tỉnh và VNeID.',
+          'Hiệu quả: Giúp công tác hỗ trợ ASXH minh bạch, tiện lợi trong công tác thanh toán; giảm giấy tờ và công sức của ngành lao động.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh', 'Hoàn thành tháng 12/2023'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Chủ trì phối hợp UBND các huyện, thị xã, Tỉnh phối hợp với C06 làm sạch dữ liệu; ',
+          'Bước 2: Phối hợp các ngân hành triển khai chi trả an sinh xã hội sử dụng thanh toán không dùng tiền mặt.',
+          'Bước 3: tích hợp cung cấp thông tin đồng bộ vào Cơ sở dữ liệu ASXH thông qua VneID, Cơ sở dữ liệu quốc gia về dân cư.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+    ],
+  },
+  {
+    id: '37',
+    title: 'Mô hình 37: Phân tích tình hình dân cư',
+    image: imgModal37,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'Cục C06: chủ trì cung cấp tài liệu tiêu chuẩn kỹ thuật kết nối, hỗ trợ kỹ thuật tích hợp thông qua nền tảng NDXP/VDXP.; mô tả các chỉ tiêu cần cung cấp về dân số, mật độ, phân bổ, tôn giáo, dân tộc…',
+          'Sở Thông tin và Truyền thông: chủ trì, phối hợp với các doanh nghiệp tích hợp hệ thống điều hành đô thị thông minh IOC phục vụ công tác chỉ đạo điều hành của lãnh đạo Thành phố.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Sở TTTT, VPUB (đơn vị chủ trì vận hành IOC) chủ trì có văn bản đề nghị cung cấp tình hình phân tích và cử đầu mối phối hợp.',
+          'Bước 2: C06 cung cấp tài liệu và hướng dẫn tích hợp.',
+          'Bước 3: C06 phối hợp kiểm tra ANAT.',
+          'Bước 4: Triển khai chính thức.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+      {
+        title: 'Giải pháp',
+        items: ['Social Listening (Hệ thống nghiên cứu dư luận xã hội)'],
+      },
+      {
+        title: 'Nền tảng công nghệ',
+        items: ['Web API'],
+      },
+    ],
+  },
+  {
+    id: '38',
+    title: 'Mô hình 38: Phân tích tình hình lao động',
+    image: imgModal38,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'Sở Thông tin và Truyền thông chủ trì cung cấp tài liệu mô tả các chỉ tiêu cần cung cấp về lực lượng lao động theo nhóm tuổi, khu vực thành thị, nông thôn, việc làm, thu nhập…',
+          'Cục C06 chủ trì cung cấp tài liệu tiêu chuẩn kỹ thuật kết nối, hỗ trợ kỹ thuật tích hợp thông qua nền tảng NDXP/VDXP.',
+          'Sở Thông tin và Truyền thông chủ trì, phối hợp với các doanh nghiệp tích hợp hệ thống điều hành đô thị thông minh IOC phục vụ công tác chỉ đạo điều hành của lãnh đạo Thành phố.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Sở TTTT, VPUB (đơn vị chủ trì vận hành IOC) chủ trì có văn bản đề nghị cung cấp tình hình phân tích và cử đầu mối phối hợp;',
+          'Bước 2: Sở lao động chủ trì, phối hợp Công an tỉnh hoàn thành việc nhập thông tin người lao động trên CSDLQG về dân cư; cung cấp nhu cầu phân tích cần C06 hỗ trợ.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+      {
+        title: 'Giải pháp',
+        items: ['Social Listening (Hệ thống nghiên cứu dư luận xã hội)'],
+      },
+      {
+        title: 'Nền tảng công nghệ',
+        items: ['Web API'],
+      },
+    ],
+  },
+  {
+    id: '39',
+    title: 'Mô hình 39: Phân tích tình hình du lịch thông qua lưu trú',
+    image: imgModal39,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'Sở Thông tin và Truyền thông chủ trì cung cấp tài liệu mô tả các chỉ tiêu cần cung cấp về lượng khách quốc tế, nội địa, khách lưu trú theo từng loại hình, theo từng nhóm tuổi…',
+          'Cục C06 chủ trì cung cấp tài liệu tiêu chuẩn kỹ thuật kết nối, hỗ trợ kỹ thuật tích hợp thông qua nền tảng NDXP/VDXP.',
+          'Sở Thông tin và Truyền thông chủ trì, phối hợp với các doanh nghiệp tích hợp hệ thống điều hành đô thị thông minh IOC phục vụ công tác chỉ đạo điều hành của lãnh đạo Thành phố.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Sở TTTT, VPUB (đơn vị chủ trì vận hành IOC)chủ trì có văn bản đề nghị cung cấp tình hình phân tích và cử đầu mối phối hợp;',
+          'Bước 2: Sở VHTTDL chủ trì, phối hợp Công an tỉnh thực hiện quản lý lưu trú trên ASM.',
+          'Bước 3: C06 cung cấp tài liệu và hướng dẫn tích hợp.',
+          'Bước 4: C06 phối hợp kiểm tra ANAT.',
+          'Bước 5: Triển khai chính thức.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+      {
+        title: 'Giải pháp',
+        items: ['Social Listening (Hệ thống nghiên cứu dư luận xã hội)'],
+      },
+      {
+        title: 'Nền tảng công nghệ',
+        items: ['Web API'],
+      },
+    ],
+  },
+  {
+    id: '40',
+    title: 'Mô hình 40: Phân tích tình hình trật tự, an toàn xã hội trên địa bàn',
+    image: imgModal40,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'Sở Thông tin và Truyền thông chủ trì cung cấp tài liệu mô tả các chỉ tiêu cần cung cấp về di biến động về tình hình dân cư, các loại đối tượng cần quản lý…',
+          'Cục C06 chủ trì cung cấp tài liệu tiêu chuẩn kỹ thuật kết nối, hỗ trợ kỹ thuật tích hợp thông qua nền tảng NDXP/VDXP.',
+          'Sở Thông tin và Truyền thông chủ trì, phối hợp với các doanh nghiệp tích hợp hệ thống điều hành đô thị thông minh IOC phục vụ công tác chỉ đạo điều hành của lãnh đạo Thành phố.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Sở TTTT, VPUB (đơn vị chủ trì vận hành IOC) chủ trì có văn bản đề nghị cung cấp tình hình phân tích và cử đầu mối phối hợp;',
+          'Bước 2: Công an tỉnh chủ trì thực hiện nhâp thông tin đối tượng trên hệ thống dân cư.',
+          'Bước 3: C06 cung cấp tài liệu và hướng dẫn tích hợp.',
+          'Bước 4: C06 phối hợp kiểm tra ANAT.',
+          'Bước 5: Triển khai chính thức',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+      {
+        title: 'Giải pháp',
+        items: ['Social Listening (Hệ thống nghiên cứu dư luận xã hội)'],
+      },
+      {
+        title: 'Nền tảng công nghệ',
+        items: ['Web API'],
+      },
+    ],
+  },
+  {
+    id: '41',
+    title:
+      'Mô hình 41: Triển khai cuộc thi sáng kiến phát triển ứng dụng khai thác dữ liệu phục vụ xây dựng Chính phủ số, xã hội số và nền kinh tế số.',
+    image: imgModal41,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: ['C06 chủ trì, phối hợp các chuyên gia tư vấn tổ chức triển khai.'],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo yêu cầu thực tiễn', 'Hoàn thành Quý I/ 2024'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: C06 xây dựng kế hoạch và tổ chức Hội thảo.',
+          'Bước 2: Cung cấp tài liệu cho Sở TTTT tuyên truyền rộng rãi.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+    ],
+  },
+  {
+    id: '42',
+    title: 'Mô hình 42: Trung tâm Giám sát an ninh mạng SOC Tỉnh',
+    image: imgModal42,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'Sở Thông tin và Truyền thông chủ trì đầu tư các giải pháp đảm bảo an toàn an ninh thông tin theo hướng dẫn của Bộ Công an và Bộ Thông tin và Truyền thông.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh', 'Hoàn thành tháng 12/2023'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Sở TTTT rà soát đánh giá đầu tư, thuê, nâng cấp phù hợp ',
+          'Bước 2: Đề xuất UBND tổ chức thực hiện.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Mất kinh phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
+      },
+    ],
+  },
+  {
+    id: '43',
+    title:
+      'Mô hình 43: Tổ chức đào tạo, tập huấn an ninh, an toàn, bảo mật thông tin cho người sử dụng cuối (end use).',
+    image: imgModal43,
+    sections: [
+      {
+        title: 'Tổ chức thực hiện:',
+        items: [
+          'Sở Thông tin và Truyền thông chủ trì đầu tư các giải pháp đảm bảo an toàn an ninh thông tin theo hướng dẫn của Bộ Công an và Bộ Thông tin và Truyền thông.',
+        ],
+      },
+      {
+        title: 'Căn cứ pháp lý',
+        items: ['Theo nhu cầu, đề nghị của Tổ công tác tỉnh'],
+      },
+      {
+        title: 'Các bước thực hiện',
+        items: [
+          'Bước 1: Các đơn vị đăng ký lập danh sách các học viên đào tạo người sử dụng cuối (end use)',
+          'Bước 2: Thực hiện học tập trực tuyến trên website daotao.ai ',
+          'Bước 3: Kiểm tra đánh giá và cấp chứng chỉ đào tạo.',
+        ],
+      },
+      {
+        title: 'Thiết bị',
+        items: ['Miễn phí'],
+      },
+      {
+        title: 'Đơn vị triển khai',
+        items: ['HTC SOFTWARE & RAR'],
       },
     ],
   },

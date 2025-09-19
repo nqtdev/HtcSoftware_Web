@@ -1,7 +1,7 @@
-import Gcn from 'assets/page_RarEkyc/certification/giay_chung_nhan.webp'
-import GcnZ from 'assets/page_RarEkyc/certification/giay_chung_nhan_zoom.webp'
-import Dkth from 'assets/page_RarEkyc/certification/dang_ky_thuong_hieu.webp'
-import DkthZ from 'assets/page_RarEkyc/certification/dang_ky_thuong_hieu_zoom.webp'
+import Gcn from 'assets/page_RarEkycPlatform/certification/giay_chung_nhan.webp'
+import GcnZ from 'assets/page_RarEkycPlatform/certification/giay_chung_nhan_zoom.webp'
+import Dkth from 'assets/page_RarEkycPlatform/certification/dang_ky_thuong_hieu.webp'
+import DkthZ from 'assets/page_RarEkycPlatform/certification/dang_ky_thuong_hieu_zoom.webp'
 import ModalImage from 'react-modal-image'
 const Certificate = () => {
   const CertificateImg = [

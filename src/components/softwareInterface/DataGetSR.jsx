@@ -1,3 +1,5 @@
+import DescribeTitle from 'layout/describeTitle/describeTitle'
+
 /* eslint-disable react/prop-types */
 const dataCard = [
   '1- Số Căn Cước',
@@ -32,7 +34,6 @@ const DataGetSR = () => {
   const firstColumn = dataCard.slice(0, half)
   const secondColumn = dataCard.slice(half)
 
-  // eslint-disable-next-line react/prop-types
   const ListItem = ({children}) => (
     <div className='flex items-center p-3 border-b border-gray-100 last:border-b-0 hover:bg-gray-50 transition-colors duration-200'>
       <div className='w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0'></div>
@@ -40,7 +41,6 @@ const DataGetSR = () => {
     </div>
   )
 
-  // eslint-disable-next-line react/prop-types
   const Section = ({title, data, icon}) => (
     <div className='bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300'>
       <div className='bg-gradient-to-r from-blue-500 to-blue-600 p-4'>
@@ -62,8 +62,7 @@ const DataGetSR = () => {
       <div className='max-w-7xl mx-auto'>
         {/* Header */}
         <div className='text-center mb-12'>
-          <h2 className='base_title'>Dữ liệu trả về</h2>
-          <div className='w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full'></div>
+          <DescribeTitle title={'Dữ liệu trả về từ thiết bị đọc ID Card'} />
         </div>
 
         {/* Main Content */}

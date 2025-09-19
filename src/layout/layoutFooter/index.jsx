@@ -5,7 +5,7 @@ const LayoutFooter = () => {
     <footer className='bg-gray-800 text-white pt-12 pb-6'>
       <div className='container mx-auto px-4 xl:px-0'>
         <h3 className='text-2xl text-center font-roboto font-bold mb-4 text-white uppercase '>
-          Công ty Cổ phần Thương mại và Truyền thông HTC.
+          Công ty Cổ phần giải pháp phần mềm HTC
         </h3>
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8 mb-8'>
           {/* Column 1 - Logo & Contact */}
@@ -102,13 +102,13 @@ const LayoutFooter = () => {
                     />
                   </svg>
                   <p className='ml-2 text-gray-300'>
-                    Số 132 Nguyễn Khánh Toàn, Phường Quan Hoa, Quận Cầu Giấy, Thành phố Hà Nội, Việt
-                    Nam
+                    Tầng 4, Tòa Monaco, Ngách 6 ngõ 118 Nguyễn Khánh Toàn, Phường Nghĩa Đô, Thành
+                    Phố Hà Nội
                   </p>
                 </div>
               </div>
               <div>
-                <h4 className='font-semibold text-gray-400 mb-2'>ĐỊA CHỈ CÔNG TY</h4>
+                <h4 className='font-semibold text-gray-400 mb-2'>TRỤ SỞ CHÍNH</h4>
                 <div className='flex'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -130,8 +130,7 @@ const LayoutFooter = () => {
                     />
                   </svg>
                   <p className='ml-2 text-gray-300'>
-                    Số 15, Ngõ 29 phố Khương Hạ, Phường Khương Đình, Quận Thanh Xuân, Thành phố Hà
-                    Nội.
+                    Số 15, Ngõ 29 phố Khương Hạ, Phường Khương Đình, Thành phố Hà Nội.
                   </p>
                 </div>
               </div>
@@ -148,8 +147,8 @@ const LayoutFooter = () => {
         {/* Divider */}
         <div className='border-t border-gray-700 my-6'></div>
         {/* Copyright */}
-        <div className='text-center text-sm text-gray-400'>
-          <p>Copyright © 2023 Công ty Cổ phần Thương mại và Truyền thông HTC.</p>
+        <div className='text-center text-sm text-gray-400 '>
+          <p>Copyright © 2023 Công ty Cổ Phần Giải Pháp Phần Mềm HTC.</p>
         </div>
       </div>
     </footer>

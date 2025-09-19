@@ -1,5 +1,7 @@
-import ButtonContact from 'layout/buttons/ButtonContact'
+/* eslint-disable react/prop-types */
+import DescribeTitle from 'layout/describeTitle/describeTitle'
 import {useState} from 'react'
+
 const FeaturesSection = ({dataFeatures}) => {
   const [hoveredItem, setHoveredItem] = useState(null)
 
@@ -52,12 +54,11 @@ const FeaturesSection = ({dataFeatures}) => {
   }
 
   return (
-    <div className='py-12 px-4 '>
+    <div className='py-12 px-4 overflow-hidden '>
       <div className='max-w-6xl mx-auto'>
         {/* Header Section */}
         <div className='mb-12'>
-          <h2 className='base_title'>Chức năng</h2>
-          <div className='w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full'></div>
+          <DescribeTitle title={'Tính năng nổi bật'} />
         </div>
 
         {/* Features Grid */}
@@ -177,7 +178,6 @@ const FeaturesSection = ({dataFeatures}) => {
           </div>
         </div>
       </div>
-      <ButtonContact />
     </div>
   )
 }

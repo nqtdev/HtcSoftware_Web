@@ -1,11 +1,8 @@
 import TableSpecification from 'components/TableSpecification'
 import SlideShowSwiper from 'components/SlideShowSwiper'
-
 import SlideProduct from './data/SlideProduct'
 import DeviceParameters from './data/DeviceParameters'
-
 import imgProduct_eYe from 'assets/image_products/meta-eye/main.webp'
-
 import OtherProduct from 'components/otherProducts'
 import ButtonContact from 'layout/buttons/ButtonContact'
 

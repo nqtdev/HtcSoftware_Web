@@ -1,26 +1,46 @@
-import imgModal from 'assets/page_modal/mo-hinh-01.webp'
-import imgModal2 from 'assets/page_modal/mo-hinh-02.webp'
-import imgModal3 from 'assets/page_modal/mo-hinh-03.webp'
-import imgModal4 from 'assets/page_modal/mo-hinh-04.webp'
-import imgModal5 from 'assets/page_modal/mo-hinh-05.webp'
-import imgModal6 from 'assets/page_modal/mo-hinh-06 (1).webp'
-import imgModal7 from 'assets/page_modal/mo-hinh-06 (2).webp'
-import imgModal8 from 'assets/page_modal/mo-hinh-06 (3).webp'
-import imgModal9 from 'assets/page_modal/mo-hinh-06 (4).webp'
-import imgModal10 from 'assets/page_modal/mo-hinh-06 (5).webp'
-import imgModal11 from 'assets/page_modal/mo-hinh-06 (6).webp'
-import imgModal12 from 'assets/page_modal/mo-hinh-06 (7).webp'
-import imgModal13 from 'assets/page_modal/mo-hinh-06 (8).webp'
-import imgModal14 from 'assets/page_modal/mo-hinh-06 (9).webp'
-import imgModal15 from 'assets/page_modal/mo-hinh-06 (10).webp'
-import imgModal16 from 'assets/page_modal/mo-hinh-06 (11).webp'
-import imgModal17 from 'assets/page_modal/mo-hinh-06 (12).webp'
-import imgModal18 from 'assets/page_modal/mo-hinh-06 (13).webp'
-import imgModal19 from 'assets/page_modal/mo-hinh-06 (14).webp'
-import imgModal20 from 'assets/page_modal/mo-hinh-06 (15).webp'
-import imgModal21 from 'assets/page_modal/mo-hinh-06 (16).webp'
-import imgModal22 from 'assets/page_modal/mo-hinh-06 (17).webp'
-import imgModal23 from 'assets/page_modal/mo-hinh-06 (18).webp'
+import imgModal from 'assets/page_modal/1.webp'
+import imgModal2 from 'assets/page_modal/2.webp'
+import imgModal3 from 'assets/page_modal/3.webp'
+import imgModal4 from 'assets/page_modal/4.webp'
+import imgModal5 from 'assets/page_modal/5.webp'
+import imgModal6 from 'assets/page_modal/6.webp'
+import imgModal7 from 'assets/page_modal/7.webp'
+import imgModal8 from 'assets/page_modal/8.webp'
+import imgModal9 from 'assets/page_modal/9.webp'
+import imgModal10 from 'assets/page_modal/10.webp'
+import imgModal11 from 'assets/page_modal/11.webp'
+import imgModal12 from 'assets/page_modal/12.webp'
+import imgModal13 from 'assets/page_modal/13.webp'
+import imgModal14 from 'assets/page_modal/14.webp'
+import imgModal15 from 'assets/page_modal/15.webp'
+import imgModal16 from 'assets/page_modal/16.webp'
+import imgModal17 from 'assets/page_modal/17.webp'
+import imgModal18 from 'assets/page_modal/18.webp'
+import imgModal19 from 'assets/page_modal/19.webp'
+import imgModal20 from 'assets/page_modal/20.webp'
+import imgModal21 from 'assets/page_modal/21.webp'
+import imgModal22 from 'assets/page_modal/22.webp'
+import imgModal23 from 'assets/page_modal/23.webp'
+import imgModal24 from 'assets/page_modal/24.webp'
+import imgModal25 from 'assets/page_modal/25.webp'
+import imgModal26 from 'assets/page_modal/26.webp'
+import imgModal27 from 'assets/page_modal/27.webp'
+import imgModal28 from 'assets/page_modal/28.webp'
+import imgModal29 from 'assets/page_modal/29.webp'
+import imgModal30 from 'assets/page_modal/30.webp'
+import imgModal31 from 'assets/page_modal/31.webp'
+import imgModal32 from 'assets/page_modal/32.webp'
+import imgModal33 from 'assets/page_modal/33.webp'
+import imgModal34 from 'assets/page_modal/34.webp'
+import imgModal35 from 'assets/page_modal/35.webp'
+import imgModal36 from 'assets/page_modal/36.webp'
+import imgModal37 from 'assets/page_modal/37.webp'
+import imgModal38 from 'assets/page_modal/38.webp'
+import imgModal39 from 'assets/page_modal/39.webp'
+import imgModal40 from 'assets/page_modal/40.webp'
+import imgModal41 from 'assets/page_modal/41.webp'
+import imgModal42 from 'assets/page_modal/42.webp'
+import imgModal43 from 'assets/page_modal/43.webp'
 const dataModal = [
   {
     id: '1',
@@ -136,14 +156,124 @@ const dataModal = [
   },
   {
     id: '22',
-    title: 'Mô hình 22:Đảm bảo điều kiện công dân số',
+    title: 'Mô hình 22: Đảm bảo điều kiện công dân số',
     image: imgModal22,
   },
   {
     id: '23',
     title:
-      'Mô hình 23:Triển khai hệ thống quản lý trường học: Xác thực thông tin giáo viên và học sinh; Cho phép giáo viên đăng nhập bằng tài khoản VneID (SSO); Quản lý điểm, lịch học…',
+      'Mô hình 23: Triển khai hệ thống quản lý trường học: Xác thực thông tin giáo viên và học sinh; Cho phép giáo viên đăng nhập bằng tài khoản VneID (SSO); Quản lý điểm, lịch học…',
     image: imgModal23,
+  },
+
+  {
+    id: '24',
+    title:
+      'Mô hình 24: Phát triển du lịch, gắn với phát triển đặc sản vùng miền hỗ trợ người dân ứng dụng dữ liệu dân cư, định danh xác thực điện tử trong phát triển kinh tế hộ gia đình, kinh tế số.',
+    image: imgModal24,
+  },
+  {
+    id: '25',
+    title: 'Mô hình 25: Triển khai giải pháp thu phí không dùng tiền mặt tại các bãi xe của tỉnh',
+    image: imgModal25,
+  },
+  {
+    id: '26',
+    title: 'Mô hình 26: Chuẩn hóa xác thực tập trung (SSO)',
+    image: imgModal26,
+  },
+  {
+    id: '27',
+    title: 'Mô hình 27: Nền tảng tích hợp, chia sẻ dữ liệu tỉnh (LGSP)',
+    image: imgModal27,
+  },
+  {
+    id: '28',
+    title:
+      'Mô hình 28: Truyền thông nội bộ cho toàn bộ cán bộ, công chức, viên chức cơ quan nhà nước',
+    image: imgModal28,
+  },
+  {
+    id: '29',
+    title:
+      'Mô hình 29: Triển khai nền tảng đào tạo, giáo dục trực tuyến đại chúng mở (MOOC) trên toàn quốc để nâng cao nhận thức, hỗ trợ triển khai Đề án 06 cho các cán bộ, công chức',
+    image: imgModal29,
+  },
+  {
+    id: '30',
+    title: 'Mô hình 30: Triển khai tố giác tội phạm qua ứng dụng VneID',
+    image: imgModal30,
+  },
+  {
+    id: '31',
+    title:
+      'Mô hình 31: Triển khai tuyên chuyển chính sách, hỗ trợ pháp lý qua ứng dụng VNeID, Call Centrer',
+    image: imgModal31,
+  },
+  {
+    id: '32',
+    title: 'Mô hình 32: Thông tin lý lịch tư pháp trên VNeID',
+    image: imgModal32,
+  },
+  {
+    id: '33',
+    title:
+      'Mô hình 33: Triển khai tích hợp thông tin Sổ sức khỏe điện tử, Sổ lao động điện tử trên VNeid.',
+    image: imgModal33,
+  },
+  {
+    id: '34',
+    title:
+      'Mô hình 34: Quản lý thông tin người sử dụng đất, chủ sở hữu nhà ở, tài sản gắn liền với đất thông qua Cơ sở dữ liệu quốc gia về dân cư, VneID',
+    image: imgModal34,
+  },
+  {
+    id: '35',
+    title:
+      'Mô hình 35: Số hóa tạo lập dữ liệu trên nền Cơ sở dữ liệu quốc gia về dân cư, như: Hộ tịch, lao động xã hội, các tổ chức, đoàn hội…. Phục vụ cải cách TTHC',
+    image: imgModal35,
+  },
+  {
+    id: '36',
+    title: 'Mô hình 36: Quản lý chương trình An sinh xã hội thông qua VneID',
+    image: imgModal36,
+  },
+  {
+    id: '37',
+    title: 'Mô hình 37: Phân tích tình hình dân cư',
+    image: imgModal37,
+  },
+  {
+    id: '38',
+    title: 'Mô hình 38: Phân tích tình hình lao động',
+    image: imgModal38,
+  },
+  {
+    id: '39',
+    title: 'Mô hình 39: Phân tích tình hình du lịch thông qua lưu trú',
+    image: imgModal39,
+  },
+  {
+    id: '40',
+    title: 'Mô hình 40: Phân tích tình hình trật tự, an toàn xã hội trên địa bàn',
+    image: imgModal40,
+  },
+  {
+    id: '41',
+    title:
+      'Mô hình 41: Triển khai cuộc thi sáng kiến phát triển ứng dụng khai thác dữ liệu phục vụ xây dựng Chính phủ số, xã hội số và nền kinh tế số.',
+    image: imgModal41,
+  },
+  {
+    id: '42',
+    title: 'Mô hình 42: Trung tâm Giám sát an ninh mạng SOC Tỉnh',
+    image: imgModal42,
+  },
+  {
+    id: '43',
+    title:
+      'Mô hình 43: Tổ chức đào tạo, tập huấn an ninh, an toàn, bảo mật thông tin cho người sử dụng cuối (end use).',
+    image: imgModal43,
   },
 ]
 export default dataModal

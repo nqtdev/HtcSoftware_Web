@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import {NavLink, useLocation} from 'react-router-dom'
-import {ChevronDown, Menu, X, Zap, Shield, Settings, Home, Layers} from 'lucide-react'
+import {ChevronDown, Menu, X, Zap, Shield, Settings, Home, Layers, ShieldCheck} from 'lucide-react'
 
 const HeaderWeb = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -34,13 +34,19 @@ const HeaderWeb = () => {
   const solutions = [
     {
       name: 'RAR eKYC Platform',
-      href: '/solution/rar-ekyc',
+      href: '/solution/RarEkycPlatform',
       icon: Shield,
       desc: 'Định danh điện tử cho doanh nghiệp',
     },
     {
+      name: 'RAR VNeid Platform',
+      href: '/solution/RarVNeidPlatform',
+      icon: ShieldCheck,
+      desc: 'Định danh điện tử cho doanh nghiệp',
+    },
+    {
       name: 'HTC eKYC Platform',
-      href: '/solution/ekyc-platform',
+      href: '/solution/HtcEkycPlatform',
       icon: Zap,
       desc: 'Định danh điện tử cho doanh nghiệp',
     },
@@ -54,10 +60,10 @@ const HeaderWeb = () => {
   ]
 
   const devices = [
-    {name: 'CheckID-SR', href: '/products/check-id-sr', category: 'Thiết bị đọc thẻ'},
-    {name: 'CheckID-ET100', href: '/products/check-id-et100', category: 'Thiết bị đọc thẻ'},
-    {name: 'CheckID-R301', href: '/products/check-id-r301', category: 'Thiết bị đọc thẻ'},
-    {name: 'CheckID-HN212', href: '/products/check-id-hn212', category: 'Thiết bị đọc thẻ'},
+    {name: 'CheckID-SR', href: '/products/checkID-SR', category: 'Thiết bị đọc thẻ'},
+    {name: 'CheckID-ET100', href: '/products/checkID-ET100', category: 'Thiết bị đọc thẻ'},
+    {name: 'CheckID-R301', href: '/products/checkID-R301', category: 'Thiết bị đọc thẻ'},
+    {name: 'CheckID-HN212', href: '/products/checkID-HN212', category: 'Thiết bị đọc thẻ'},
   ]
 
   const navItems = [

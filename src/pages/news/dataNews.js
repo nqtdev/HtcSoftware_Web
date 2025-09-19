@@ -1,4 +1,4 @@
-import imgModal from 'assets/page_modal/mo-hinh-01.webp'
+import imgModal from 'assets/page_modal/1.webp'
 const dataNews = [
   {
     id: 'mo-hinh-01',

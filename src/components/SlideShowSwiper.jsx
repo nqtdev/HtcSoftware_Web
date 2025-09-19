@@ -39,11 +39,11 @@ const SlideShowSwiper = ({slidesShow}) => {
               slidesPerView: 1,
             },
           }}
-          className='rounded-xl shadow-lg overflow-hidden border border-gray-100'
+          className=' overflow-hidden '
         >
           {slidesShow.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className='flex items-center justify-center bg-gray-50 p-4'>
+              <div className='flex items-center justify-center  p-4'>
                 <img
                   src={slide.slideContent}
                   alt={`Hình ảnh sản phẩm ${index + 1}`}

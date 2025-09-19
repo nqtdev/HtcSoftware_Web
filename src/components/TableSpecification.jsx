@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import DescribeTitle from 'layout/describeTitle/describeTitle'
 
 const TableSpecification = ({data}) => {
   const formatSpecification = spec => {
@@ -13,17 +14,15 @@ const TableSpecification = ({data}) => {
   }
 
   return (
-    <section className='py-8 md:py-12 px-4 sm:px-6 lg:px-8 min-h-screen'>
+    <section className='py-8 md:py-12 px-4 sm:px-6 lg:px-8 min-h-screen overflow-hidden'>
       <div className='max-w-7xl mx-auto'>
         <div className='text-center mb-8 md:mb-12'>
           <div className='mb-12'>
-            <h2 className='base_title'>Thông số kỹ thuật thiết bị</h2>
-            <div className='w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full'></div>
+            <DescribeTitle title={'Thông số kỹ thuật'} />
           </div>
         </div>
-
         {/* Desktop Table (hidden on mobile) */}
-        <div className='hidden md:block bg-white rounded-xl md:rounded-2xl shadow-lg md:shadow-2xl border border-gray-100 overflow-hidden backdrop-blur-sm'>
+        <div className='hidden md:block bg-white rounded-xl md:rounded-2xl border border-gray-100 overflow-hidden backdrop-blur-sm'>
           <div className='overflow-x-auto'>
             <table className='min-w-full'>
               <thead>
