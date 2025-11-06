@@ -4,8 +4,8 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 
-import DescribeTitle from 'layout/describeTitle/describeTitle'
 import ShowProducts from './ShowProducts'
+import DescribeTitle from 'layout/DescribeTitle'
 
 const DEFAULT_BREAKPOINTS = {
   320: {slidesPerView: 1, spaceBetween: 16},
@@ -16,12 +16,12 @@ const DEFAULT_BREAKPOINTS = {
 
 function SlideSwiper({
   slides = ShowProducts,
-  title = 'Xem thêm các sản phẩm khác',
+  title = title,
   description = '',
   swiperConfig = {freeMode: true},
 }) {
   return (
-    <section className='relative overflow-x-hidden py-16 px-4' aria-label={title}>
+    <section className='relative overflow-x-hidden py-16 px-4 overflow-hidden' aria-label={title}>
       {/* Decor blobs: nằm TRƯỚC để không đè nội dung, và được clip bởi overflow-hidden của section */}
       <div className='pointer-events-none absolute inset-0 overflow-hidden -z-10'>
         <div className='absolute left-0 -bottom-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply blur-xl opacity-30 animate-blob' />
@@ -56,10 +56,10 @@ function SlideSwiper({
 
                     {/* Content */}
                     <div className='flex flex-1 flex-col p-6'>
-                      <h4 className='text-xl font-bold text-gray-800 line-clamp-1 transition-colors duration-200 group-hover:text-blue-600'>
+                      <h4 className='text-xl font-roboto font-semibold text-gray-800 line-clamp-1 transition-colors duration-200 group-hover:text-blue-600'>
                         {item.slideName}
                       </h4>
-                      <p className='mt-3 flex-grow text-gray-600 line-clamp-2'>
+                      <p className='mt-3 flex-grow font-roboto text-gray-600 line-clamp-2'>
                         {item.slideDescription}
                       </p>
                     </div>

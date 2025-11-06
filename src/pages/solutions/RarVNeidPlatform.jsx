@@ -1,18 +1,21 @@
-import Banner from 'assets/page_RarVNeidPlatform/banner.png'
-import CheckTicker from 'assets/page_RarEkycPlatform/check_ticket.png'
-import IconNFC from 'assets/page_RarEkycPlatform/section_content/scan_nfc.png'
-import IconLiveNess from 'assets/page_RarEkycPlatform/section_content/liveness.png'
-import IconConnect from 'assets/page_RarEkycPlatform/section_content/connect.png'
-import IconShow from 'assets/page_RarEkycPlatform/section_content/view.png'
-import IconNfc from 'assets/page_RarEkycPlatform/section_content_b/icon_nfc.png'
-import IconSdk from 'assets/page_RarEkycPlatform/section_content_b/icon_sdk.png'
-import IconApi from 'assets/page_RarEkycPlatform/section_content_b/icon_api.png'
-import Banner_CCDV from 'assets/page_RarEkycPlatform/section_content_b/banner_section.png'
-// import useCheckMobile from 'hooks/useCheckMobile'
-import DescribeTitle from 'layout/describeTitle/describeTitle'
-import CallToAction from 'layout/callToAcction'
+import Banner from 'assets/page_RarVNeidPlatform/EKYC.webp'
+import DescribeTitle from 'layout/DescribeTitle'
+import CallToAction from 'layout/CallToAction'
+import DieuKien from 'assets/page_RarVNeidPlatform/dieukiensudung.webp'
+import {useEffect} from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import {Image} from 'antd'
+
 const RarVNeidPlatform = () => {
-  // const isMobile = useCheckMobile()
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false,
+    })
+  }, [])
 
   return (
     <div className='overflow-hidden'>
@@ -32,30 +35,29 @@ const RarVNeidPlatform = () => {
               data-aos-delay='200'
             >
               <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 mb-6'>
-                RAR VNeid Platform
+                RAR VNeID Platform
               </h1>
-              <p className='text-xl md:text-2xl text-gray-700 mb-6'>
-                Xác thực căn cước công dân gắn chip chính xác{' '}
-                <span className='font-bold text-green-600'>100%</span> với cơ sở dữ liệu
-                <span className='font-bold text-green-600'> RAR-C06</span> của Bộ Công An
+              <p className='text-xl font-roboto md:text-2xl text-gray-700 mb-6'>
+                Kết nối xác thực điện tử với trung tâm RAR
               </p>
-              <p className='text-gray-600 mb-8 leading-relaxed'>
-                RAR eKYC Platform là dịch vụ xác minh tính đúng đắn, tính toàn vẹn thông tin, xác
-                minh chữ ký trên thẻ chip với trung tâm RAR-C06 của Bộ Công An. Dịch vụ có khả năng
-                chống giả mạo ở mức tuyệt đối, giảm tối đa các rủi ro trong giao dịch định danh điện
-                tử, tăng trải nghiệm khách hàng và đáp ứng nhu cầu chuyển đổi số cho các doanh
-                nghiệp.
+              <p className='text-gray-600 mb-8 leading-relaxed font-roboto'>
+                RAR VNeID Platform là bộ dịch vụ kết nối xác thực điện tử với trung tâm RAR thông
+                qua các hình thức:{' '}
+                <b className='text-yellow-500 font-roboto'>Đăng nhập bằng VNeID (SSO)</b>,{' '}
+                <b className='text-blue-700 font-roboto'>Chia sẻ thông tin từ VNeID (ShareInfo)</b>,{' '}
+                <b className='text-green-700 font-roboto'>
+                  Xác thực thông tin từ hệ thống Định Danh Và Xác Thực Điện Tử
+                </b>
               </p>
             </div>
             <div className='w-full lg:w-1/2' data-aos='fade-left' data-aos-delay='400'>
               <div className='relative items-center justify-center flex'>
-                <div className='absolute -inset-5'>
-                  <div className='w-full h-full max-w-sm mx-auto lg:mx-0 opacity-30 blur-lg bg-gradient-to-r from-blue-400 to-purple-600'></div>
-                </div>
                 <img
                   src={Banner}
                   alt='RAR VNeid Platform'
-                  className='relative w-full max-w-md mx-auto lg:mx-0 rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-700'
+                  className='relative w-full max-w-md mx-auto lg:mx-0 transform hover:scale-105 transition-all duration-700 hover:rotate-1'
+                  data-aos='zoom-in'
+                  data-aos-delay='600'
                 />
               </div>
             </div>
@@ -63,92 +65,84 @@ const RarVNeidPlatform = () => {
         </div>
       </section>
 
-      {/* Giá trị của sản phẩm */}
-      <section className='py-20 px-4 bg-white'>
+      {/* Services Section */}
+      <section className='py-10 px-4 '>
         <div className='container mx-auto max-w-6xl'>
           <DescribeTitle
-            title='Giá trị chúng tôi đem lại'
+            title='Các dịch vụ RAR đang cung cấp'
             description='Những lợi ích nổi bật khi sử dụng nền tảng xác thực định danh điện tử RAR VNeid'
+            data-aos='fade-up'
           />
 
-          <div
-            className='bg-gradient-to-br from-blue-600 to-purple-700 rounded-3xl p-8 md:p-12 shadow-2xl'
-            data-aos='fade-up'
-          >
-            <ul className='space-y-6'>
-              {[
-                'Onboard khách hàng nhanh chóng và an toàn',
-                'Phát hiện gian lận, giả mạo về hình ảnh, thông tin giấy tờ',
-                'Mang lại giá trị tốt nhất với chi phí tối ưu',
-                'Rút ngắn thời gian thẩm định và xử lý hồ sơ',
-              ].map((item, index) => (
-                <li
-                  key={index}
-                  className='flex items-start p-4 bg-white/10 backdrop-blur-sm rounded-2xl'
-                  data-aos='fade-right'
-                  data-aos-delay={index * 200}
-                >
-                  <div className='flex-shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 shadow-md'>
-                    <img src={CheckTicker} alt='Check' className='w-6 h-6' />
-                  </div>
-                  <span className='text-lg text-white font-medium'>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Thao tác sử dụng */}
-      <section className='py-20 px-4 bg-gray-50'>
-        <div className='container mx-auto max-w-6xl'>
-          <div className='text-center mb-16' data-aos='zoom-in'>
-            <h2 className='text-3xl md:text-4xl font-semibold text-gray-800 mb-4'>
-              Thao tác <span className='text-green-600'>4 bước</span> đơn giản
-            </h2>
-            <div className='w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-6'></div>
-            <p className='text-gray-600 max-w-2xl mx-auto'>
-              Quy trình xác thực nhanh chóng và dễ dàng thực hiện
-            </p>
-          </div>
-
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12'>
             {[
               {
-                step: 'Bước 1',
-                text: 'Đưa CCCD gắn chip vào thiết bị đọc thẻ chip',
-                icon: IconNFC,
-                delay: 200,
+                title: 'Dịch vụ đăng nhập bằng VNeID',
+                description:
+                  'Dịch vụ SSO (Single Sign On) là giải pháp giúp doanh nghiệp xây dựng các hệ thống cho phép người dùng truy cập các dịch vụ kỹ thuật qua tài khoản VNeID. Tính năng định danh và xác thực người sử dụng dịch vụ, tạo ra môi trường đăng nhập an toàn, tiện lợi mà không cần mật khẩu.',
+                color: 'from-yellow-400 to-yellow-600',
+                icon: '🔐',
               },
               {
-                step: 'Bước 2',
-                text: 'Xác thực khuôn mặt chân dung chủ giấy tờ',
-                icon: IconLiveNess,
-                delay: 400,
+                title: 'Dịch vụ chia sẻ thông tin VNeID',
+                description:
+                  'Chia sẻ thông tin là dịch vụ triển khai thông tin từ Hệ thống định danh và cung cấp cho các doanh nghiệp, tổ chức có thể khai thác các thông tin cá nhân, thông tin tổ chức thông qua API. Việc chia sẻ thông tin cần được sự đồng ý của chủ thể dữ liệu.',
+                color: 'from-blue-400 to-blue-600',
+                icon: '📤',
               },
               {
-                step: 'Bước 3',
-                text: 'Xác thực CCCD gắn chip với Bộ Công An',
-                icon: IconConnect,
-                delay: 600,
+                title: 'Dịch vụ xác thực thông tin từ hệ thống Định danh và xác thực điện tử',
+                description:
+                  'Dịch vụ xác thực thông tin trên Hệ thống định danh điện tử giúp Tổ chức, Cá nhân khai thác nhằm xác thực các trường thông tin của Cá nhân, Tổ chức (trả ra đúng/sai) bao gồm: Họ, chữ đệm và tên khai sinh; Số định danh cá nhân; Ngày tháng năm sinh; Giới tính.',
+                color: 'from-green-400 to-green-600',
+                icon: '✅',
               },
               {
-                step: 'Bước 4',
-                text: 'Gửi kết quả xác thực cho ứng dụng thích hợp',
-                icon: IconShow,
-                delay: 800,
+                title: 'Dịch vụ xác thực sinh trắc khuôn mặt',
+                description:
+                  'Giải pháp bao gồm chống giả mạo khuôn mặt và xác thực khuôn mặt đạt chứng nhận tiêu chuẩn Quốc tế kết hợp với nguồn dữ liệu từ hệ thống Căn cước của Bộ Công An đảm bảo độ chính xác cao; không cần đọc NFC chip thẻ căn cước trong quá trình xác thực.',
+                color: 'from-purple-400 to-purple-600',
+                icon: '👤',
+              },
+              {
+                title: 'Dịch vụ xác thực khuôn mặt',
+                description:
+                  'Dịch vụ xác thực sinh trắc học sử dụng công nghệ AI để giúp các Tổ chức, Doanh nghiệp so khớp khuôn mặt của cá nhân với dữ liệu khuôn mặt trên hệ thống định danh trả ra kết quả điểm số đánh giá trùng làm cơ sở để các TCDN triển khai bổ sung yếu tố xác thực.',
+                color: 'from-pink-400 to-pink-600',
+                icon: '🤖',
+              },
+              {
+                title: 'Dịch vụ chống giả tạo khuôn mặt - LiveNess Detection',
+                description:
+                  'Dịch vụ xác thực chống giả mạo khuôn mặt sử dụng công nghệ AI để giúp các tổ chức, doanh nghiệp xác thực ảnh khuôn mặt của cá nhân thu nhận từ thiết bị đầu cuối, ngăn chặn các hành vi giả mạo như sử dụng ảnh 2D, mặt nạ 3D,...',
+                color: 'from-red-400 to-red-600',
+                icon: '🛡️',
               },
             ].map((item, index) => (
               <div
                 key={index}
-                className='bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col items-center text-center'
+                className='group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden hover:-translate-y-2'
                 data-aos='fade-up'
-                data-aos-delay={item.delay}
+                data-aos-delay={index * 100}
+                data-aos-anchor-placement='top-bottom'
               >
-                <h4 className='text-lg font-semibold text-gray-800 mb-2'>{item.step}</h4>
-                <p className='text-gray-600 mb-4 flex-grow'>{item.text}</p>
-                <div className='w-20 h-20 bg-blue-50 rounded-xl flex items-center justify-center p-4'>
-                  <img src={item.icon} alt={item.step} className='w-full h-full object-contain' />
+                <div
+                  className={`h-2 bg-gradient-to-r ${item.color} transition-all duration-500 group-hover:h-3`}
+                ></div>
+                <div className='p-6'>
+                  <div className='flex items-center gap-3 mb-4'>
+                    <div
+                      className={`w-12 h-12 rounded-xl bg-gradient-to-r ${item.color} flex items-center justify-center text-white text-xl`}
+                    >
+                      {item.icon}
+                    </div>
+                    <h3 className='text-lg font-roboto font-bold text-gray-800 group-hover:text-gray-900 transition-colors flex-1'>
+                      {item.title}
+                    </h3>
+                  </div>
+                  <p className='text-gray-600 font-roboto leading-relaxed text-sm'>
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -156,74 +150,176 @@ const RarVNeidPlatform = () => {
         </div>
       </section>
 
-      {/* Hình thức cung cấp dịch vụ */}
-      <section className='py-20 px-4 bg-white'>
+      {/* Conditions Section */}
+      <section className='py-10 px-4 '>
         <div className='container mx-auto max-w-6xl'>
-          <DescribeTitle
-            title='Hình thức cung cấp dịch vụ'
-            description='Đa dạng phương thức tích hợp phù hợp với mọi nhu cầu của doanh nghiệp'
-          />
+          <DescribeTitle title='Điều kiện kết nối sử dụng dịch vụ' data-aos='fade-up' />
+          <div className='mt-12' data-aos='zoom-in' data-aos-delay='300'>
+            <Image
+              className='w-full m-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-700'
+              src={DieuKien}
+              alt='Điều kiện kết nối sử dụng dịch vụ'
+            />
+          </div>
+        </div>
+      </section>
 
-          <div
-            className='bg-gradient-to-br from-blue-600 to-purple-700 rounded-3xl overflow-hidden shadow-2xl'
-            data-aos='fade-up'
-          >
-            <div className='flex flex-col lg:flex-row'>
-              <div className='w-full lg:w-3/5 p-8 md:p-12'>
-                <div className='space-y-8'>
-                  {[
-                    {
-                      icon: IconNfc,
-                      title: 'Thiết bị đọc thẻ chip',
-                      desc: 'Chúng tôi sẵn sàng cung cấp cho quý khách thiết bị đọc thẻ chip chuyên dụng để đọc thông tin trong thẻ căn cước công dân gắn chip',
-                    },
-                    {
-                      icon: IconSdk,
-                      title: 'SDK NFC',
-                      desc: 'Bộ SDK (IOS, Android) sẵn sàng cung cấp cho quý khách để đọc thông tin căn cước gắn chip qua công nghệ kết nối gần NFC',
-                    },
-                    {
-                      icon: IconApi,
-                      title: 'API',
-                      desc: 'Quý khách hàng đã có thiết bị đọc thẻ, có thể sử dụng API xác thực thông tin căn cước công dân gắn chip với RAR-C06 của chúng tôi',
-                    },
-                  ].map((item, index) => (
-                    <div
-                      key={index}
-                      className='flex items-start p-4 bg-white/10 backdrop-blur-sm rounded-2xl'
-                      data-aos='fade-right'
-                      data-aos-delay={index * 200}
-                    >
-                      <div className='flex-shrink-0 w-12 h-12  rounded-lg flex items-center justify-center mr-4 shadow-md'>
-                        <img src={item.icon} alt={item.title} className='w-12 h-12' />
-                      </div>
-                      <div>
-                        <h5 className='text-lg font-semibold text-white mb-1'>{item.title}</h5>
-                        <p className='text-blue-100'>{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+      {/* HTC Services Section */}
+      <section className='py-10 px-4 bg-gradient-to-br from-gray-50 to-blue-50'>
+        <div className='container mx-auto max-w-6xl'>
+          <div className='mt-16'>
+            {/* Main Highlight Card */}
+            <div
+              className='bg-gradient-to-r from-blue-600 to-purple-700 rounded-3xl p-8 md:p-12 text-white mb-12 relative overflow-hidden'
+              data-aos='fade-up'
+            >
+              <div className='absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32 animate-pulse'></div>
+              <div className='absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24 animate-pulse delay-1000'></div>
+
+              <div className='relative m-auto z-10 max-w-3xl text-center'>
+                <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-6 font-roboto'>
+                  HTC Software - Đối tác chiến lược triển khai kết nối VNeID Trung tâm RAR
+                </h2>
+                <p className='text-lg md:text-xl text-blue-100 leading-relaxed font-roboto'>
+                  HTC Software tự hào cung cấp dịch vụ tư vấn toàn diện về kết nối với Trung tâm RAR
+                  , giúp doanh nghiệp đáp ứng các yêu cầu pháp lý và kỹ thuật trong lĩnh vực xác
+                  thực điện tử.
+                </p>
               </div>
+            </div>
 
-              <div className='w-full lg:w-2/5 flex items-center justify-center p-8'>
-                <div className='relative' data-aos='zoom-in' data-aos-delay='600'>
-                  <div className='absolute -inset-5'>
-                    <div className='w-full h-full opacity-30 blur-lg bg-gradient-to-r from-blue-400 to-purple-400'></div>
+            {/* Services Grid */}
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12'>
+              {[
+                {
+                  icon: '⚖️',
+                  title: 'Phân tích pháp lý',
+                  description: 'Đánh giá toàn diện hệ thống và hồ sơ năng lực',
+                  gradient: 'from-blue-500 to-cyan-500',
+                },
+                {
+                  icon: '🏗️',
+                  title: 'Kiến trúc kết nối',
+                  description: 'Thiết kế mô hình tích hợp phù hợp',
+                  gradient: 'from-green-500 to-emerald-500',
+                },
+                {
+                  icon: '🔧',
+                  title: 'Triển khai kỹ thuật',
+                  description: 'Hướng dẫn cấu hình HSM và server',
+                  gradient: 'from-purple-500 to-fuchsia-500',
+                },
+                {
+                  icon: '🛡️',
+                  title: 'An ninh thông tin',
+                  description: 'Xây dựng lộ trình bảo mật chi tiết',
+                  gradient: 'from-orange-500 to-red-500',
+                },
+              ].map((service, index) => (
+                <div
+                  key={index}
+                  className='bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2'
+                  data-aos='flip-left'
+                  data-aos-delay={index * 200}
+                >
+                  <div
+                    className={`w-14 h-14 bg-gradient-to-r ${service.gradient} rounded-2xl m-auto flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform duration-300`}
+                  >
+                    {service.icon}
                   </div>
-                  <img
-                    src={Banner_CCDV}
-                    alt='Hình thức cung cấp dịch vụ'
-                    className='relative rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-700'
-                  />
+                  <h3 className='font-bold text-center font-roboto text-gray-800 text-lg mb-3'>
+                    {service.title}
+                  </h3>
+                  <p className='text-gray-600 text-center text-sm font-roboto leading-relaxed'>
+                    {service.description}
+                  </p>
                 </div>
+              ))}
+            </div>
+
+            {/* Detailed Features */}
+            <div
+              className='bg-white rounded-3xl p-8 shadow-xl border border-gray-100'
+              data-aos='fade-up'
+              data-aos-delay='400'
+            >
+              <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
+                {[
+                  {
+                    color: 'from-blue-500 to-purple-500',
+                    features: [
+                      {
+                        title: 'Hỗ trợ tư vấn pháp lý & hồ sơ năng lực',
+                        description:
+                          'HTC tư vấn bộ hồ sơ đầy đủ theo yêu cầu của RAR: Tờ trình doanh nghiệp, Phương án kỹ thuật và bảo mật, Thông tin hệ thống và hạ tầng',
+                      },
+                      {
+                        title: 'Tham vấn mô hình kết nối',
+                        description:
+                          'Thiết kế kiến trúc tích hợp Agent Gateway phù hợp với hệ thống sẵn có (VPN, Agent gateway, Máy chủ, HSM,...)',
+                      },
+                    ],
+                  },
+                  {
+                    color: 'from-green-500 to-emerald-500',
+                    features: [
+                      {
+                        title: 'Triển khai kỹ thuật & phần mềm',
+                        description:
+                          'Hướng dẫn lựa chọn và cấu hình thiết bị HSM, cung cấp dịch vụ cho thuê hoặc mua thiết bị Server + HSM',
+                      },
+                      {
+                        title: 'Tư vấn an ninh thông tin',
+                        description:
+                          'Xây dựng lộ trình chi tiết với mốc thời gian, nhân sự, phân tích rủi ro và cấu hình kỹ thuật an toàn hệ thống theo tiêu chuẩn RAR',
+                      },
+                    ],
+                  },
+                  {
+                    color: 'from-yellow-500 to-orange-500',
+                    features: [
+                      {
+                        title: 'Chuẩn hóa hồ sơ Pentest',
+                        description:
+                          'Kết nối khách hàng làm việc với các đơn vị Pentest theo khuyến nghị của trung tâm RAR',
+                      },
+                      {
+                        title: 'Ký hợp đồng Pentest/ Điều phối với RAR',
+                        description:
+                          'Làm việc, giải trình và điều phối phản hồi với Trung tâm RAR thay mặt doanh nghiệp trong suốt quá trình xét duyệt hồ sơ',
+                      },
+                    ],
+                  },
+                ].map((column, columnIndex) => (
+                  <div key={columnIndex} className='space-y-6'>
+                    {column.features.map((feature, featureIndex) => (
+                      <div
+                        key={featureIndex}
+                        className='flex gap-4 p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300 group'
+                        data-aos='fade-right'
+                        data-aos-delay={columnIndex * 100 + featureIndex * 50}
+                      >
+                        <div
+                          className={`flex-shrink-0 w-2 bg-gradient-to-b ${column.color} rounded-full transition-all duration-300 group-hover:w-3`}
+                        ></div>
+                        <div>
+                          <h4 className='font-semibold text-gray-800 font-roboto mb-2 group-hover:text-gray-900 transition-colors'>
+                            {feature.title}
+                          </h4>
+                          <p className='text-gray-600 font-roboto text-sm leading-relaxed'>
+                            {feature.description}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
       <CallToAction />
 
       <style>{`
@@ -249,6 +345,16 @@ const RarVNeidPlatform = () => {
         }
         .animation-delay-4000 {
           animation-delay: 4s;
+        }
+
+        /* Custom scroll animations */
+        [data-aos] {
+          opacity: 0;
+          transition-property: transform, opacity;
+        }
+
+        [data-aos].aos-animate {
+          opacity: 1;
         }
       `}</style>
     </div>

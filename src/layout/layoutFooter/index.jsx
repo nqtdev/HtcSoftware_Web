@@ -3,7 +3,7 @@ import LogoHtcSw from 'assets/logo/logo_sw.webp'
 const LayoutFooter = () => {
   return (
     <footer className='bg-gray-800 text-white pt-12 pb-6'>
-      <div className='container mx-auto px-4 xl:px-0'>
+      <div className='mx-auto max-w-7xl px-4 xl:px-0'>
         <h3 className='text-2xl text-center font-roboto font-bold mb-4 text-white uppercase '>
           Công ty Cổ phần giải pháp phần mềm HTC
         </h3>

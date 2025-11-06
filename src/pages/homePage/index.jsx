@@ -1,10 +1,5 @@
 import 'aos/dist/aos.css'
-import History from 'components/info/history'
-import Certificate from 'components/rarEkyc/Certificate'
-import PartnerLogo from 'components/rarEkyc/PartnerLogo'
-import useCheckMobile from 'hooks/useCheckMobile'
 const HomePage = () => {
-  const isMobile = useCheckMobile()
   return (
     <div className='bg-gradient-to-br from-slate-50 to-blue-50'>
       <div className='container m-auto w-full xl:w-10/12 '>
@@ -47,43 +42,6 @@ const HomePage = () => {
               lực, phát triển công nghệ và sản phẩm.
             </span>
           </div>
-        </section>
-        {/* Video giới thiệu  */}
-        <section className='mt-10'>
-          <iframe
-            className='m-auto px-2 rounded-lg'
-            width={isMobile ? '380' : '1020'}
-            height={isMobile ? '250' : '630'}
-            src='https://www.youtube.com/embed/dhS4VUslonQ?autoplay=1&mute=1&start=4&loop=1&playlist=dhS4VUslonQ&vq=hd1080rel=0'
-            title='YouTube video player'
-            // frameborder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            // referrerpolicy='strict-origin-when-cross-origin'
-            allowfullscreen
-          ></iframe>
-        </section>
-        {/* Lịch sử hình thành  */}
-        <section className='mt-10' data-aos='zoom-in' data-aos-duration='1000'>
-          <div>
-            <h2 className='base_title'>Lịch sử hình thành HTC Software</h2>
-            <div className='w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full'></div>
-          </div>
-
-          <div className='px-10'>
-            <History />
-          </div>
-        </section>
-        {/* Chứng nhận */}
-        <section className='m-auto md:w-3/4'>
-          <div>
-            <h2 className='base_title'>Giấy chứng nhận</h2>
-            <div className='w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full'></div>
-          </div>
-          <Certificate />
-        </section>
-        {/* Đối tác */}
-        <section>
-          <PartnerLogo />
         </section>
       </div>
     </div>

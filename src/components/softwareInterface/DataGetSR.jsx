@@ -1,4 +1,4 @@
-import DescribeTitle from 'layout/describeTitle/describeTitle'
+import DescribeTitle from 'layout/DescribeTitle'
 
 /* eslint-disable react/prop-types */
 const dataCard = [
@@ -58,7 +58,7 @@ const DataGetSR = () => {
   )
 
   return (
-    <div className='py-12 px-4 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 min-h-screen'>
+    <div className='py-12 px-4  min-h-screen'>
       <div className='max-w-7xl mx-auto'>
         {/* Header */}
         <div className='text-center mb-12'>
@@ -69,7 +69,17 @@ const DataGetSR = () => {
         <div className='grid lg:grid-cols-2 gap-8'>
           {/* Left Section - 15 trường thông tin */}
           <div className='space-y-6'>
-            <Section title='15 trường thông tin cơ bản' data={[]} icon='📋' />
+            <Section
+              title={
+                <span>
+                  Các trường thông tin dịnh danh trong Chip <span className='text-red-600'>*</span>{' '}
+                  <br />
+                  <i className='text-[.6rem]'> Dữ liệu có thể ít hơn nếu là thẻ Căn Cước</i>
+                </span>
+              }
+              data={[]}
+              icon='📋'
+            />
             <div className='bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300'>
               <div className='grid md:grid-cols-2 gap-0'>
                 {/* Cột đầu tiên */}
