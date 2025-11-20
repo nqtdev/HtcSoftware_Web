@@ -27,9 +27,6 @@ const ButtonCall = ({phoneNumber}) => {
       className={`
         button_call
         animate__animated
-
-        right-[-1.7rem]
-        lg:right-0
         ${isClicked ? 'animate__zoomOutRight' : 'animate__zoomInRight'}
       `}
       onClick={handleClick}

@@ -4,7 +4,6 @@ import checkbox from 'assets/page_modal/checkbox.svg'
 import data from '../pageNews/dataNewsDetail'
 import ErrorPage from 'pages/errorPage'
 
-// ✅ Tạo slug từ title để khớp với param :id
 const createSlug = (str = '') =>
   String(str)
     .toLowerCase()

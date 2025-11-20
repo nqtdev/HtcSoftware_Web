@@ -40,10 +40,7 @@ const ScrollToTop = () => {
   }, [])
 
   return (
-    <div
-      className='button_scroll right-[-1.7rem]
-        lg:right-0'
-    >
+    <div className='button_scroll '>
       {isVisible && (
         <div
           onClick={scrollToTop}

@@ -2,9 +2,9 @@
 import {useParams} from 'react-router-dom'
 import checkbox from 'assets/page_modal/checkbox.svg'
 import data from 'pages/model/pageModel/dataModelDetail'
-import ListNews from 'pages/news/listNews'
 import ErrorPage from 'pages/errorPage'
 import bannerMohinh from 'assets/page_modal/bannerMohinh.webp'
+import ContentModel from '../contentModel'
 // ✅ Tạo hàm chuyển title thành slug
 const createSlug = str =>
   str
@@ -30,7 +30,6 @@ const ModelDetail = () => {
         className='w-full h-56 flex justify-center items-center bg-cover bg-center bg-no-repeat'
         style={{backgroundImage: `url(${bannerMohinh})`}}
       >
-        {/* <h2 className='text-white text-center text-2xl xl:px-20 font-mulish'>{pageData.title}</h2> */}
         <h2
           className='text-white text-center text-2xl font-mulish text-sh'
           style={{textShadow: '2px 2px 6px rgba(0,0,0,1)'}}
@@ -63,7 +62,16 @@ const ModelDetail = () => {
           </div>
         </div>
         <div className='col-span-3'>
-          <ListNews />
+          {/* Container với scroll */}
+          <div
+            className='h-[calc(100vh-3rem)] overflow-y-auto overflow-x-hidden
+                         border border-gray-200 rounded-lg
+                         scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100
+                         hover:scrollbar-thumb-gray-400 transition-colors duration-200
+                         sticky top-5  mx-auto'
+          >
+            <ContentModel />
+          </div>
         </div>
       </div>
     </div>

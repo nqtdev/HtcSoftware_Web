@@ -15,9 +15,9 @@ const Layout = () => {
       </header>
       <body className='bg-gradient-to-br from-blue-50 to-indigo-50/30'>
         <Outlet />
+        <ScrollToTop />
         <ButtonCall phoneNumber='0848565555' />
         <ButtonMail emailAddress='kinhdoanh@htcsoftware.vn' />
-        <ScrollToTop />
       </body>
       <footer>
         <LayoutFooter />

@@ -15,6 +15,7 @@ export default defineConfig({
       routes: path.resolve(__dirname, 'src/routes'), // Alias for routes
       utils: path.resolve(__dirname, 'src/utils'), // Alias for utils
       assets: path.resolve(__dirname, 'src/assets'), // Alias for assets
+      libs: path.resolve(__dirname, 'src/libs'), // Alias for libs
     },
   },
 })

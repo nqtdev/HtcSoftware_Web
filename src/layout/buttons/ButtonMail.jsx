@@ -23,10 +23,7 @@ const ButtonMail = ({emailAddress}) => {
   }
 
   return (
-    <div
-      className='button_mail mb-4 right-[-1.7rem]
-        lg:right-0'
-    >
+    <div className='button_mail mb-4 '>
       <a
         href={`mailto:${emailAddress}`}
         onClick={handleClick}

@@ -1,24 +1,26 @@
-import bannerMohinh from 'assets/page_breakingnews/bannerNews.webp'
-import ContentNews from './contentNews'
+import bannerMohinh from 'assets/page_Documents/bannerMohinh.webp'
+import ContentDocuments from './contentDocuments'
 
-const News = () => {
+const Documents = () => {
   return (
     <>
       <div
         className='w-full h-56 flex justify-center items-center bg-cover bg-center bg-no-repeat'
         style={{backgroundImage: `url(${bannerMohinh})`}}
       >
-        {/* <div className="w-full h-56 flex justify-center items-center bg-gradient-to-r from-purple-600 to-blue-300"> */}
-        <h2
+        <h1
           className='text-white text-center text-4xl font-mulish text-sh'
           style={{textShadow: '2px 2px 6px rgba(0,0,0,1)'}}
         >
-          Tin Tức Mới
-        </h2>
+          Văn Bản Quy Phạm
+        </h1>
       </div>
-      <ContentNews />
+
+      <div className='p-4 max-w-5xl mx-auto'>
+        <ContentDocuments />
+      </div>
     </>
   )
 }
 
-export default News
+export default Documents
