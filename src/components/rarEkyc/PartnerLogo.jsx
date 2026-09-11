@@ -1,110 +1,126 @@
-// @ Hiển thị logo của đối tác
-
-import DescribeTitle from 'layout/DescribeTitle'
-import ImgBIDV from 'assets/page_RarEkycPlatform/partner/bidv.svg'
-import ImgViettin from 'assets/page_RarEkycPlatform/partner/vietinbank.svg'
-import ImgMB from 'assets/page_RarEkycPlatform/partner/mb.svg'
-import ImgVietcom from 'assets/page_RarEkycPlatform/partner/vietcombank.svg'
-import ImgACB from 'assets/page_RarEkycPlatform/partner/acb.svg'
-import ImgTp from 'assets/page_RarEkycPlatform/partner/tp.svg'
-import ImgShinhan from 'assets/page_RarEkycPlatform/partner/shinhanbank.svg'
 import ImgCMC from 'assets/page_RarEkycPlatform/partner/cmc.svg'
-import ImgViettel from 'assets/page_RarEkycPlatform/partner/viettel.svg'
-import ImgVNPT from 'assets/page_RarEkycPlatform/partner/vnpt.svg'
-import ImgSHB from 'assets/page_RarEkycPlatform/partner/shb.svg'
-import ImgCimBank from 'assets/page_RarEkycPlatform/partner/cimbank.svg'
-import ImgCredita from 'assets/page_RarEkycPlatform/partner/credita.svg'
 import ImgDatanest from 'assets/page_RarEkycPlatform/partner/datanest.svg'
-import ImgEximbank from 'assets/page_RarEkycPlatform/partner/eximbank.svg'
 import Imgfptsoftware from 'assets/page_RarEkycPlatform/partner/fptsoftware.svg'
 import Imggtel from 'assets/page_RarEkycPlatform/partner/gtel.svg'
-import ImgHDbank from 'assets/page_RarEkycPlatform/partner/hdbank.svg'
 import ImgKalapa from 'assets/page_RarEkycPlatform/partner/kalapa.svg'
 import ImgKbank from 'assets/page_RarEkycPlatform/partner/kbank.svg'
-import ImgMisa from 'assets/page_RarEkycPlatform/partner/misa.svg'
+import ImgMB from 'assets/page_RarEkycPlatform/partner/mb.svg'
 import ImgMobiphonIt from 'assets/page_RarEkycPlatform/partner/mobilephoneit.svg'
 import ImgMomo from 'assets/page_RarEkycPlatform/partner/momo.svg'
-import ImgNcb from 'assets/page_RarEkycPlatform/partner/ncb.svg'
 import ImgSmartpay from 'assets/page_RarEkycPlatform/partner/smartpay.svg'
-import ImgTnex from 'assets/page_RarEkycPlatform/partner/tnex.svg'
 import ImgVib from 'assets/page_RarEkycPlatform/partner/vib.svg'
+import ImgVietcom from 'assets/page_RarEkycPlatform/partner/vietcombank.svg'
+import ImgViettin from 'assets/page_RarEkycPlatform/partner/vietinbank.svg'
 import ImgViettelAI from 'assets/page_RarEkycPlatform/partner/viettelAI.svg'
-import ImgVng from 'assets/page_RarEkycPlatform/partner/vng.svg'
-import ImgHongngoc from 'assets/page_RarEkycPlatform/partner/hongngoc.svg'
-import ImgThucuc from 'assets/page_RarEkycPlatform/partner/thucuc.svg'
-import ImgVietcap from 'assets/page_RarEkycPlatform/partner/vietcap.svg'
-import ImgVinmec from 'assets/page_RarEkycPlatform/partner/vinmec.svg'
-import ImgVndirect from 'assets/page_RarEkycPlatform/partner/vndirect.svg'
+import ImgVNPT from 'assets/page_RarEkycPlatform/partner/vnpt.svg'
+import DescribeTitle from 'layout/DescribeTitle'
 const PartnerLogo = () => {
   const LogoSvg = [
-    ImgBIDV,
     ImgViettin,
     ImgMB,
     ImgVietcom,
-    ImgACB,
-    ImgTp,
-    ImgShinhan,
     ImgCMC,
-    ImgViettel,
     ImgVNPT,
-    ImgSHB,
-    ImgCimBank,
-    ImgCredita,
     ImgDatanest,
-    ImgEximbank,
     Imgfptsoftware,
     Imggtel,
-    ImgHDbank,
     ImgKalapa,
     ImgKbank,
-    ImgMisa,
-    ImgHongngoc,
     ImgMobiphonIt,
     ImgMomo,
-    ImgVinmec,
-    ImgNcb,
     ImgSmartpay,
-    ImgTnex,
     ImgVib,
     ImgViettelAI,
-    ImgVng,
-    ImgVndirect,
-    ImgThucuc,
-    ImgVietcap,
   ]
 
-  const chunkArray = (arr, chunkSize) => {
-    const result = []
-    for (let i = 0; i < arr.length; i += chunkSize) {
-      result.push(arr.slice(i, i + chunkSize))
-    }
-    return result
+  // Chia đều các logo thành 4 hàng cân đối
+  const splitIntoRows = (arr, numRows) => {
+    const rows = Array.from({length: numRows}, () => [])
+    arr.forEach((item, index) => {
+      rows[index % numRows].push(item)
+    })
+    return rows
   }
 
-  const LogoPartner = chunkArray(LogoSvg, 9)
+  const rows = splitIntoRows(LogoSvg, 4)
+
+  // Cấu hình thời gian và hướng cuộn cho từng hàng
+  const rowConfigs = [
+    {duration: 160, reverse: false},
+    {duration: 120, reverse: true},
+    {duration: 160, reverse: false},
+    {duration: 120, reverse: true},
+  ]
 
   return (
-    <>
-      <DescribeTitle title='Đối tác của chúng tôi' description='' />
-      {LogoPartner.map((row, rowIndex) => (
-        <div key={rowIndex} className='partner_scroll'>
-          {row.map((logo, index) => {
-            // Lấy tên hình ảnh từ đường dẫn
-            const imageName = logo.split('/').pop().split('.')[0]
+    <div className='py-2 sm:py-3'>
+      {/* Thu gọn khoảng cách tiêu đề */}
+      <div className='[&>div]:mb-4 sm:[&>div]:mb-6'>
+        <DescribeTitle title='Đối tác của chúng tôi' description='' />
+      </div>
 
-            return (
-              <div className='partner_logo' key={index}>
-                <img
-                  className='px-4 py-3'
-                  src={logo}
-                  alt={`Logo ${imageName}`} // Thêm "Logo" trước tên hình ảnh
-                />
+      {/* Danh sách logo đối tác cuộn lặp vô tận */}
+      <div className='space-y-2 sm:space-y-2.5 partner_marquee_mask'>
+        {rows.map((row, rowIndex) => {
+          const config = rowConfigs[rowIndex] || {duration: 40, reverse: false}
+          const displayItems = [...row, ...row, ...row]
+
+          return (
+            <div key={rowIndex} className='partner_marquee_row'>
+              <div
+                className='partner_marquee_track'
+                style={{
+                  animation: `${config.reverse ? 'marqueeScrollReverse' : 'marqueeScroll'} ${config.duration}s linear infinite`,
+                }}
+              >
+                {/* Group 1 */}
+                <div className='flex shrink-0 items-center gap-2.5 sm:gap-3.5 md:gap-4 pr-2.5 sm:pr-3.5 md:pr-4'>
+                  {displayItems.map((logo, index) => {
+                    const imageName = logo.split('/').pop().split('.')[0]
+                    return (
+                      <div
+                        key={`g1-${index}`}
+                        className='partner_logo_item shrink-0 flex items-center justify-center px-2 py-1'
+                      >
+                        <img
+                          className='h-16 sm:h-18 md:h-20 w-auto max-w-[85px] sm:max-w-[105px] object-contain transition-transform duration-200 hover:scale-110'
+                          src={logo}
+                          alt={`Logo ${imageName}`}
+                          loading='lazy'
+                        />
+                      </div>
+                    )
+                  })}
+                </div>
+
+                {/* Group 2 (Bản sao tạo vòng lặp vô tận mượt mà) */}
+                <div
+                  className='flex shrink-0 items-center gap-2.5 sm:gap-3.5 md:gap-4 pr-2.5 sm:pr-3.5 md:pr-4'
+                  aria-hidden='true'
+                >
+                  {displayItems.map((logo, index) => {
+                    const imageName = logo.split('/').pop().split('.')[0]
+                    return (
+                      <div
+                        key={`g2-${index}`}
+                        className='partner_logo_item shrink-0 flex items-center justify-center px-2 py-1'
+                      >
+                        <img
+                          className='h-16 sm:h-18 md:h-20 w-auto max-w-[85px] sm:max-w-[105px] object-contain transition-transform duration-200 hover:scale-110'
+                          src={logo}
+                          alt={`Logo ${imageName}`}
+                          loading='lazy'
+                        />
+                      </div>
+                    )
+                  })}
+                </div>
               </div>
-            )
-          })}
-        </div>
-      ))}
-    </>
+            </div>
+          )
+        })}
+      </div>
+    </div>
   )
 }
 

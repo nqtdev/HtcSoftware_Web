@@ -45,7 +45,7 @@ const HomePage = () => {
               trigger='mount'
               fillMode='wipe'
               fontSize={160}
-              fontWeight={600}
+              fontWeight={700}
               letterSpacing={3}
               reverse={false}
             />
@@ -107,7 +107,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        <section className='py-10 px-4 '>
+        <section className='py-6 sm:py-8 px-4'>
           <div className='container mx-auto max-w-6xl'>
             <div data-aos='fade-up'>
               <PartnerLogo />

@@ -1,20 +1,28 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Eye, Lightbulb, Rocket, Shield, Target, TrendingUp, Users, Zap } from 'lucide-react'
-import React, { useEffect, useState, useCallback } from 'react'
+import {Eye, Lightbulb, Rocket, Shield, Target, TrendingUp, Users, Zap} from 'lucide-react'
+import React, {useCallback, useEffect, useState} from 'react'
 
 const MissionVisionValues = () => {
   // Vision, Mission, and Core Values
   const visionMission = [
     {
       title: 'Tầm nhìn',
-      description:
-        'Định danh và xác thực điện tử giúp khẳng định chính xác danh tính số hợp pháp của người thực hiện giao dịch, nâng cao độ bảo mật và tin tưởng giữa người dân, chính quyền và doanh nghiệp trên môi trường số.',
+      description: [
+        'Trở thành đơn vị tiên phong kiến tạo nền tảng định danh số và xác thực điện tử chuẩn mực tại Việt Nam.',
+        'Khẳng định chính xác danh tính số hợp pháp cho người dùng trong mọi giao dịch trực tuyến đa nền tảng.',
+        'Nâng cao tối đa tính bảo mật, toàn vẹn dữ liệu và xây dựng niềm tin số vững chắc giữa người dân, chính quyền và doanh nghiệp.',
+        'Định hình hệ sinh thái số an toàn, góp phần thúc đẩy tiến trình chuyển đổi số quốc gia toàn diện.',
+      ],
       icon: Eye,
     },
     {
       title: 'Sứ mệnh',
-      description:
-        'Đón đầu xu hướng Công nghệ số hoá, hỗ trợ các Đối tác Khách hàng, Ngân hàng, Tổ chức tài chính, Doanh nghiệp số hoá các lĩnh vực trong việc Định danh và Xác thực điện tử. Phục vụ khách hàng tốt nhất với những gì mình có.',
+      description: [
+        'Đón đầu xu hướng công nghệ số hóa tiên tiến để phát triển các giải pháp định danh và xác thực điện tử thế hệ mới.',
+        'Đồng hành và hỗ trợ khối Ngân hàng, Tổ chức tài chính và Doanh nghiệp tự động hóa quy trình nghiệp vụ số an toàn.',
+        'Cung cấp hệ thống xác thực CCCD gắn chip, sinh trắc học và chữ ký số đạt chuẩn quy định pháp lý cao nhất.',
+        'Tối ưu hóa nguồn lực công nghệ để phục vụ khách hàng tận tâm với cam kết chất lượng dịch vụ vượt trội.',
+      ],
       icon: Rocket,
     },
   ]
@@ -22,38 +30,62 @@ const MissionVisionValues = () => {
   const coreValues = [
     {
       title: 'Năng lực hoàn thành công việc',
-      description:
-        'Khả năng thực hiện và hoàn thành các dự án với chất lượng cao, đáp ứng mọi yêu cầu kỹ thuật và thời gian đã cam kết.',
+      description: [
+        'Cam kết bàn giao và vận hành các dự án phần mềm, phần cứng đúng tiến độ với chất lượng kiểm thử nghiêm ngặt.',
+        'Đáp ứng chính xác mọi tiêu chuẩn kỹ thuật phức tạp và yêu cầu chuyên biệt của từng phân khúc đối tác.',
+        'Chủ động phòng ngừa rủi ro phát sinh trong quá trình triển khai nhờ quy trình quản lý dự án chuẩn hóa.',
+        'Duy trì tính ổn định, sẵn sàng cao (High Availability) cho toàn bộ hệ thống dịch vụ sau bàn giao.',
+      ],
       icon: Target,
     },
     {
       title: 'Năng lực Tích hợp',
-      description:
-        'Kết hợp các công nghệ và giải pháp một cách hiệu quả, tạo ra hệ thống hoàn chỉnh và tối ưu cho doanh nghiệp.',
+      description: [
+        'Kết nối liền mạch giữa phần cứng thiết bị chuyên dụng và các hệ sinh thái phần mềm quản trị sẵn có.',
+        'Thiết kế kiến trúc hệ thống mở, linh hoạt tích hợp qua các chuẩn kết nối bảo mật RESTful API, SDK chuyên sâu.',
+        'Đồng bộ hóa dữ liệu thời gian thực giữa các điểm trạm giao dịch và máy chủ trung tâm an toàn.',
+        'Tối ưu hóa hiệu năng xử lý tác vụ, giảm thiểu độ trễ trong quá trình quét và đối chiếu dữ liệu.',
+      ],
       icon: Zap,
     },
     {
       title: 'Hệ thống đối tác uy tín',
-      description:
-        'Mạng lưới đối tác tin cậy và chuyên nghiệp, đảm bảo chất lượng dịch vụ và hỗ trợ tốt nhất cho khách hàng.',
+      description: [
+        'Hợp tác chặt chẽ với các nhà cung cấp giải pháp bảo mật và nhà sản xuất thiết bị hàng đầu ngành.',
+        'Duy trì mạng lưới đối tác công nghệ tin cậy, đảm bảo tính sẵn có của chuỗi cung ứng linh kiện và phần mềm.',
+        'Đội ngũ chuyên gia hỗ trợ kỹ thuật 24/7, luôn đồng hành xử lý sự cố tại chỗ nhanh chóng.',
+        'Chia sẻ tài nguyên tri thức và liên tục nâng cao giá trị thặng dư cho toàn bộ đối tác trong hệ sinh thái.',
+      ],
       icon: Users,
     },
     {
       title: 'Số hóa vận hành tổ chức',
-      description:
-        'Chuyển đổi số và tối ưu hóa quy trình hoạt động, nâng cao hiệu quả và năng suất làm việc của tổ chức.',
+      description: [
+        'Tự động hóa hoàn toàn các thao tác thủ công, rút ngắn thời gian xử lý hồ sơ khách hàng tại quầy giao dịch.',
+        'Tối ưu hóa chi phí vận hành nhân sự và lưu trữ giấy tờ thông qua mô hình văn phòng không giấy tờ.',
+        'Nâng cao năng suất làm việc và sự minh bạch trong toàn bộ luồng luân chuyển dữ liệu nội bộ.',
+        'Cung cấp báo cáo phân tích trực quan theo thời gian thực giúp ban điều hành ra quyết định chính xác.',
+      ],
       icon: TrendingUp,
     },
     {
       title: 'Chuyên môn ngành đa dạng',
-      description:
-        'Kiến thức sâu rộng trong nhiều lĩnh vực khác nhau, từ công nghệ thông tin đến viễn thông và định danh điện tử.',
+      description: [
+        'Sở hữu đội ngũ kỹ sư có nền tảng chuyên môn sâu rộng về AI, Computer Vision, mật mã học và viễn thông.',
+        'Nắm vững nghiệp vụ đặc thù trong các ngành: Ngân hàng số, Tài chính, Bảo hiểm, Công chứng và Y tế.',
+        'Hiểu rõ các hành lang pháp lý, tiêu chuẩn an toàn thông tin Nhà nước về bảo vệ dữ liệu cá nhân.',
+        'Tư vấn kiến trúc giải pháp may đo riêng biệt, phù hợp với quy mô thực tế của từng doanh nghiệp.',
+      ],
       icon: Shield,
     },
     {
       title: 'Năng lực Cải tiến',
-      description:
-        'Không ngừng đổi mới và nâng cấp giải pháp, luôn đi đầu trong việc áp dụng các công nghệ tiên tiến nhất.',
+      description: [
+        'Liên tục nghiên cứu và ứng dụng các thuật toán nhận diện khuôn mặt, AI OCR mới nhất vào sản phẩm.',
+        'Thường xuyên cập nhật phiên bản, vá lỗi bảo mật và nâng cấp tính năng định kỳ theo phản hồi thực tế.',
+        'Khuyến khích sáng tạo và thử nghiệm giải pháp đột phá nhằm rút ngắn hơn nữa thời gian xác thực.',
+        'Luôn duy trì vị thế tiên phong về công nghệ định danh trước các biến động công nghệ của thị trường.',
+      ],
       icon: Lightbulb,
     },
   ]
@@ -89,33 +121,36 @@ const MissionVisionValues = () => {
   const nodeRadius = (wheelSize / baseWheelSize) * baseNodeRadius
 
   // Xác định item active dựa trên góc quay
-  const detectActiveIndex = useCallback(currentRotation => {
-    const triggerRange = 30
-    let newActiveIndex = null
+  const detectActiveIndex = useCallback(
+    currentRotation => {
+      const triggerRange = 30
+      let newActiveIndex = null
 
-    for (let i = 0; i < totalItems; i++) {
-      const baseAngle = (i * angleStep + angleStep / 2 - 90) * (Math.PI / 180)
-      const currentAngle = baseAngle + (currentRotation * Math.PI) / 180
-      let currentAngleDeg = ((currentAngle * 180) / Math.PI) % 360
-      if (currentAngleDeg < 0) currentAngleDeg += 360
+      for (let i = 0; i < totalItems; i++) {
+        const baseAngle = (i * angleStep + angleStep / 2 - 90) * (Math.PI / 180)
+        const currentAngle = baseAngle + (currentRotation * Math.PI) / 180
+        let currentAngleDeg = ((currentAngle * 180) / Math.PI) % 360
+        if (currentAngleDeg < 0) currentAngleDeg += 360
 
-      const isNearTrigger =
-        (currentAngleDeg >= 360 - triggerRange && currentAngleDeg <= 360) ||
-        (currentAngleDeg >= 0 && currentAngleDeg <= triggerRange)
+        const isNearTrigger =
+          (currentAngleDeg >= 360 - triggerRange && currentAngleDeg <= 360) ||
+          (currentAngleDeg >= 0 && currentAngleDeg <= triggerRange)
 
-      if (isNearTrigger) {
-        newActiveIndex = i
-        break
+        if (isNearTrigger) {
+          newActiveIndex = i
+          break
+        }
       }
-    }
 
-    setActiveIndex(prevActive => {
-      if (prevActive !== newActiveIndex) {
-        return newActiveIndex
-      }
-      return prevActive
-    })
-  }, [totalItems, angleStep])
+      setActiveIndex(prevActive => {
+        if (prevActive !== newActiveIndex) {
+          return newActiveIndex
+        }
+        return prevActive
+      })
+    },
+    [totalItems, angleStep],
+  )
 
   // Touch handlers for mobile interaction
   const handleTouchStart = e => {
@@ -186,10 +221,10 @@ const MissionVisionValues = () => {
   }, [isPaused, totalItems, angleStep, detectActiveIndex])
 
   return (
-    <section className='relative py-12 lg:py-16 overflow-hidden'>
+    <section className='relative py-6 sm:py-8 overflow-hidden'>
       {/* Center glow */}
       <div
-        className='absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-3xl pointer-events-none'
+        className='absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full blur-3xl pointer-events-none'
         style={{
           background:
             'radial-gradient(circle, rgba(37, 129, 186, 0.2) 0%, rgba(15, 122, 229, 0.1) 50%, transparent 100%)',
@@ -197,15 +232,15 @@ const MissionVisionValues = () => {
       ></div>
       <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         {/* Section Header */}
-        <div className='text-center mb-8 lg:mb-16' data-aos='fade-up'>
-          <h2 className='text-2xl lg:text-3xl xl:text-4xl font-roboto font-bold mb-4 text-gray-900'>
+        <div className='text-center mb-3' data-aos='fade-up'>
+          <h2 className='text-xl lg:text-2xl xl:text-3xl font-roboto font-bold mb-2 text-gray-900'>
             Sứ Mệnh, Tầm Nhìn & Giá Trị Cốt Lõi
           </h2>
-          <div className='w-20 lg:w-24 h-1 bg-gradient-to-r from-[#2581ba] to-[#0f7ae5] mx-auto rounded-full mb-4'></div>
-          <p className='text-base lg:text-lg xl:text-xl font-roboto font-bold text-gray-900 mb-2'>
+          <div className='w-16 lg:w-20 h-1 bg-gradient-to-r from-[#2581ba] to-[#0f7ae5] mx-auto rounded-full mb-2'></div>
+          <p className='text-sm lg:text-base xl:text-lg font-roboto font-bold text-gray-900 mb-1'>
             Dám nghĩ - Dám làm - Luôn sáng tạo
           </p>
-          <p className='text-sm lg:text-base text-gray-600 font-roboto max-w-3xl mx-auto'>
+          <p className='text-xs lg:text-sm text-gray-600 font-roboto max-w-3xl mx-auto'>
             Với mục tiêu "Phục vụ khách hàng tốt nhất với những gì mình có", HTC luôn nỗ lực, cố
             gắng thay đổi và hoàn thiện hơn mỗi ngày để khách hàng luôn nhận được "dịch vụ và giá
             trị tốt nhất".
@@ -213,7 +248,7 @@ const MissionVisionValues = () => {
         </div>
 
         <div
-          className='grid lg:grid-cols-[1fr,1.2fr] gap-6 lg:gap-12 items-center lg:min-h-[600px] relative'
+          className='grid lg:grid-cols-[1fr,1.2fr] gap-3 lg:gap-6 items-center lg:min-h-[480px] relative'
           data-aos='fade-up'
           data-aos-delay='200'
         >
@@ -396,21 +431,21 @@ const MissionVisionValues = () => {
           <div className='relative w-full' data-aos='fade-up' data-aos-delay='300'>
             {isMobile ? (
               // Mobile: Single card that changes content based on active index
-              <div className='min-h-[200px] flex items-center justify-center'>
+              <div className='min-h-[160px] flex items-center justify-center'>
                 {activeIndex === null ? (
                   // Default state when no item is active
-                  <div className='text-center text-slate-400 p-8'>
-                    <div className='w-16 h-16 mx-auto mb-4 rounded-full bg-slate-100 flex items-center justify-center'>
-                      <Target className='w-8 h-8 text-slate-300' />
+                  <div className='text-center text-slate-400 p-4'>
+                    <div className='w-12 h-12 mx-auto mb-2 rounded-full bg-slate-100 flex items-center justify-center'>
+                      <Target className='w-6 h-6 text-slate-300' />
                     </div>
-                    <p className='text-sm font-roboto'>Chạm và xoay vòng tròn để khám phá</p>
+                    <p className='text-xs font-roboto'>Chạm và xoay vòng tròn để khám phá</p>
                   </div>
                 ) : (
                   // Active item card
-                  <div className='bg-white border border-blue-50 rounded-2xl p-4 shadow-lg shadow-blue-50 w-full'>
-                    <div className='flex items-center gap-4 mb-4'>
+                  <div className='bg-white border border-blue-50 rounded-xl p-3 sm:p-3.5 shadow-md shadow-blue-50 w-full'>
+                    <div className='flex items-center gap-2.5 mb-2.5'>
                       <div
-                        className='w-14 h-14 rounded-2xl flex items-center justify-center text-white shadow-md'
+                        className='w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center text-white shadow-md flex-shrink-0'
                         style={{
                           background:
                             activeIndex === 0
@@ -421,23 +456,35 @@ const MissionVisionValues = () => {
                         }}
                       >
                         {React.createElement(allItems[activeIndex].icon, {
-                          className: 'w-7 h-7',
+                          className: 'w-5 h-5 sm:w-6 sm:h-6',
                           strokeWidth: 1.5,
                         })}
                       </div>
                       <div>
-                        <h4 className='text-md font-roboto font-bold text-slate-900'>
+                        <h4 className='text-sm sm:text-base font-roboto font-bold text-slate-900'>
                           {allItems[activeIndex].title}
                         </h4>
-                        <p className='text-xs text-slate-500 mt-1'>
+                        <p className='text-[0.7rem] text-slate-500 mt-0.5'>
                           {activeIndex + 1} / {allItems.length}
                         </p>
                       </div>
                     </div>
-                    <p className='text-sm font-roboto text-slate-600 leading-relaxed'>
-                      {allItems[activeIndex].description}
-                    </p>
-                    <div className='mt-4 h-1 rounded-full bg-slate-100 overflow-hidden'>
+                    <ul className='space-y-1 sm:space-y-1.5 text-slate-600 font-roboto text-xs sm:text-sm leading-relaxed'>
+                      {Array.isArray(allItems[activeIndex].description) ? (
+                        allItems[activeIndex].description.map((item, idx) => (
+                          <li key={idx} className='flex items-start gap-2'>
+                            <span className='text-blue-500 font-bold select-none leading-none mt-1'>–</span>
+                            <span className='flex-1'>{item}</span>
+                          </li>
+                        ))
+                      ) : (
+                        <li className='flex items-start gap-2'>
+                          <span className='text-blue-500 font-bold select-none leading-none mt-1'>–</span>
+                          <span className='flex-1'>{allItems[activeIndex].description}</span>
+                        </li>
+                      )}
+                    </ul>
+                    <div className='mt-2.5 h-1 rounded-full bg-slate-100 overflow-hidden'>
                       <div
                         className='h-full rounded-full transition-all duration-500'
                         style={{
@@ -456,9 +503,9 @@ const MissionVisionValues = () => {
               </div>
             ) : (
               // Desktop: Original card system
-              <div className='relative min-h-[300px] flex items-center'>
+              <div className='relative min-h-[220px] flex items-center'>
                 {activeIndex === null && (
-                  <div className='absolute inset-0 flex items-center justify-center text-slate-300 font-mono text-sm tracking-widest animate-pulse border-2 border-dashed border-slate-100 rounded-3xl'>
+                  <div className='absolute inset-0 flex items-center justify-center text-slate-300 font-mono text-sm tracking-widest animate-pulse border-2 border-dashed border-slate-100 rounded-2xl'>
                     WAITING FOR DATA STREAM...
                   </div>
                 )}
@@ -480,11 +527,11 @@ const MissionVisionValues = () => {
                         }
                       `}
                     >
-                      <div className='relative bg-white rounded-2xl p-4 shadow-[0_20px_60px_-15px_rgba(37,129,186,0.15)] border border-blue-50 overflow-hidden group'>
-                        <div className='flex items-start gap-6 relative z-10'>
+                      <div className='relative bg-white rounded-xl p-3.5 sm:p-4 shadow-[0_15px_40px_-15px_rgba(37,129,186,0.12)] border border-blue-50 overflow-hidden group'>
+                        <div className='flex items-start gap-3 sm:gap-4 relative z-10'>
                           <div className='flex-shrink-0'>
                             <div
-                              className='w-16 h-16 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-200/50 transform transition-transform duration-500 group-hover:rotate-6 group-hover:scale-110'
+                              className='w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-white shadow-md shadow-blue-200/50 transform transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105'
                               style={{
                                 background: isVision
                                   ? 'linear-gradient(135deg, #0f7ae5, #60a5fa)'
@@ -493,16 +540,28 @@ const MissionVisionValues = () => {
                                     : 'linear-gradient(135deg, #1e3a8a, #3b82f6)',
                               }}
                             >
-                              <Icon className='w-8 h-8' strokeWidth={1.5} />
+                              <Icon className='w-5 h-5 sm:w-6 sm:h-6' strokeWidth={1.5} />
                             </div>
                           </div>
-                          <div className='flex-1 pt-1'>
-                            <h4 className='text-xl font-roboto text-slate-900 mb-3 group-hover:text-blue-700 transition-colors'>
+                          <div className='flex-1 pt-0.5'>
+                            <h4 className='text-base sm:text-lg font-roboto font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors'>
                               {value.title}
                             </h4>
-                            <p className='text-slate-500 leading-relaxed font-mulish text-sm'>
-                              {value.description}
-                            </p>
+                            <ul className='space-y-1 sm:space-y-1.5 text-slate-600 font-roboto text-xs sm:text-sm leading-relaxed'>
+                              {Array.isArray(value.description) ? (
+                                value.description.map((item, idx) => (
+                                  <li key={idx} className='flex items-start gap-2'>
+                                    <span className='text-blue-500 font-bold select-none leading-none mt-1'>–</span>
+                                    <span className='flex-1'>{item}</span>
+                                  </li>
+                                ))
+                              ) : (
+                                <li className='flex items-start gap-2'>
+                                  <span className='text-blue-500 font-bold select-none leading-none mt-1'>–</span>
+                                  <span className='flex-1'>{value.description}</span>
+                                </li>
+                              )}
+                            </ul>
                           </div>
                         </div>
                       </div>

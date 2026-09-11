@@ -1,5 +1,5 @@
+import {Award, Calendar, PiggyBank, Target, TrendingUp} from 'lucide-react'
 import React from 'react'
-import {Calendar, Target, TrendingUp, Award, PiggyBank} from 'lucide-react'
 
 const AboutCompany = () => {
   const milestones = [
@@ -107,7 +107,7 @@ const AboutCompany = () => {
   const arrowHeadPoints = pathArrowHead.map(point => `${point.x},${point.y}`).join(' ')
 
   return (
-    <section className='relative py-12 sm:py-16 lg:py-24 overflow-hidden'>
+    <section className='relative py-12 overflow-hidden'>
       <div className='relative'>
         <div
           className='absolute inset-0 opacity-40'

@@ -19,34 +19,48 @@ body {
   @apply my-6 text-center text-3xl font-mulish text-[#2582BD] lg:my-14 lg:text-4xl;
 }
 
-/* @Style logo các đối tác  */
-@keyframes slide {
-  from {
-    transform: translateX(-5%);
+/* @Style logo các đối tác cuộn lặp vô tận (Infinite Marquee) */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
   }
-  to {
+  100% {
     transform: translateX(-50%);
   }
 }
 
-.partner_scroll {
+@keyframes marqueeScrollReverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.partner_marquee_row {
   overflow: hidden;
-  white-space: nowrap;
   position: relative;
+  width: 100%;
 }
 
-.partner_scroll:before,
-.partner_scroll:after {
-  position: absolute;
-  top: 0;
-  content: '';
-  z-index: 1;
+.partner_marquee_track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
 }
 
-.partner_logo {
+.partner_marquee_row:hover .partner_marquee_track {
+  animation-play-state: paused;
+}
+
+.partner_marquee_mask {
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+
+.partner_logo_item {
   box-sizing: border-box;
-  display: inline-block;
-  animation: 15s slide infinite linear;
 }
 
 .swiper-slide {

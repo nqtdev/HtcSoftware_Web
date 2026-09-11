@@ -58,7 +58,7 @@ const CompanyOverview = () => {
   }
 
   return (
-    <section className='my-7'>
+    <section>
       <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <DescribeTitle
           title='Về Công Ty HTC'
