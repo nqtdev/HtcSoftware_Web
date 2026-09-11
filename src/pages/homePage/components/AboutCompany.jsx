@@ -32,7 +32,7 @@ const AboutCompany = () => {
     },
     {
       yearLabel: '2021 - Nay',
-      title: 'Đối tác chiến lược',
+      title: 'Đối tác chiến lược trung tâm RAR',
       description:
         'Tiếp tục khẳng định vị thế bằng các dự án chuyển đổi số quy mô lớn và mạng lưới hợp tác toàn quốc.',
       icon: Award,
@@ -40,7 +40,7 @@ const AboutCompany = () => {
       accentTo: '#3bb1f5',
     },
     {
-      yearLabel: 'Tương lai 2025+',
+      yearLabel: 'Tương lai +',
       title: 'Mở rộng hệ sinh thái',
       description:
         'Đặt mục tiêu dẫn dắt thị trường giải pháp eKYC, dữ liệu số và dịch vụ số hóa cho doanh nghiệp.',
@@ -107,8 +107,8 @@ const AboutCompany = () => {
   const arrowHeadPoints = pathArrowHead.map(point => `${point.x},${point.y}`).join(' ')
 
   return (
-    <section id='history' className='relative py-16 sm:py-20 lg:py-24 overflow-hidden'>
-      <div className='relative bg-gradient-to-br from-white via-blue-50/70 to-white rounded-3xl border border-white shadow-[0_40px_80px_-40px_rgba(15,122,229,0.4)] overflow-hidden'>
+    <section className='relative py-12 sm:py-16 lg:py-24 overflow-hidden'>
+      <div className='relative'>
         <div
           className='absolute inset-0 opacity-40'
           style={{
@@ -118,25 +118,22 @@ const AboutCompany = () => {
           }}
         />
 
-        <div className='relative z-10 p-8 lg:p-12'>
-          <div className='max-w-6xl mx-auto space-y-12'>
-            <div className='grid lg:grid-cols-[1.1fr,1.4fr] gap-12 items-center'>
-              <div className='space-y-6' data-aos='fade-up'>
+        <div className='relative z-10 px-4 sm:px-6 lg:p-12'>
+          <div className='max-w-6xl mx-auto space-y-8 lg:space-y-12'>
+            <div className='grid lg:grid-cols-[1.1fr,1.4fr] gap-8 lg:gap-12 items-center'>
+              <div className='space-y-4 lg:space-y-6' data-aos='fade-up'>
                 <div>
-                  <p className='uppercase tracking-[0.4em] text-xs text-slate-500 mb-4'>
-                    HTC SOFTWARE
-                  </p>
-                  <h2 className='text-4xl lg:text-5xl font-bold text-slate-900 leading-tight'>
+                  <h2 className='text-2xl sm:text-3xl lg:text-4xl font-roboto font-bold text-slate-900 leading-tight'>
                     Hành trình phát triển
                   </h2>
-                  <div className='w-24 h-1.5 bg-gradient-to-r from-[#0f7ae5] to-[#8ec5ff] mt-6'></div>
+                  <div className='w-20 lg:w-24 h-1.5 bg-gradient-to-r from-[#0f7ae5] to-[#8ec5ff] mt-4 lg:mt-6'></div>
                 </div>
-                <p className='text-slate-600 text-lg leading-relaxed'>
+                <p className='text-slate-600 text-base sm:text-lg font-roboto leading-relaxed'>
                   Chúng tôi phát triển với tinh thần công nghệ, luôn đổi mới để bắt kịp tốc độ
                   chuyển đổi số của thị trường. Mỗi cột mốc là một lần bứt phá về năng lực sản phẩm
                   và chất lượng dịch vụ.
                 </p>
-                <p className='text-slate-500 text-base leading-relaxed'>
+                <p className='text-slate-500 text-sm sm:text-base leading-relaxed font-roboto'>
                   Từ nền tảng eKYC, giải pháp xác thực chip CCCD đến tư vấn triển khai hệ sinh thái
                   số, HTC Software đồng hành cùng doanh nghiệp trên hành trình kiến tạo giá trị bền
                   vững.
@@ -204,10 +201,10 @@ const AboutCompany = () => {
                               top: `calc(${position.y}% + 10px)`,
                             }}
                           >
-                            <p className='text-sm font-semibold text-slate-900'>
+                            <p className='font-roboto text-sm font-semibold text-slate-900'>
                               {position.milestone.yearLabel}
                             </p>
-                            <p className='text-xs uppercase tracking-wide text-slate-500'>
+                            <p className='text-xs uppercase font-roboto tracking-wide text-slate-500'>
                               {position.milestone.title}
                             </p>
                           </div>
@@ -219,28 +216,33 @@ const AboutCompany = () => {
               </div>
             </div>
 
-            <div className='lg:hidden grid gap-6'>
-              {milestones.map(milestone => {
+            {/* Mobile timeline - chỉ hiển thị trên mobile */}
+            <div className='lg:hidden space-y-4 sm:space-y-6'>
+              {milestones.map((milestone, index) => {
                 const Icon = milestone.icon
                 return (
                   <div
                     key={milestone.yearLabel}
-                    className='bg-white/80 backdrop-blur rounded-2xl border border-slate-100 p-5 shadow-lg shadow-blue-100/70'
+                    className='bg-white/80 backdrop-blur rounded-xl sm:rounded-2xl border border-slate-100 p-4 sm:p-5 shadow-lg shadow-blue-100/70'
+                    data-aos='fade-up'
+                    data-aos-delay={index * 100}
                   >
-                    <div className='flex items-center gap-4 mb-3'>
+                    <div className='flex items-start gap-3 sm:gap-4 mb-3'>
                       <div
-                        className='w-12 h-12 rounded-xl flex items-center justify-center text-white shadow-inner'
+                        className='w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center text-white shadow-inner flex-shrink-0'
                         style={{
                           background: `linear-gradient(135deg, ${milestone.accentFrom}, ${milestone.accentTo})`,
                         }}
                       >
-                        <Icon className='w-5 h-5' />
+                        <Icon className='w-4 h-4 sm:w-5 sm:h-5' />
                       </div>
-                      <div>
-                        <p className='text-sm font-semibold text-slate-500'>
+                      <div className='flex-1 min-w-0'>
+                        <p className='text-xs sm:text-sm font-semibold text-slate-500'>
                           {milestone.yearLabel}
                         </p>
-                        <h3 className='text-lg font-bold text-slate-900'>{milestone.title}</h3>
+                        <h3 className='text-base sm:text-lg font-bold text-slate-900 leading-tight'>
+                          {milestone.title}
+                        </h3>
                       </div>
                     </div>
                     <p className='text-slate-600 text-sm leading-relaxed'>
@@ -251,8 +253,9 @@ const AboutCompany = () => {
               })}
             </div>
 
+            {/* Desktop cards - ẩn trên mobile */}
             <div
-              className='grid md:grid-cols-5 gap-6 pt-6 border-t border-white/60'
+              className='hidden lg:grid md:grid-cols-5 gap-6 pt-6 border-t border-white/60'
               data-aos='fade-up'
             >
               {milestones.map(milestone => (
@@ -260,11 +263,13 @@ const AboutCompany = () => {
                   key={`card-${milestone.yearLabel}`}
                   className='bg-white rounded-2xl p-5 border border-slate-100 shadow-lg shadow-blue-100/60'
                 >
-                  <p className='text-xs uppercase tracking-wide text-slate-400 mb-2'>
+                  <p className='text-xs uppercase tracking-wide text-slate-400 mb-2 font-roboto'>
                     {milestone.yearLabel}
                   </p>
-                  <h3 className='text-base font-semibold text-slate-900 mb-2'>{milestone.title}</h3>
-                  <p className='text-sm text-slate-500 leading-relaxed'>{milestone.description}</p>
+                  <h3 className='text-sm text-blue-700 mb-2 font-roboto'>{milestone.title}</h3>
+                  <p className='text-sm text-slate-500 leading-relaxed font-roboto'>
+                    {milestone.description}
+                  </p>
                 </div>
               ))}
             </div>

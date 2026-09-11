@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types'
-import Mail from 'assets/icon_buttons/seenMail.webp'
 import 'animate.css'
-import {useState} from 'react'
+import Mail from 'assets/icon_buttons/seenMail.webp'
+import PropTypes from 'prop-types'
+import { useState } from 'react'
 
 const ButtonMail = ({emailAddress}) => {
   const [isClicked, setIsClicked] = useState(false)
@@ -23,7 +23,7 @@ const ButtonMail = ({emailAddress}) => {
   }
 
   return (
-    <div className='button_mail mb-4 '>
+    <div className='button_mail '>
       <a
         href={`mailto:${emailAddress}`}
         onClick={handleClick}
@@ -33,7 +33,7 @@ const ButtonMail = ({emailAddress}) => {
           ${isClicked ? 'animate__fadeOutTopRight' : 'animate__zoomInRight'}
         `}
       >
-        <img className='w-[60%] xl:w-[70%]' src={Mail} alt='Send email' />
+        <img className='w-[40%] xl:w-[50%]' src={Mail} alt='Send email' />
       </a>
     </div>
   )

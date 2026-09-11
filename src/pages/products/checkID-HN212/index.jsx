@@ -1,18 +1,16 @@
+import imgProduct_HN from 'assets/image_products/checkID-HN212/banner.png'
+import DepthCarousel from 'components/DepthCarousel'
+import OtherProduct from 'components/otherProducts'
+import DataGet from 'components/softwareInterface/DataGet'
+import HanelView from 'components/softwareInterface/HanelView'
 import TableSpecification from 'components/TableSpecification'
 import {DeviceParameters, DeviceParametersCamera} from './data/DeviceParameters'
 import SlideProduct from './data/SlideProduct'
-import imgProduct_HN from 'assets/image_products/checkID-HN212/banner.png'
-import SlideShowSwiper from 'components/SlideShowSwiper'
-import OtherProduct from 'components/otherProducts'
-import HanelView from 'components/softwareInterface/HanelView'
-import DataGet from 'components/softwareInterface/DataGet'
-import FeaturesSection from 'components/FeaturesSection'
-import Features from './data/Features'
 
 import ProductDescription from 'components/ProductDescription'
-import DataProductDescription from './data/ProductDescription'
-import DescribeTitle from 'layout/DescribeTitle'
 import CallToAction from 'layout/CallToAction'
+import DescribeTitle from 'layout/DescribeTitle'
+import DataProductDescription from './data/ProductDescription'
 const CheckIdHn = () => {
   return (
     <div className='overflow-hidden'>
@@ -31,7 +29,7 @@ const CheckIdHn = () => {
           </div>
 
           {/* Content */}
-          <div className='relative z-10 container mx-auto px-4 py-16 md:py-24 h-full flex flex-col md:flex-row items-center'>
+          <div className='relative z-10 container mx-auto px-4 py-16 md:py-32 h-full flex flex-col md:flex-row items-center'>
             {/* Text Content */}
             <div
               data-aos='fade-right'
@@ -78,14 +76,39 @@ const CheckIdHn = () => {
           <div className='my-4 text-center'>
             <DescribeTitle title='Hình ảnh sản phẩm' />
           </div>
-          <div className='m-auto w-5/6'>
-            <SlideShowSwiper slidesShow={SlideProduct} />
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 items-center'>
+            <div className='m-auto w-full my-3' style={{height: '520px', position: 'relative'}}>
+              <DepthCarousel
+                items={SlideProduct}
+                depth={220}
+                spread={90}
+                tilt={22}
+                tiltDirection='right'
+                perspective={1400}
+                visibleCards={4}
+                falloff={0.2}
+                blur={4}
+                autoplay={false}
+                loop={true}
+                cardWidth={400}
+                cardHeight={500}
+                radius={18}
+                tint=''
+                duration={700}
+                ease='power3.out'
+                autoplayDelay={3200}
+                showControls={true}
+                showIndicators={true}
+                cardClassName='bg-white shadow-[0_20px_50px_rgba(0,0,0,0.12)] border border-gray-100'
+                imageFit='object-contain p-4'
+              />
+            </div>
+            <div className='flex items-center justify-center h-full'>
+              <ProductDescription data={DataProductDescription} />
+            </div>
           </div>
-          <ProductDescription data={DataProductDescription} />
         </section>
-        <section>
-          <FeaturesSection dataFeatures={Features} />
-        </section>
+
         <section>
           <HanelView />
         </section>

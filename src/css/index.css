@@ -3,33 +3,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  @apply font-mulish;
-} */
-
-.style-address {
-  @apply mb-3 font-bold uppercase text-white;
+/* Base style resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  position: relative;
 }
 
 /* style thẻ h2 của các section */
 .base_title {
   @apply my-6 text-center text-3xl font-mulish text-[#2582BD] lg:my-14 lg:text-4xl;
-}
-
-/* style các đầu mục của : Giá trị chúng tôi đem lại  */
-.sticker_check {
-  @apply my-2 flex items-center;
-}
-.sticker_describe {
-  @apply text-sm font-medium text-white lg:text-2xl overflow-hidden;
-}
-
-/* style các mục của : Thao tác 4 bước  */
-.operation_text {
-  @apply text-2xl font-bold text-blue-700;
-}
-.operation_img {
-  @apply m-auto w-[90%] p-4;
 }
 
 /* @Style logo các đối tác  */
@@ -42,13 +29,83 @@
   }
 }
 
-/* @ Pages Mô tả thông tin sản phẩm CheckID-ET100 */
-.table_body {
-  @apply border border-gray-300 bg-main-table p-3 text-left text-xl text-black;
+.partner_scroll {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
 }
-.table_specification {
-  @apply border border-gray-300 p-2 text-left font-roboto text-sm; /* Đảm bảo rằng font 'roboto' đã được định nghĩa */
+
+.partner_scroll:before,
+.partner_scroll:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  z-index: 1;
 }
-.table_item {
-  @apply border border-gray-300 bg-main-table/40 p-2 text-left font-roboto text-sm; /* Đảm bảo rằng font 'roboto' đã được định nghĩa */
+
+.partner_logo {
+  box-sizing: border-box;
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* @ Style nút cuộn lên đầu trang  */
+.button_scroll {
+  position: fixed;
+  bottom: 11rem;
+  right: -1.7rem;
+  z-index: 10;
+}
+.button_call {
+  position: fixed;
+  bottom: 1rem;
+  right: -1.7rem;
+  z-index: 10;
+}
+.button_mail {
+  position: fixed;
+  bottom: 6rem;
+  right: -1.7rem;
+  z-index: 10;
+}
+
+.__react_modal_image__header {
+  background-color: transparent !important;
+}
+.ant-tabs-nav {
+  margin: auto !important;
+}
+
+#collapse-demo-collapsible .ant-space {
+  width: 100%;
+}
+
+/* StrokeText component styles */
+.stroke-text {
+  display: block;
+  width: 100%;
+  line-height: 0;
+}
+
+.stroke-text--hover {
+  cursor: pointer;
+}
+
+.stroke-text__svg {
+  display: block;
+  width: 100%;
+  height: var(--stroke-text-height, 160px);
+}
+
+.stroke-text__stroke,
+.stroke-text__fill {
+  user-select: none;
 }

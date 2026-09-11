@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import DescribeTitle from 'layout/DescribeTitle'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 const TableSpecification = ({data}) => {
   const formatSpecification = spec => {
@@ -14,7 +14,7 @@ const TableSpecification = ({data}) => {
   }
 
   return (
-    <section className='py-8 md:py-12 px-4 sm:px-6 lg:px-8 min-h-screen overflow-hidden'>
+    <section className='py-8 md:py-12 px-4 sm:px-6 lg:px-8 min-h-screen overflow-hidden font-roboto'>
       <div className='max-w-7xl mx-auto'>
         <div className='text-center mb-8 md:mb-12'>
           <div className='mb-12'>
@@ -27,34 +27,34 @@ const TableSpecification = ({data}) => {
             <table className='min-w-full'>
               <thead>
                 <tr className='bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800'>
-                  <th className='px-4 md:px-8 py-4 md:py-6 text-left border-r border-slate-600'>
+                  <th className='px-2 md:px-4 py-2 md:py-3 text-left border-r border-slate-600'>
                     <div className='flex items-center space-x-2 md:space-x-3'>
                       <div className='w-2 h-2 md:w-3 md:h-3 bg-blue-400 rounded-full'></div>
-                      <span className='text-xs md:text-sm font-medium text-white uppercase tracking-wider'>
+                      <span className='text-xs md:text-sm font-medium text-white tracking-wider font-roboto'>
                         Mục
                       </span>
                     </div>
                   </th>
-                  <th className='px-4 md:px-8 py-4 md:py-6 text-left border-r border-slate-600'>
+                  <th className='px-2 md:px-4 py-2 md:py-3 text-left border-r border-slate-600'>
                     <div className='flex items-center space-x-2 md:space-x-3'>
                       <div className='w-2 h-2 md:w-3 md:h-3 bg-green-400 rounded-full'></div>
-                      <span className='text-xs md:text-sm font-medium text-white uppercase tracking-wider'>
+                      <span className='text-xs md:text-sm font-medium text-white tracking-wider font-roboto'>
                         Mô tả kỹ thuật
                       </span>
                     </div>
                   </th>
-                  <th className='px-4 md:px-8 py-4 md:py-6 text-left border-r border-slate-600'>
+                  <th className='px-2 md:px-4 py-2 md:py-3 text-left border-r border-slate-600'>
                     <div className='flex items-center space-x-2 md:space-x-3'>
                       <div className='w-2 h-2 md:w-3 md:h-3 bg-purple-400 rounded-full'></div>
-                      <span className='text-xs md:text-sm font-medium text-white uppercase tracking-wider'>
+                      <span className='text-xs md:text-sm font-medium text-white tracking-wider font-roboto'>
                         Mục
                       </span>
                     </div>
                   </th>
-                  <th className='px-4 md:px-8 py-4 md:py-6 text-left'>
+                  <th className='px-2 md:px-4 py-2 md:py-3 text-left'>
                     <div className='flex items-center space-x-2 md:space-x-3'>
                       <div className='w-2 h-2 md:w-3 md:h-3 bg-yellow-400 rounded-full'></div>
-                      <span className='text-xs md:text-sm font-medium text-white uppercase tracking-wider'>
+                      <span className='text-xs md:text-sm font-medium text-white tracking-wider font-roboto'>
                         Mô tả kỹ thuật
                       </span>
                     </div>
@@ -70,40 +70,40 @@ const TableSpecification = ({data}) => {
                       index % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'
                     }`}
                   >
-                    <td className='px-4 md:px-8 py-4 md:py-6 border-r border-gray-200 group-hover:border-blue-200'>
+                    <td className='px-2 md:px-4 py-2 md:py-3 border-r border-gray-200 group-hover:border-blue-200'>
                       <div className='flex items-start space-x-2 md:space-x-4'>
                         <div className='flex-shrink-0 mt-1'>
                           <div className='w-1.5 h-1.5 md:w-2 md:h-2 bg-blue-500 rounded-full group-hover:bg-blue-600 transition-colors'></div>
                         </div>
                         <div className='min-w-0 flex-1'>
-                          <p className='text-xs md:text-sm font-semibold text-gray-800 group-hover:text-blue-900 transition-colors leading-relaxed'>
+                          <p className='text-xs md:text-sm font-semibold text-gray-800 group-hover:text-blue-900 transition-colors leading-relaxed font-roboto'>
                             {row.itemA}
                           </p>
                         </div>
                       </div>
                     </td>
 
-                    <td className='px-4 md:px-8 py-4 md:py-6 border-r border-gray-200 group-hover:border-blue-200'>
-                      <div className='text-xs md:text-sm text-gray-600 group-hover:text-gray-700 leading-relaxed'>
+                    <td className='px-2 md:px-4 py-2 md:py-3 border-r border-gray-200 group-hover:border-blue-200'>
+                      <div className='text-xs md:text-sm text-gray-600 group-hover:text-gray-700 leading-relaxed font-roboto'>
                         <div className='space-y-1'>{formatSpecification(row.specificationA)}</div>
                       </div>
                     </td>
 
-                    <td className='px-4 md:px-8 py-4 md:py-6 border-r border-gray-200 group-hover:border-blue-200'>
+                    <td className='px-2 md:px-4 py-2 md:py-3 border-r border-gray-200 group-hover:border-blue-200'>
                       <div className='flex items-start space-x-2 md:space-x-4'>
                         <div className='flex-shrink-0 mt-1'>
                           <div className='w-1.5 h-1.5 md:w-2 md:h-2 bg-indigo-500 rounded-full group-hover:bg-indigo-600 transition-colors'></div>
                         </div>
                         <div className='min-w-0 flex-1'>
-                          <p className='text-xs md:text-sm font-semibold text-gray-800 group-hover:text-indigo-900 transition-colors leading-relaxed'>
+                          <p className='text-xs md:text-sm font-semibold text-gray-800 group-hover:text-indigo-900 transition-colors leading-relaxed font-roboto'>
                             {row.itemB}
                           </p>
                         </div>
                       </div>
                     </td>
 
-                    <td className='px-4 md:px-8 py-4 md:py-6'>
-                      <div className='text-xs md:text-sm text-gray-600 group-hover:text-gray-700 leading-relaxed'>
+                    <td className='px-2 md:px-4 py-2 md:py-3'>
+                      <div className='text-xs md:text-sm text-gray-600 group-hover:text-gray-700 leading-relaxed font-roboto'>
                         <div className='space-y-1'>{formatSpecification(row.specificationB)}</div>
                       </div>
                     </td>
@@ -129,10 +129,10 @@ const TableSpecification = ({data}) => {
                       <div className='w-2 h-2 bg-blue-500 rounded-full'></div>
                     </div>
                     <div>
-                      <h4 className='text-xs font-semibold text-gray-800 uppercase tracking-wider mb-1'>
+                      <h4 className='text-xs font-semibold text-gray-800 uppercase tracking-wider mb-1 font-roboto'>
                         {row.itemA}
                       </h4>
-                      <p className='text-xs text-gray-600'>
+                      <p className='text-xs text-gray-600 font-roboto'>
                         {formatSpecification(row.specificationA)}
                       </p>
                     </div>
@@ -146,10 +146,10 @@ const TableSpecification = ({data}) => {
                       <div className='w-2 h-2 bg-indigo-500 rounded-full'></div>
                     </div>
                     <div>
-                      <h4 className='text-xs font-semibold text-gray-800 uppercase tracking-wider mb-1'>
+                      <h4 className='text-xs font-semibold text-gray-800 uppercase tracking-wider mb-1 font-roboto'>
                         {row.itemB}
                       </h4>
-                      <p className='text-xs text-gray-600'>
+                      <p className='text-xs text-gray-600 font-roboto'>
                         {formatSpecification(row.specificationB)}
                       </p>
                     </div>

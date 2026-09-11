@@ -7,9 +7,6 @@ import IconNfc from 'assets/page_RarEkycPlatform/section_content_b/icon_nfc.png'
 import IconSdk from 'assets/page_RarEkycPlatform/section_content_b/icon_sdk.png'
 import IconApi from 'assets/page_RarEkycPlatform/section_content_b/icon_api.png'
 import Banner_CCDV from 'assets/page_RarEkycPlatform/section_content_b/banner_section.png'
-import PartnerLogo from 'components/rarEkyc/PartnerLogo'
-import Certificate from 'components/rarEkyc/Certificate'
-// import ButtonContact from 'layout/buttons/ButtonContact'
 import DescribeTitle from 'layout/DescribeTitle'
 import CallToAction from 'layout/CallToAction'
 import OnClound from 'assets/page_RarEkycPlatform/onCloud.webp'
@@ -451,26 +448,6 @@ const RarEkycPlatform = () => {
           </div>
         </div>
       </section>
-
-      {/* Đối tác */}
-      <section className='py-10 px-4 '>
-        <div className='container mx-auto max-w-6xl'>
-          <div data-aos='fade-up'>
-            <PartnerLogo />
-          </div>
-        </div>
-      </section>
-
-      {/* Chứng nhận */}
-      <section className='py-10 px-4 '>
-        <div className='container mx-auto max-w-6xl'>
-          <DescribeTitle title='Chứng nhận' description='' dataAos='fade-up' />
-          <div className='mt-12' data-aos='fade-up' data-aos-delay='200'>
-            <Certificate />
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <CallToAction />
 

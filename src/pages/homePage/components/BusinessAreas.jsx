@@ -1,9 +1,10 @@
-import {Cloud, Radio, Monitor, Cpu, Server, Activity, Zap} from 'lucide-react'
+import DescribeTitle from 'layout/DescribeTitle'
+import {Cloud, Radio, Monitor, Cpu, Server, Zap} from 'lucide-react'
 
 const businessAreas = [
   {
-    code: 'SOFT',
     title: 'Xuất Bản Phần Mềm',
+    code: 'SOFTWARE',
     icon: Cloud,
     description: 'Phát triển và xuất bản các phần mềm công nghệ tiên tiến.',
     accentFrom: '#0f172a',
@@ -11,8 +12,8 @@ const businessAreas = [
     position: 'left',
   },
   {
-    code: 'TELCO',
     title: 'Viễn Thông & Truyền Thông',
+    code: 'TELECOM',
     icon: Radio,
     description: 'Dịch vụ giá trị gia tăng và nội dung số di động.',
     accentFrom: '#0f3c7a',
@@ -20,8 +21,8 @@ const businessAreas = [
     position: 'left',
   },
   {
-    code: 'DEV',
     title: 'Lập Trình Máy Vi Tính',
+    code: 'PROGRAMMING',
     icon: Monitor,
     description: 'Thiết kế hệ thống CNTT chuyên nghiệp, đáp ứng kỹ thuật cao.',
     accentFrom: '#145a9c',
@@ -29,8 +30,8 @@ const businessAreas = [
     position: 'right',
   },
   {
-    code: 'CONS',
     title: 'Tư Vấn & Quản Trị',
+    code: 'MANAGEMENT',
     icon: Cpu,
     description: 'Vận hành hệ thống ổn định, tư vấn chiến lược tối ưu.',
     accentFrom: '#1b5b92',
@@ -41,158 +42,11 @@ const businessAreas = [
 
 // Main Core Service
 const coreService = {
-  code: 'CORE',
   title: 'Dịch Vụ CNTT Toàn Diện',
   icon: Server,
   description: 'Giải pháp số hóa chuyên nghiệp, hỗ trợ doanh nghiệp phát triển bền vững.',
   accentFrom: '#1c4370',
   accentTo: '#54c0ff',
-}
-
-const BusinessAreas = () => {
-  return (
-    <section id='business-areas' className='relative py-16 sm:py-20 lg:py-24 overflow-hidden'>
-      <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-        {/* THE MAINBOARD CONTAINER */}
-        <div className='relative bg-gradient-to-b from-slate-50 to-white rounded-[3rem] border border-blue-100 shadow-[0_40px_100px_-30px_rgba(15,122,229,0.15)] p-6 sm:p-10 lg:p-16 overflow-hidden'>
-          {/* Decorative Background Circuit Lines (Soft) */}
-          <svg
-            className='absolute inset-0 w-full h-full pointer-events-none opacity-30'
-            style={{zIndex: 0}}
-          >
-            <pattern id='grid' x='0' y='0' width='40' height='40' patternUnits='userSpaceOnUse'>
-              <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#e2e8f0' strokeWidth='1' />
-            </pattern>
-            <rect width='100%' height='100%' fill='url(#grid)' />
-          </svg>
-
-          {/* Section Header */}
-          <div className='relative z-10 text-center mb-16 lg:mb-24'>
-            <div className='inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 mb-4'>
-              <Activity className='w-4 h-4 text-blue-600' />
-              <span className='text-xs font-bold text-blue-800 uppercase tracking-wider'>
-                HTC Ecosystem
-              </span>
-            </div>
-            <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 font-mulish mb-4'>
-              Cấu Trúc Dịch Vụ
-            </h2>
-            <p className='text-slate-500 max-w-2xl mx-auto font-mulish'>
-              Các module dịch vụ liên kết chặt chẽ tạo nên sức mạnh công nghệ toàn diện
-            </p>
-          </div>
-
-          {/* THE MODULAR SYSTEM LAYOUT */}
-          <div className='relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-x-8 items-center'>
-            {/* CONNECTING LINES (DESKTOP ONLY) */}
-            <div
-              className='hidden lg:block absolute inset-0 pointer-events-none'
-              style={{zIndex: 0}}
-            >
-              {/* Dùng hệ trục 0–100 thay cho % */}
-              <svg className='w-full h-full overflow-visible' viewBox='0 0 100 100'>
-                {/* Center to Left Top */}
-                <path
-                  d='M 50 50 C 35 50, 35 20, 25 20'
-                  fill='none'
-                  stroke='#cbd5e1'
-                  strokeWidth='2'
-                  strokeDasharray='6 4'
-                  className='animate-pulse'
-                  style={{animationDuration: '3s'}}
-                />
-                {/* Center to Left Bottom */}
-                <path
-                  d='M 50 50 C 35 50, 35 80, 25 80'
-                  fill='none'
-                  stroke='#cbd5e1'
-                  strokeWidth='2'
-                  strokeDasharray='6 4'
-                  className='animate-pulse'
-                  style={{animationDuration: '3.5s'}}
-                />
-                {/* Center to Right Top */}
-                <path
-                  d='M 50 50 C 65 50, 65 20, 75 20'
-                  fill='none'
-                  stroke='#cbd5e1'
-                  strokeWidth='2'
-                  strokeDasharray='6 4'
-                  className='animate-pulse'
-                  style={{animationDuration: '4s'}}
-                />
-                {/* Center to Right Bottom */}
-                <path
-                  d='M 50 50 C 65 50, 65 80, 75 80'
-                  fill='none'
-                  stroke='#cbd5e1'
-                  strokeWidth='2'
-                  strokeDasharray='6 4'
-                  className='animate-pulse'
-                  style={{animationDuration: '4.5s'}}
-                />
-              </svg>
-            </div>
-
-            {/* LEFT COLUMN MODULES */}
-            <div className='space-y-8 lg:space-y-24'>
-              {businessAreas
-                .filter(i => i.position === 'left')
-                .map(area => (
-                  <ModuleCard key={area.code} area={area} align='right' />
-                ))}
-            </div>
-
-            {/* CENTER CORE MODULE */}
-            <div className='relative flex justify-center py-8 lg:py-0'>
-              {/* Halo Effect */}
-              <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-100/50 rounded-full blur-3xl animate-pulse'></div>
-
-              <div className='relative w-full max-w-sm bg-white rounded-[2rem] p-8 border-2 border-blue-100 shadow-[0_20px_60px_-10px_rgba(37,129,186,0.2)] text-center transform transition-transform duration-500 hover:scale-105 z-20'>
-                <div className='absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-xs font-bold px-4 py-1 rounded-full shadow-lg'>
-                  CORE SYSTEM
-                </div>
-
-                <div className='w-24 h-24 mx-auto bg-gradient-to-br from-blue-50 to-white rounded-2xl border border-blue-100 flex items-center justify-center mb-6 shadow-inner'>
-                  <div className='w-16 h-16 rounded-xl bg-gradient-to-br from-[#1c4370] to-[#54c0ff] flex items-center justify-center text-white shadow-lg'>
-                    <Server className='w-8 h-8' />
-                  </div>
-                </div>
-
-                <h3 className='text-2xl font-bold text-slate-900 mb-3 font-mulish'>
-                  {coreService.title}
-                </h3>
-                <p className='text-sm text-slate-500 mb-6 leading-relaxed'>
-                  {coreService.description}
-                </p>
-
-                {/* Connector Hubs */}
-                <div className='flex justify-center gap-2'>
-                  {[1, 2, 3, 4].map(i => (
-                    <div
-                      key={i}
-                      className={`w-2 h-2 rounded-full ${
-                        i <= 2 ? 'bg-green-400' : 'bg-slate-200'
-                      } animate-pulse`}
-                    ></div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* RIGHT COLUMN MODULES */}
-            <div className='space-y-8 lg:space-y-24'>
-              {businessAreas
-                .filter(i => i.position === 'right')
-                .map(area => (
-                  <ModuleCard key={area.code} area={area} align='left' />
-                ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
 }
 
 // Reusable Module Card Component
@@ -250,6 +104,193 @@ const ModuleCard = ({area, align}) => {
         </div>
       </div>
     </div>
+  )
+}
+
+const BusinessAreas = () => {
+  return (
+    <section className='relative py-16 sm:py-20 lg:py-24 overflow-hidden'>
+      <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        {/* THE MAINBOARD CONTAINER */}
+        <div className='relative '>
+          {/* Decorative Background Circuit Lines (Soft) */}
+          <svg
+            className='absolute inset-0 w-full h-full pointer-events-none opacity-30'
+            style={{zIndex: 0}}
+          >
+            <pattern id='grid' x='0' y='0' width='40' height='40' patternUnits='userSpaceOnUse'>
+              <path d='M 40 0 L 0 0 0 40' fill='none' stroke='#e2e8f0' strokeWidth='1' />
+            </pattern>
+            <rect width='100%' height='100%' fill='url(#grid)' />
+          </svg>
+
+          {/* Section Header */}
+          <DescribeTitle title='Cấu trúc dịch vụ' description='' />
+
+          {/* DESKTOP LAYOUT (GIỮ NGUYÊN) */}
+          <div className='hidden lg:grid relative z-10 grid-cols-3 gap-y-12 lg:gap-x-8 items-center'>
+            {/* CONNECTING LINES (DESKTOP ONLY) */}
+            <div className='absolute inset-0 pointer-events-none' style={{zIndex: 0}}>
+              {/* Dùng hệ trục 0–100 thay cho % */}
+              <svg className='w-full h-full overflow-visible' viewBox='0 0 100 100'>
+                {/* Center to Left Top */}
+                <path
+                  d='M 50 50 C 35 50, 35 20, 25 20'
+                  fill='none'
+                  stroke='#cbd5e1'
+                  strokeWidth='2'
+                  strokeDasharray='6 4'
+                  className='animate-pulse'
+                  style={{animationDuration: '3s'}}
+                />
+                {/* Center to Left Bottom */}
+                <path
+                  d='M 50 50 C 35 50, 35 80, 25 80'
+                  fill='none'
+                  stroke='#cbd5e1'
+                  strokeWidth='2'
+                  strokeDasharray='6 4'
+                  className='animate-pulse'
+                  style={{animationDuration: '3.5s'}}
+                />
+                {/* Center to Right Top */}
+                <path
+                  d='M 50 50 C 65 50, 65 20, 75 20'
+                  fill='none'
+                  stroke='#cbd5e1'
+                  strokeWidth='2'
+                  strokeDasharray='6 4'
+                  className='animate-pulse'
+                  style={{animationDuration: '4s'}}
+                />
+                {/* Center to Right Bottom */}
+                <path
+                  d='M 50 50 C 65 50, 65 80, 75 80'
+                  fill='none'
+                  stroke='#cbd5e1'
+                  strokeWidth='2'
+                  strokeDasharray='6 4'
+                  className='animate-pulse'
+                  style={{animationDuration: '4.5s'}}
+                />
+              </svg>
+            </div>
+
+            {/* LEFT COLUMN MODULES */}
+            <div className='space-y-8 lg:space-y-24'>
+              {businessAreas
+                .filter(i => i.position === 'left')
+                .map(area => (
+                  <ModuleCard key={area.code || area.title} area={area} align='right' />
+                ))}
+            </div>
+
+            {/* CENTER CORE MODULE */}
+            <div className='relative flex justify-center py-8 lg:py-0'>
+              {/* Halo Effect */}
+              <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-100/50 rounded-full blur-3xl animate-pulse'></div>
+
+              <div className='relative w-full max-w-sm bg-white rounded-[2rem] p-8 border-2 border-blue-100 shadow-[0_20px_60px_-10px_rgba(37,129,186,0.2)] text-center transform transition-transform duration-500 hover:scale-105 z-20'>
+                <div className='absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-xs font-bold px-4 py-1 rounded-full shadow-lg'>
+                  CORE SYSTEM
+                </div>
+
+                <div className='w-24 h-24 mx-auto bg-gradient-to-br from-blue-50 to-white rounded-2xl border border-blue-100 flex items-center justify-center mb-6 shadow-inner'>
+                  <div className='w-16 h-16 rounded-xl bg-gradient-to-br from-[#1c4370] to-[#54c0ff] flex items-center justify-center text-white shadow-lg'>
+                    <Server className='w-8 h-8' />
+                  </div>
+                </div>
+
+                <h3 className='text-2xl font-bold font-roboto text-slate-900 mb-3'>
+                  {coreService.title}
+                </h3>
+                <p className='text-sm font-roboto text-slate-500 mb-6 leading-relaxed'>
+                  {coreService.description}
+                </p>
+
+                {/* Connector Hubs */}
+                <div className='flex justify-center gap-2'>
+                  {[1, 2, 3, 4].map(i => (
+                    <div
+                      key={i}
+                      className={`w-2 h-2 rounded-full ${
+                        i <= 2 ? 'bg-green-400' : 'bg-slate-200'
+                      } animate-pulse`}
+                    ></div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* RIGHT COLUMN MODULES */}
+            <div className='space-y-8 lg:space-y-24'>
+              {businessAreas
+                .filter(i => i.position === 'right')
+                .map(area => (
+                  <ModuleCard key={area.code || area.title} area={area} align='left' />
+                ))}
+            </div>
+          </div>
+
+          {/* MOBILE LAYOUT (THIẾT KẾ LẠI) */}
+          <div className='lg:hidden relative z-10 mt-6'>
+            {/* Halo Effect for Mobile */}
+            <div className='absolute top-10 left-1/2 -translate-x-1/2 w-40 h-40 bg-blue-100/60 rounded-full blur-3xl'></div>
+
+            {/* Core Module at Top */}
+            <div className='relative flex justify-center mb-8'>
+              <div className='relative w-full max-w-md bg-white rounded-[1.75rem] p-6 border-2 border-blue-100 shadow-[0_16px_40px_-10px_rgba(37,129,186,0.25)] text-center z-20'>
+                <div className='absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-xs font-bold px-4 py-1 rounded-full shadow-md'>
+                  CORE SYSTEM
+                </div>
+
+                <div className='w-20 h-20 mx-auto bg-gradient-to-br from-blue-50 to-white rounded-2xl border border-blue-100 flex items-center justify-center mb-4 shadow-inner'>
+                  <div className='w-12 h-12 rounded-xl bg-gradient-to-br from-[#1c4370] to-[#54c0ff] flex items-center justify-center text-white shadow-lg'>
+                    <Server className='w-7 h-7' />
+                  </div>
+                </div>
+
+                <h3 className='text-xl font-bold font-roboto text-slate-900 mb-2'>
+                  {coreService.title}
+                </h3>
+                <p className='text-sm font-roboto text-slate-500 mb-4 leading-relaxed'>
+                  {coreService.description}
+                </p>
+
+                {/* Connector Hubs */}
+                <div className='flex justify-center gap-1.5'>
+                  {[1, 2, 3, 4].map(i => (
+                    <div
+                      key={i}
+                      className={`w-2 h-2 rounded-full ${
+                        i <= 2 ? 'bg-green-400' : 'bg-slate-200'
+                      } animate-pulse`}
+                    ></div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Vertical timeline label */}
+            <div className='flex items-center gap-2 mb-4'>
+              <div className='w-1 h-6 rounded-full bg-blue-500'></div>
+              <p className='text-xs font-semibold uppercase tracking-widest text-slate-400'>
+                Modules kết nối với Core
+              </p>
+            </div>
+
+            {/* Vertical Stack of Modules */}
+            <div className='space-y-4'>
+              {businessAreas.map((area, index) => (
+                <div key={area.code || area.title} className='flex w-full justify-center'>
+                  <ModuleCard area={area} align={index % 2 === 0 ? 'left' : 'right'} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 

@@ -121,7 +121,7 @@ const data = [
     NguoiKy: 'Nguyễn Chí Dũng',
     TrichYeu:
       'Quy định chi tiết và hướng dẫn một số điều của Nghị quyết số 193/2025/QH15 ngày 19 tháng 02 năm 2025 của Quốc hội về thí điểm một số cơ chế, chính sách đặc biệt tạo đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia',
-    TaiLieu: '/documents/Nghi_Dinh_88_NĐCP.pdf',
+    TaiLieu: '/documents/Nghi_Dinh_88_NDCP.pdf',
   },
   {
     id: '9',
@@ -133,7 +133,7 @@ const data = [
     CoQuanBanHanh: 'Chính Phủ',
     NguoiKy: 'Phạm Minh Chính',
     TrichYeu: 'Quy định về định danh và xác thực điện tử',
-    TaiLieu: '/documents/Nghi_Dinh_59_NĐCP.pdf',
+    TaiLieu: '/documents/Nghi_Dinh_59_NDCP.pdf',
   },
   {
     id: '10',
@@ -145,7 +145,7 @@ const data = [
     CoQuanBanHanh: 'Chính Phủ',
     NguoiKy: 'Trần Lưu Quang',
     TrichYeu: 'Quy định về định danh và xác thực điện tử',
-    TaiLieu: '/documents/Nghi_Dinh_69_NĐCP.pdf',
+    TaiLieu: '/documents/Nghi_Dinh_69_NDCP.pdf',
   },
 ]
 

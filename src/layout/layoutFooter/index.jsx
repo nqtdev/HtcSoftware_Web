@@ -3,7 +3,7 @@ import LogoHtcSw from 'assets/logo/logo_sw.webp'
 
 const LayoutFooter = () => {
   // const year = new Date().getFullYear()
-
+  const currentYear = new Date().getFullYear()
   return (
     <footer className='bg-gray-950 text-gray-100'>
       {/* Main grid */}
@@ -174,10 +174,10 @@ const LayoutFooter = () => {
               <li className='flex items-start'>
                 <Phone className='mt-0.5 h-5 w-5 text-gray-300' />
                 <a
-                  href='tel:0848565555'
+                  href='tel:0708896666'
                   className='ml-3 text-gray-300 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 rounded'
                 >
-                  084.856.5555
+                  070.889.6666
                 </a>
               </li>
               <li>
@@ -236,7 +236,7 @@ const LayoutFooter = () => {
 
         {/* Legal bar */}
         <div className='flex flex-col items-center justify-between gap-4 py-6 text-sm text-gray-400 md:flex-row'>
-          <p>© 2023 Công ty Cổ phần Giải pháp Phần mềm HTC. Mã số DN: 0103925078</p>
+          <p>© {currentYear} Công ty Cổ phần Giải pháp Phần mềm HTC. Mã số DN: 0103925078</p>
           <div className='flex flex-wrap items-center gap-x-6 gap-y-2'>
             <a href='#top' className='hover:text-white'>
               Bảo mật

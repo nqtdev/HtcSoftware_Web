@@ -14,19 +14,24 @@ import img_allq from 'assets/image_products/checkID-SR/all/19.webp'
 import img_allw from 'assets/image_products/checkID-SR/all/20.webp'
 
 const SlideProductCam = [
-  {slideContent: img_camq},
-  {slideContent: img_camw},
-
-  {slideContent: img_camr},
-
-  {slideContent: img_came},
+  {image: img_camq, alt: 'CheckID-SR có Camera 1', slideContent: img_camq},
+  {image: img_camw, alt: 'CheckID-SR có Camera 2', slideContent: img_camw},
+  {image: img_camr, alt: 'CheckID-SR có Camera 3', slideContent: img_camr},
+  {image: img_came, alt: 'CheckID-SR có Camera 4', slideContent: img_came},
 ]
+
 const SlideProductNoCam = [
-  {slideContent: img_nocam},
-  {slideContent: img_nocamq},
-  {slideContent: img_nocamw},
-  {slideContent: img_nocame},
-  {slideContent: img_nocamr},
+  {image: img_nocam, alt: 'CheckID-SR không Camera 1', slideContent: img_nocam},
+  {image: img_nocamq, alt: 'CheckID-SR không Camera 2', slideContent: img_nocamq},
+  {image: img_nocamw, alt: 'CheckID-SR không Camera 3', slideContent: img_nocamw},
+  {image: img_nocame, alt: 'CheckID-SR không Camera 4', slideContent: img_nocame},
+  {image: img_nocamr, alt: 'CheckID-SR không Camera 5', slideContent: img_nocamr},
 ]
-const SlideProduct = [{slideContent: img_all}, {slideContent: img_allw}, {slideContent: img_allq}]
+
+const SlideProduct = [
+  {image: img_all, alt: 'CheckID-SR so sánh 1', slideContent: img_all},
+  {image: img_allw, alt: 'CheckID-SR so sánh 2', slideContent: img_allw},
+  {image: img_allq, alt: 'CheckID-SR so sánh 3', slideContent: img_allq},
+]
+
 export {SlideProductCam, SlideProductNoCam, SlideProduct}

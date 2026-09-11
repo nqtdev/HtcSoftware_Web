@@ -32,5 +32,5 @@ export default {
       },
     },
   },
-  plugins: [flowbite.plugin(), require('tailwindcss-animated')],
+  plugins: [flowbite.plugin()],
 }

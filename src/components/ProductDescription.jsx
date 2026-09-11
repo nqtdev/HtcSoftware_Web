@@ -1,9 +1,8 @@
-/* eslint-disable react/prop-types */
-const ProductDescription = ({data}) => {
+const ProductDescription = ({data, className = ''}) => {
   return (
-    <section>
-      <div className='max-w-4xl mx-auto  overflow-hidden'>
-        <div className='p-8 md:p-12'>
+    <section className={className}>
+      <div className='max-w-md mx-auto overflow-hidden'>
+        <div className='p-4 sm:p-6'>
           <div className='space-y-4'>
             {data.map((item, index) => (
               <div key={index} className='flex items-start'>
@@ -23,7 +22,7 @@ const ProductDescription = ({data}) => {
                     />
                   </svg>
                 </div>
-                <p className='ml-3 text-gray-700 font-mulish text-lg'>{item.descriptions}</p>
+                <p className='ml-3 text-gray-700 font-roboto text-base text-left'>{item.descriptions}</p>
               </div>
             ))}
           </div>

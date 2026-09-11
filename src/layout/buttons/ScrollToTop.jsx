@@ -1,7 +1,7 @@
 // @ Nút chức năng cuộn lên đầu trang
-import {useEffect, useState} from 'react'
-import Scroll from 'assets/icon_buttons/scrollToTop.webp'
 import 'animate.css'
+import Scroll from 'assets/icon_buttons/scrollToTop.webp'
+import { useEffect, useState } from 'react'
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -49,7 +49,7 @@ const ScrollToTop = () => {
             ${isClicked ? 'animate__backOutUp' : 'animate__zoomInRight'}
           `}
         >
-          <img className='w-[60%] xl:w-[70%]' src={Scroll} alt='Scroll to top' />
+          <img className='w-[40%] xl:w-[50%]' src={Scroll} alt='Scroll to top' />
         </div>
       )}
     </div>

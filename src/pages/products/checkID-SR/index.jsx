@@ -1,17 +1,15 @@
+import imgProduct_SR from 'assets/image_products/checkID-SR/banner.webp'
+import OtherProduct from 'components/otherProducts'
+import DataGetSR from 'components/softwareInterface/DataGetSR'
+import MobileIDView from 'components/softwareInterface/MobileIdView'
 import TableSpecification from 'components/TableSpecification'
 import DeviceParameters from './data/DeviceParameters'
-import imgProduct_SR from 'assets/image_products/checkID-SR/banner.webp'
 import TabShowDevice from './tabShowDevice'
-import OtherProduct from 'components/otherProducts'
-import MobileIDView from 'components/softwareInterface/MobileIdView'
-import DataGetSR from 'components/softwareInterface/DataGetSR'
-import FeaturesSection from 'components/FeaturesSection'
-import Features from './data/Features'
 
 import ProductDescription from 'components/ProductDescription'
-import DataProductDescription from './data/ProductDescription'
 import CallToAction from 'layout/CallToAction'
 import DescribeTitle from 'layout/DescribeTitle'
+import DataProductDescription from './data/ProductDescription'
 
 const CheckIdSr = () => {
   return (
@@ -31,7 +29,7 @@ const CheckIdSr = () => {
           </div>
 
           {/* Content */}
-          <div className='relative z-10 container mx-auto px-4 py-16 md:py-24 h-full flex flex-col md:flex-row items-center'>
+          <div className='relative z-10 container mx-auto px-4 py-16 md:py-32 h-full flex flex-col md:flex-row items-center'>
             {/* Text Content */}
             <div
               data-aos='fade-right'
@@ -79,14 +77,16 @@ const CheckIdSr = () => {
           <div className='my-4 text-center'>
             <DescribeTitle title='Hình ảnh sản phẩm' />
           </div>
-          <div className='m-auto w-3/4'>
-            <TabShowDevice />
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 items-center'>
+            <div className='m-auto w-full'>
+              <TabShowDevice />
+            </div>
+            <div className='flex items-center justify-center h-full'>
+              <ProductDescription data={DataProductDescription} />
+            </div>
           </div>
-          <ProductDescription data={DataProductDescription} />
         </section>
-        <section>
-          <FeaturesSection dataFeatures={Features} />
-        </section>
+
         <section>
           <MobileIDView />
         </section>

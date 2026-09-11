@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
-import {NavLink} from 'react-router-dom'
-import {Swiper, SwiperSlide} from 'swiper/react'
+import { NavLink } from 'react-router-dom'
 import 'swiper/css'
 import 'swiper/css/free-mode'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
-import ShowProducts from './ShowProducts'
 import DescribeTitle from 'layout/DescribeTitle'
+import ShowProducts from './ShowProducts'
 
 const DEFAULT_BREAKPOINTS = {
   320: {slidesPerView: 1, spaceBetween: 16},
@@ -16,7 +16,7 @@ const DEFAULT_BREAKPOINTS = {
 
 function SlideSwiper({
   slides = ShowProducts,
-  title = title,
+  title = 'Xem thêm sản phẩm khác',
   description = '',
   swiperConfig = {freeMode: true},
 }) {
@@ -56,10 +56,10 @@ function SlideSwiper({
 
                     {/* Content */}
                     <div className='flex flex-1 flex-col p-6'>
-                      <h4 className='text-xl font-roboto font-semibold text-gray-800 line-clamp-1 transition-colors duration-200 group-hover:text-blue-600'>
+                      <h4 className='text-base font-roboto  text-gray-800 line-clamp-1 transition-colors duration-200 group-hover:text-blue-600'>
                         {item.slideName}
                       </h4>
-                      <p className='mt-3 flex-grow font-roboto text-gray-600 line-clamp-2'>
+                      <p className='mt-3 text-sm flex-grow font-roboto text-gray-600 line-clamp-2'>
                         {item.slideDescription}
                       </p>
                     </div>

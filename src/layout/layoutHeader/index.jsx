@@ -1,19 +1,20 @@
-import {useState, useEffect} from 'react'
-import {NavLink, useLocation} from 'react-router-dom'
 import {
+  BookOpen,
   ChevronDown,
-  Menu,
-  X,
-  Zap,
-  Shield,
-  Settings,
   Home,
   Layers,
-  ShieldCheck,
+  Menu,
   Newspaper,
   Scale,
-  BookOpen,
+  Settings,
+  Shield,
+  ShieldCheck,
+  ScanFace,
+  X,
+  Zap,
 } from 'lucide-react'
+import {useEffect, useState} from 'react'
+import {NavLink, useLocation} from 'react-router-dom'
 
 const HeaderWeb = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -73,10 +74,30 @@ const HeaderWeb = () => {
   ]
 
   const devices = [
-    {name: 'CheckID-SR', href: '/products/checkID-SR', category: 'Thiết bị đọc thẻ'},
-    {name: 'CheckID-ET100', href: '/products/checkID-ET100', category: 'Thiết bị đọc thẻ'},
-    {name: 'CheckID-R301', href: '/products/checkID-R301', category: 'Thiết bị đọc thẻ'},
-    {name: 'CheckID-HN212', href: '/products/checkID-HN212', category: 'Thiết bị đọc thẻ'},
+    {
+      name: 'CheckID-SR',
+      href: '/products/checkID-SR',
+      icon: ScanFace,
+      desc: 'Thiết bị đọc thẻ scan 2 mặt',
+    },
+    {
+      name: 'CheckID-ET100',
+      href: '/products/checkID-ET100',
+      icon: ScanFace,
+      desc: 'Thiết bị đọc thẻ Tablets',
+    },
+    {
+      name: 'CheckID-R301',
+      href: '/products/checkID-R301',
+      icon: ScanFace,
+      desc: 'Thiết bị đọc thẻ nhỏ gọn nhất',
+    },
+    {
+      name: 'CheckID-HN212',
+      href: '/products/checkID-HN212',
+      icon: ScanFace,
+      desc: 'Thiết bị đọc thẻ tiện lợi',
+    },
   ]
 
   const newDocuments = [
@@ -106,7 +127,7 @@ const HeaderWeb = () => {
     isActive ? 'text-purple-600' : 'text-gray-700 hover:text-purple-700'
 
   return (
-    <div className='mb-14'>
+    <div className='mb-16'>
       <header
         className={`fixed left-0 top-0 z-50 w-full transition-all duration-500 ${
           scrolled
@@ -116,7 +137,7 @@ const HeaderWeb = () => {
       >
         {/* <div className='absolute inset-0 bg-gradient-to-r from-purple-600/5 via-blue-600/5 to-indigo-600/5'></div> */}
         <nav className='relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-          <div className='flex items-center justify-between h-14'>
+          <div className='flex items-center justify-between h-16'>
             {/* Logo với NavLink */}
             <div className='flex-shrink-0 group'>
               <NavLink to='/' className='flex items-center space-x-3'>
@@ -125,7 +146,7 @@ const HeaderWeb = () => {
                   <img
                     src='/logo_sw.webp'
                     alt='HTC Software Logo'
-                    className='relative h-12 w-auto transform group-hover:scale-105 transition-transform duration-300'
+                    className='relative h-14 w-auto transform group-hover:scale-105 transition-transform duration-300'
                   />
                 </div>
               </NavLink>
@@ -143,13 +164,13 @@ const HeaderWeb = () => {
                       `group relative px-4 py-2 rounded-xl transition-all duration-300 hover:bg-white/10 ${isActive ? 'text-purple-600' : 'text-gray-700'}`
                     }
                   >
-                    <div className='flex items-center space-x-2'>
+                    <div className='flex items-center space-x-1'>
                       <Icon
                         size={14}
                         className={`transition-colors duration-300 ${navLinkStyle}`}
                       />
                       <span
-                        className={`text-sm font-roboto transition-colors duration-300 ${navLinkStyle}`}
+                        className={`text-xs font-roboto transition-colors duration-300 ${navLinkStyle}`}
                       >
                         {item.name}
                       </span>
@@ -171,7 +192,7 @@ const HeaderWeb = () => {
                     className={`text-gray-600 group-hover:text-purple-600 transition-colors duration-300 ${location.pathname.startsWith('/newDocuments') ? 'text-purple-600' : ''}`}
                   />
                   <span
-                    className={`text-sm font-roboto transition-colors duration-300 ${location.pathname.startsWith('/newDocuments') ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-700'}`}
+                    className={`text-xs font-roboto transition-colors duration-300 ${location.pathname.startsWith('/newDocuments') ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-700'}`}
                   >
                     Tin tức - Tài liệu
                   </span>
@@ -196,17 +217,17 @@ const HeaderWeb = () => {
                             href={item.href}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='group block p-4 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-50 hover:to-blue-50'
+                            className='group block p-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-50 hover:to-blue-50'
                           >
                             <div className='flex items-start space-x-3'>
-                              <div className='p-2 rounded-lg transition-all duration-300 bg-gradient-to-r from-purple-100 to-blue-100 group-hover:from-purple-200 group-hover:to-blue-200'>
+                              <div className='p-1 rounded-lg transition-all duration-300 bg-gradient-to-r from-purple-100 to-blue-100 group-hover:from-purple-200 group-hover:to-blue-200'>
                                 <Icon size={20} className='text-purple-600' />
                               </div>
                               <div>
-                                <div className='font-roboto transition-colors duration-300 text-gray-900 group-hover:text-purple-700'>
+                                <div className='font-roboto text-xs transition-colors duration-300 text-gray-900 group-hover:text-purple-700'>
                                   {item.name}
                                 </div>
-                                <div className='text-sm text-gray-500 mt-1'>{item.desc}</div>
+                                <div className='text-xs text-gray-500 mt-1'>{item.desc}</div>
                               </div>
                             </div>
                           </a>
@@ -215,7 +236,7 @@ const HeaderWeb = () => {
                             key={index}
                             to={item.href}
                             className={({isActive}) =>
-                              `group block p-4 rounded-xl transition-all duration-300 ${
+                              `group block p-2 rounded-xl transition-all duration-300 ${
                                 isActive
                                   ? 'bg-gradient-to-r from-purple-50 to-blue-50'
                                   : 'hover:bg-gradient-to-r hover:from-purple-50 hover:to-blue-50'
@@ -224,7 +245,7 @@ const HeaderWeb = () => {
                           >
                             <div className='flex items-start space-x-3'>
                               <div
-                                className={`p-2 rounded-lg transition-all duration-300 ${
+                                className={`p-1 rounded-lg transition-all duration-300 ${
                                   location.pathname === item.href
                                     ? 'bg-gradient-to-r from-purple-200 to-blue-200'
                                     : 'bg-gradient-to-r from-purple-100 to-blue-100 group-hover:from-purple-200 group-hover:to-blue-200'
@@ -234,7 +255,7 @@ const HeaderWeb = () => {
                               </div>
                               <div>
                                 <div
-                                  className={`font-roboto transition-colors duration-300 ${
+                                  className={`font-roboto text-xs transition-colors duration-300 ${
                                     location.pathname === item.href
                                       ? 'text-purple-700'
                                       : 'text-gray-900 group-hover:text-purple-700'
@@ -242,7 +263,7 @@ const HeaderWeb = () => {
                                 >
                                   {item.name}
                                 </div>
-                                <div className='text-sm text-gray-500 mt-1'>{item.desc}</div>
+                                <div className='text-xs text-gray-500 mt-1'>{item.desc}</div>
                               </div>
                             </div>
                           </NavLink>
@@ -263,7 +284,7 @@ const HeaderWeb = () => {
                     className={`text-gray-600 group-hover:text-purple-600 transition-colors duration-300 ${location.pathname.startsWith('/solution') ? 'text-purple-600' : ''}`}
                   />
                   <span
-                    className={`text-sm font-roboto transition-colors duration-300 ${location.pathname.startsWith('/solution') ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-700'}`}
+                    className={`text-xs font-roboto transition-colors duration-300 ${location.pathname.startsWith('/solution') ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-700'}`}
                   >
                     Giải Pháp
                   </span>
@@ -288,17 +309,17 @@ const HeaderWeb = () => {
                             href={item.href}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='group block p-4 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-50 hover:to-blue-50'
+                            className='group block p-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-50 hover:to-blue-50'
                           >
                             <div className='flex items-start space-x-3'>
                               <div className='p-2 rounded-lg transition-all duration-300 bg-gradient-to-r from-purple-100 to-blue-100 group-hover:from-purple-200 group-hover:to-blue-200'>
                                 <Icon size={20} className='text-purple-600' />
                               </div>
                               <div>
-                                <div className='font-roboto transition-colors duration-300 text-gray-900 group-hover:text-purple-700'>
+                                <div className='font-roboto text-xs transition-colors duration-300 text-gray-900 group-hover:text-purple-700'>
                                   {item.name}
                                 </div>
-                                <div className='text-sm text-gray-500 mt-1'>{item.desc}</div>
+                                <div className='text-xs text-gray-500 mt-1'>{item.desc}</div>
                               </div>
                             </div>
                           </a>
@@ -307,7 +328,7 @@ const HeaderWeb = () => {
                             key={index}
                             to={item.href}
                             className={({isActive}) =>
-                              `group block p-4 rounded-xl transition-all duration-300 ${
+                              `group block p-2 rounded-xl transition-all duration-300 ${
                                 isActive
                                   ? 'bg-gradient-to-r from-purple-50 to-blue-50'
                                   : 'hover:bg-gradient-to-r hover:from-purple-50 hover:to-blue-50'
@@ -326,7 +347,7 @@ const HeaderWeb = () => {
                               </div>
                               <div>
                                 <div
-                                  className={`font-roboto transition-colors duration-300 ${
+                                  className={`font-roboto text-xs transition-colors duration-300 ${
                                     location.pathname === item.href
                                       ? 'text-purple-700'
                                       : 'text-gray-900 group-hover:text-purple-700'
@@ -334,7 +355,7 @@ const HeaderWeb = () => {
                                 >
                                   {item.name}
                                 </div>
-                                <div className='text-sm text-gray-500 mt-1'>{item.desc}</div>
+                                <div className='text-xs text-gray-500 mt-1'>{item.desc}</div>
                               </div>
                             </div>
                           </NavLink>
@@ -355,7 +376,7 @@ const HeaderWeb = () => {
                     className={`text-gray-600 group-hover:text-purple-600 transition-colors duration-300 ${location.pathname.startsWith('/products') ? 'text-purple-600' : ''}`}
                   />
                   <span
-                    className={`text-sm font-roboto transition-colors duration-300 ${location.pathname.startsWith('/products') ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-700'}`}
+                    className={`text-xs font-roboto transition-colors duration-300 ${location.pathname.startsWith('/products') ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-700'}`}
                   >
                     Thiết Bị
                   </span>
@@ -370,32 +391,68 @@ const HeaderWeb = () => {
                 </button>
 
                 {activeDropdown === 'devices' && (
-                  <div className='absolute top-full right-0 mt-4 w-96 bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/20 p-3 z-50'>
-                    <div className='grid grid-cols-2 gap-3'>
-                      {devices.map((item, index) => (
-                        <NavLink
-                          key={index}
-                          to={item.href}
-                          className={({isActive}) =>
-                            `p-3 rounded-xl transition-all duration-300 border ${
-                              isActive
-                                ? 'bg-gradient-to-br from-purple-50 to-blue-50 border-purple-100'
-                                : 'border-transparent hover:border-purple-100 hover:bg-gradient-to-br hover:from-purple-50 hover:to-blue-50'
-                            }`
-                          }
-                        >
-                          <div
-                            className={`font-roboto transition-colors duration-300 ${
-                              location.pathname === item.href
-                                ? 'text-purple-700'
-                                : 'text-gray-900 group-hover:text-purple-700'
-                            } text-sm`}
+                  <div className='absolute top-full right-0 mt-4 w-80 bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/20 p-3 z-50'>
+                    <div className='space-y-4'>
+                      {devices.map((item, index) => {
+                        const Icon = item.icon
+                        return item.external ? (
+                          <a
+                            key={index}
+                            href={item.href}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='group block p-2 rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-50 hover:to-blue-50'
                           >
-                            {item.name}
-                          </div>
-                          <div className='text-xs text-gray-500 mt-1'>{item.category}</div>
-                        </NavLink>
-                      ))}
+                            <div className='flex items-start space-x-3'>
+                              <div className='p-2 rounded-lg transition-all duration-300 bg-gradient-to-r from-purple-100 to-blue-100 group-hover:from-purple-200 group-hover:to-blue-200'>
+                                <Icon size={20} className='text-purple-600' />
+                              </div>
+                              <div>
+                                <div className='font-roboto text-xs transition-colors duration-300 text-gray-900 group-hover:text-purple-700'>
+                                  {item.name}
+                                </div>
+                                <div className='text-xs text-gray-500 mt-1'>{item.desc}</div>
+                              </div>
+                            </div>
+                          </a>
+                        ) : (
+                          <NavLink
+                            key={index}
+                            to={item.href}
+                            className={({isActive}) =>
+                              `group block p-2 rounded-xl transition-all duration-300 ${
+                                isActive
+                                  ? 'bg-gradient-to-r from-purple-50 to-blue-50'
+                                  : 'hover:bg-gradient-to-r hover:from-purple-50 hover:to-blue-50'
+                              }`
+                            }
+                          >
+                            <div className='flex items-start space-x-3'>
+                              <div
+                                className={`p-2 rounded-lg transition-all duration-300 ${
+                                  location.pathname === item.href
+                                    ? 'bg-gradient-to-r from-purple-200 to-blue-200'
+                                    : 'bg-gradient-to-r from-purple-100 to-blue-100 group-hover:from-purple-200 group-hover:to-blue-200'
+                                }`}
+                              >
+                                <Icon size={20} className='text-purple-600' />
+                              </div>
+                              <div>
+                                <div
+                                  className={`font-roboto text-xs transition-colors duration-300 ${
+                                    location.pathname === item.href
+                                      ? 'text-purple-700'
+                                      : 'text-gray-900 group-hover:text-purple-700'
+                                  }`}
+                                >
+                                  {item.name}
+                                </div>
+                                <div className='text-xs text-gray-500 mt-1'>{item.desc}</div>
+                              </div>
+                            </div>
+                          </NavLink>
+                        )
+                      })}
                     </div>
                   </div>
                 )}
@@ -622,19 +679,33 @@ const HeaderWeb = () => {
 
                     {activeDropdown === 'devices' && (
                       <div className='mt-2 ml-6 space-y-2'>
-                        {devices.map((item, index) => (
-                          <NavLink
-                            key={index}
-                            to={item.href}
-                            className={({isActive}) =>
-                              `block p-2 text-sm transition-colors duration-300 ${
-                                isActive ? 'text-purple-600' : 'text-gray-600 hover:text-purple-600'
-                              }`
-                            }
-                          >
-                            {item.name}
-                          </NavLink>
-                        ))}
+                        {devices.map((item, index) =>
+                          item.external ? (
+                            <a
+                              key={index}
+                              href={item.href}
+                              target='_blank'
+                              rel='noopener noreferrer'
+                              className='block p-2 text-sm font-roboto text-gray-600 hover:text-purple-600 transition-colors duration-300'
+                            >
+                              {item.name}
+                            </a>
+                          ) : (
+                            <NavLink
+                              key={index}
+                              to={item.href}
+                              className={({isActive}) =>
+                                `block p-2 text-sm font-roboto transition-colors duration-300 ${
+                                  isActive
+                                    ? 'text-purple-600'
+                                    : 'text-gray-600 hover:text-purple-600'
+                                }`
+                              }
+                            >
+                              {item.name}
+                            </NavLink>
+                          ),
+                        )}
                       </div>
                     )}
                   </div>

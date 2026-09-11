@@ -1,7 +1,7 @@
-import {Button} from 'antd'
-import {NavLink} from 'react-router-dom'
-import {HomeOutlined, MoonOutlined, SunOutlined} from '@ant-design/icons'
-import {useState} from 'react'
+import { Button } from 'antd'
+import { Home, Moon, Sun } from 'lucide-react'
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const ErrorPage = () => {
   const [isDark, setIsDark] = useState(false)
@@ -18,11 +18,11 @@ const ErrorPage = () => {
         {/* Theme Toggle */}
         <button
           onClick={() => setIsDark(!isDark)}
-          className={`absolute top-6 right-6 p-2 rounded-lg transition-colors ${
-            isDark ? 'bg-gray-700 hover:bg-gray-600' : 'bg-white hover:bg-gray-100'
+          className={`absolute top-6 right-6 p-2 rounded-lg transition-colors flex items-center justify-center ${
+            isDark ? 'bg-gray-700 hover:bg-gray-600 text-yellow-400' : 'bg-white hover:bg-gray-100 text-gray-600'
           }`}
         >
-          {isDark ? <SunOutlined /> : <MoonOutlined />}
+          {isDark ? <Sun size={20} /> : <Moon size={20} />}
         </button>
 
         {/* GIF Vui nhộn */}
@@ -51,12 +51,8 @@ const ErrorPage = () => {
             <Button
               type='primary'
               size='large'
-              icon={<HomeOutlined />}
-              className={
-                isDark
-                  ? 'bg-blue-600 hover:bg-blue-700 border-blue-600'
-                  : 'bg-blue-600 hover:bg-blue-700 border-blue-600'
-              }
+              icon={<Home size={16} />}
+              className='bg-blue-600 hover:bg-blue-700 border-blue-600 flex items-center'
             >
               Về trang chủ
             </Button>
